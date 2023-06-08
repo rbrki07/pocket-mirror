@@ -1,49 +1,92 @@
 // @ts-check
-import React from 'react'
-import { PMCameraView } from './PMCameraView'
-import { PMSetting } from './PMSetting'
-import { PMBrightnessSlider } from './PMBrightnessSlider'
-import { useTheme } from '../hooks/useTheme'
-import { StyleSheet } from 'react-native'
-import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context'
+import React, { useCallback, useState } from 'react'
+import { StyleSheet, View } from 'react-native'
+import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
-import { PMThemeSelector } from './PMThemeSelector'
-import { PMWhiteBalanceSelector } from './PMWhiteBalanceSelector'
+import { PMCameraView } from './../components/PMCameraView'
+import { useTheme } from './../hooks/useTheme'
+import { PMThemeSelector } from './../components/PMThemeSelector'
+import { PMBrightnessChanger } from './../components/PMBrightnessChanger'
+import { PMButton } from './../components/PMButton'
+import { PMZoomChanger } from './PMZoomChanger'
+import { PMSettingModal } from './PMSettingModal'
+// eslint-disable-next-line no-unused-vars
+import typedefs from './../typedefs'
 
 /**
  * @returns {Object} PMMain
  */
 const PMMain = () => {
   const theme = useTheme()
-  const styles = themedStyles(theme)
+  const insets = useSafeAreaInsets()
+  const styles = themedStyles({ currentTheme: theme, insets })
+  const [showSettingModal, setShowSettingModal] = useState(false)
+
+  const settingButtonOnPressCallback = useCallback(() => {
+    setShowSettingModal(true)
+  }, [])
+
+  const showSettingModalOnClose = useCallback(() => {
+    setShowSettingModal(false)
+  }, [])
 
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={styles.container}>
-        <PMCameraView />
-        <PMSetting title={'Modus'}>
-          <PMThemeSelector />
-        </PMSetting>
-        <PMSetting title={'Weißabgleich'}>
-          <PMWhiteBalanceSelector />
-        </PMSetting>
-        <PMSetting title={'Display-Helligkeit anpassen'}>
-          <PMBrightnessSlider />
-        </PMSetting>
-        <StatusBar style={theme.statusBarStyle} />
-      </SafeAreaView>
-    </SafeAreaProvider>
+    <SafeAreaView style={styles.container}>
+      <View style={[styles.menu, styles.menuTop]}>
+        <PMButton
+          onPressCallback={settingButtonOnPressCallback}
+          iconName={'settings-outline'}
+        />
+        <PMSettingModal
+          show={showSettingModal}
+          onClose={showSettingModalOnClose}
+        />
+        <PMZoomChanger />
+      </View>
+      <PMCameraView />
+      <View style={[styles.menu, styles.menuBottom]}>
+        <PMBrightnessChanger />
+        <PMThemeSelector />
+      </View>
+      <StatusBar style={theme.statusBarStyle} />
+    </SafeAreaView>
   )
 }
 
-const themedStyles = (currentTheme) =>
+/**
+ * @param {Object} params
+ * @param {typedefs.Theme} params.currentTheme
+ * @param {import("react-native-safe-area-context").EdgeInsets} params.insets
+ *
+ * @returns {Object}
+ */
+const themedStyles = ({ currentTheme, insets }) =>
   StyleSheet.create({
     // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       backgroundColor: currentTheme.backgroundColor,
       flex: 1,
-      justifyContent: 'flex-start',
+      justifyContent: 'center',
+    },
+    // eslint-disable-next-line react-native/no-unused-styles
+    menu: {
+      flexDirection: 'row',
+      width: '95%',
+    },
+    // eslint-disable-next-line react-native/no-unused-styles
+    menuBottom: {
+      alignItems: 'flex-end',
+      bottom: insets.bottom,
+      justifyContent: 'space-between',
+      position: 'absolute',
+    },
+    // eslint-disable-next-line react-native/no-unused-styles
+    menuTop: {
+      alignItems: 'flex-start',
+      justifyContent: 'space-between',
+      position: 'absolute',
+      top: insets.top,
     },
   })
 

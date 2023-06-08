@@ -4,17 +4,31 @@ import { WhiteBalance } from 'expo-camera'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
+const SETTING_KEY_CURRENT_THEME = 'currentTheme'
+const SETTING_KEY_CURRENT_WHITE_BALANCE = 'currentWhiteBalance'
+const SETTING_KEY_CURRENT_ZOOM_LEVEL = 'currentZoomLevel'
+
+export {
+  SETTING_KEY_CURRENT_THEME,
+  SETTING_KEY_CURRENT_WHITE_BALANCE,
+  SETTING_KEY_CURRENT_ZOOM_LEVEL,
+}
+
 /**
  * @type {typedefs.Settings}
  */
-const initialState = [
+const SETTING_INITIAL_STATE = [
   {
-    key: 'currentTheme',
-    value: undefined,
+    key: SETTING_KEY_CURRENT_THEME,
+    value: 'light',
   },
   {
-    key: 'currentWhiteBalance',
+    key: SETTING_KEY_CURRENT_WHITE_BALANCE,
     value: WhiteBalance.auto,
+  },
+  {
+    key: SETTING_KEY_CURRENT_ZOOM_LEVEL,
+    value: 0.0,
   },
 ]
 
@@ -50,7 +64,7 @@ const updateSettingReducer = (state, action) => {
  *
  * @returns {typedefs.Settings}
  */
-export const settingsReducer = (state = initialState, action) => {
+export const settingsReducer = (state = SETTING_INITIAL_STATE, action) => {
   switch (action.type) {
     case UPDATE_SETTING:
       return updateSettingReducer(state, action)
@@ -72,8 +86,9 @@ export const currentThemeSelector = createSelector(
   /**
    * @returns {typedefs.CurrentThemeSetting | undefined}
    */
-  // @ts-ignore
-  (settings) => settings.find((setting) => setting.key === 'currentTheme')
+  (settings) =>
+    // @ts-ignore
+    settings.find((setting) => setting.key === SETTING_KEY_CURRENT_THEME)
 )
 
 export const currentWhiteBalanceSelector = createSelector(
@@ -83,5 +98,17 @@ export const currentWhiteBalanceSelector = createSelector(
    */
   (settings) =>
     // @ts-ignore
-    settings.find((setting) => setting.key === 'currentWhiteBalance')
+    settings.find(
+      (setting) => setting.key === SETTING_KEY_CURRENT_WHITE_BALANCE
+    )
+)
+
+export const currentZoomLevelSelector = createSelector(
+  settingsSelector,
+  /**
+   * @returns {typedefs.CurrentZoomLevelSetting | undefined}
+   */
+  (settings) =>
+    // @ts-ignore
+    settings.find((setting) => setting.key === SETTING_KEY_CURRENT_ZOOM_LEVEL)
 )

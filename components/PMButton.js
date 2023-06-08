@@ -12,6 +12,7 @@ import typedefs from './../typedefs'
  * @param {String} params.iconName
  * @param {Number} [params.iconSize]
  * @param {Boolean} [params.selected]
+ * @param {Boolean} [params.disabled]
  *
  * @returns {Object} PMButton
  */
@@ -20,20 +21,24 @@ const PMButton = ({
   iconName,
   iconSize = 32,
   selected = false,
+  disabled = false,
 }) => {
   const theme = useTheme()
   const styles = themedStyles(theme)
   return (
     <TouchableOpacity
+      disabled={disabled}
       onPress={onPressCallback}
       // eslint-disable-next-line react-native/no-inline-styles
-      style={[styles.container, { borderWidth: selected ? 2 : 1 }]}
+      style={[styles.container, { borderWidth: selected ? 1 : 0 }]}
     >
       <Ionicons
         // @ts-ignore
         name={iconName}
         size={iconSize}
         color={theme.iconColor}
+        // eslint-disable-next-line react-native/no-inline-styles
+        style={{ opacity: disabled ? 0.25 : 1.0 }}
       />
     </TouchableOpacity>
   )
@@ -41,6 +46,8 @@ const PMButton = ({
 
 /**
  * @param {typedefs.Theme} currentTheme
+ *
+ * @returns {Object}
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
@@ -50,11 +57,10 @@ const themedStyles = (currentTheme) =>
       borderColor: currentTheme.borderColor,
       borderRadius: 8,
       borderStyle: 'dashed',
-      borderWidth: 1,
-      height: 64,
+      height: 50,
       justifyContent: 'center',
       margin: 8,
-      width: 64,
+      width: 50,
     },
   })
 

@@ -1,34 +1,50 @@
 // @ts-check
-import React from 'react'
+import React, { useCallback } from 'react'
 import { useColorScheme } from 'react-native'
 import { PMButton } from './PMButton'
 import { useDispatch, useSelector } from 'react-redux'
-import { currentThemeSelector, updateSetting } from '../store/settings'
+import {
+  SETTING_KEY_CURRENT_THEME,
+  currentThemeSelector,
+  updateSetting,
+} from './../store/settings'
 
+/**
+ * @returns {Object} PMThemeSelector
+ */
 const PMThemeSelector = () => {
   const colorScheme = useColorScheme()
   const currentTheme = useSelector(currentThemeSelector)?.value
   const dispatch = useDispatch()
 
+  const themeButtonOnPressCallback = useCallback(() => {
+    if (currentTheme) {
+      if (currentTheme === 'light') {
+        dispatch(
+          updateSetting({ key: SETTING_KEY_CURRENT_THEME, value: 'dark' })
+        )
+      } else {
+        dispatch(
+          updateSetting({ key: SETTING_KEY_CURRENT_THEME, value: 'light' })
+        )
+      }
+    } else if (colorScheme && ['dark', 'light'].includes(colorScheme)) {
+      if (colorScheme === 'light') {
+        dispatch(
+          updateSetting({ key: SETTING_KEY_CURRENT_THEME, value: 'dark' })
+        )
+      } else {
+        dispatch(
+          updateSetting({ key: SETTING_KEY_CURRENT_THEME, value: 'light' })
+        )
+      }
+    }
+  }, [colorScheme, currentTheme, dispatch])
+
   return (
     <PMButton
-      onPressCallback={() => {
-        if (currentTheme) {
-          if (currentTheme === 'light') {
-            dispatch(updateSetting({ key: 'currentTheme', value: 'dark' }))
-          } else {
-            dispatch(updateSetting({ key: 'currentTheme', value: 'light' }))
-          }
-        } else if (colorScheme && ['dark', 'light'].includes(colorScheme)) {
-          if (colorScheme === 'light') {
-            dispatch(updateSetting({ key: 'currentTheme', value: 'dark' }))
-          } else {
-            dispatch(updateSetting({ key: 'currentTheme', value: 'light' }))
-          }
-        }
-      }}
-      iconName={currentTheme === 'light' ? 'moon-outline' : 'sunny-outline'}
-      selected={true}
+      onPressCallback={themeButtonOnPressCallback}
+      iconName={currentTheme === 'light' ? 'sunny-outline' : 'moon-outline'}
     />
   )
 }

@@ -17,8 +17,8 @@
 
 /**
  * @typedef {Object} Setting
- * @property {'currentTheme' | 'currentWhiteBalance'} key
- * @property {ColorScheme | import("expo-camera").WhiteBalance} value
+ * @property {'currentTheme' | 'currentWhiteBalance' | 'currentZoomLevel'} key
+ * @property {ColorScheme | import("expo-camera").WhiteBalance | Number} value
  */
 
 /**
@@ -31,6 +31,12 @@
  * @typedef {Object} CurrentWhiteBalanceSetting
  * @property {'currentWhiteBalance'} key
  * @property {import("expo-camera").WhiteBalance} value
+ */
+
+/**
+ * @typedef {Object} CurrentZoomLevelSetting
+ * @property {'currentZoomLevel'} key
+ * @property {Number} value
  */
 
 /**

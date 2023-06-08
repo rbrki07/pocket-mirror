@@ -20,7 +20,7 @@ const pmReducer = combineReducers({
 
 const persistConfig = {
   key: 'pocket-mirror',
-  version: 1,
+  version: 0,
   storage: AsyncStorage,
 }
 

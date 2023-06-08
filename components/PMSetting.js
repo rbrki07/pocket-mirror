@@ -9,6 +9,8 @@ import typedefs from './../typedefs'
  * @param {Object} params
  * @param {String} params.title
  * @param {Object} params.children
+ *
+ * @returns {Object} PMSetting
  */
 const PMSetting = ({ title, children }) => {
   const theme = useTheme()
@@ -23,6 +25,8 @@ const PMSetting = ({ title, children }) => {
 
 /**
  * @param {typedefs.Theme} currentTheme
+ *
+ * @returns {Object}
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
