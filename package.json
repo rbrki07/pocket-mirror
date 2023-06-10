@@ -6,7 +6,16 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "android:dev:client": "expo start --android --dev-client",
+    "ios:dev:client": "expo start --ios --dev-client",
+    "eas:build:development:android:emulator+device": "eas build --profile development --platform android",
+    "eas:build:development:ios:simulator": "eas build --profile development-simulator --platform ios",
+    "eas:build:development:ios:device": "eas build --profile development --platform ios",
+    "eas:build:preview:android": "eas build --profile preview --platform android",
+    "eas:build:preview:ios": "eas build --profile preview --platform ios",
+    "eas:build:run:android": "eas build:run -p android",
+    "eas:build:run:ios": "eas build:run -p ios"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.17.11",
@@ -22,7 +31,8 @@
     "react-native-safe-area-context": "4.5.0",
     "react-redux": "^8.0.5",
     "redux": "^4.2.1",
-    "redux-persist": "^6.0.0"
+    "redux-persist": "^6.0.0",
+    "expo-dev-client": "~2.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

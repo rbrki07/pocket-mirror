@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "pocket-mirror",
+    "name": "Pocket Mirror",
     "slug": "pocket-mirror",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "de.audience-engagement.pocket-mirror"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,7 +27,8 @@
         "WRITE_SETTINGS",
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
-      ]
+      ],
+      "package": "de.audience_engagement.pocket_mirror"
     },
     "web": {
       "favicon": "./assets/favicon.png"
