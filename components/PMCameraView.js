@@ -3,9 +3,10 @@ import React, { useEffect, useState } from 'react'
 import { Platform, StyleSheet, useWindowDimensions, View } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Camera, CameraType } from 'expo-camera'
+import { useSelector } from 'react-redux'
+import { useIsFocused } from '@react-navigation/native'
 import { PMSetting } from './PMSetting'
 import { PMButton } from './PMButton'
-import { useSelector } from 'react-redux'
 import {
   currentWhiteBalanceSelector,
   currentZoomLevelSelector,
@@ -48,6 +49,8 @@ const PMCameraView = () => {
     }
   }, [cameraHeight, cameraWidth, currentDisplayWidth])
 
+  const isFocused = useIsFocused()
+
   return (
     <View
       style={[
@@ -58,7 +61,7 @@ const PMCameraView = () => {
         },
       ]}
     >
-      {cameraPermissionResponse?.granted === true && (
+      {cameraPermissionResponse?.granted === true && isFocused && (
         <Camera
           style={{ height: cameraHeight, width: cameraWidth }}
           type={CameraType.front}
