@@ -45,6 +45,7 @@ const PMThemeSelector = () => {
     <PMButton
       onPressCallback={themeButtonOnPressCallback}
       iconName={currentTheme === 'light' ? 'sunny-outline' : 'moon-outline'}
+      testID={'themeButton'}
     />
   )
 }

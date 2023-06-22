@@ -56,6 +56,7 @@ const PMWhiteBalanceSelector = () => {
             }}
             iconName={entry.icon}
             selected={entry.value === currentWhiteBalance}
+            testID={'whiteBalanceButton'}
           />
           <Text style={styles.text}>{entry.value}</Text>
         </View>

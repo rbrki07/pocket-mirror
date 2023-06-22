@@ -60,19 +60,24 @@ const PMCameraView = () => {
           width: cameraContainerWidth,
         },
       ]}
+      testID={'cameraContainer'}
     >
-      {cameraPermissionResponse?.granted === true && isFocused && (
+      {cameraPermissionResponse?.granted === true && isFocused === true && (
         <Camera
           style={{ height: cameraHeight, width: cameraWidth }}
           type={CameraType.front}
           useCamera2Api={false}
           whiteBalance={currentWhiteBalance}
           zoom={currentZoomLevel}
+          testID={'camera'}
         />
       )}
       {cameraPermissionResponse?.granted !== true &&
         cameraPermissionResponse?.canAskAgain === true && (
-          <View style={styles.placeholder}>
+          <View
+            style={styles.placeholder}
+            testID={'requestCameraPermissionPlaceholder'}
+          >
             <PMSetting title={'Front-Kamera aktivieren'}>
               <PMButton
                 onPressCallback={requestCameraPermission}
