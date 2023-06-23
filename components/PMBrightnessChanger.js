@@ -13,7 +13,7 @@ import { useTheme } from './../hooks/useTheme'
  *
  * @returns {Boolean}
  */
-const getMinusButtonDisabledState = ({
+const getDecreaseBrightnessButtonDisabledState = ({
   currentBrightness,
   minBrightness = 0.0,
 }) => currentBrightness <= minBrightness
@@ -43,7 +43,7 @@ const decreaseCurrentBrightness = ({
  *
  * @returns {Boolean}
  */
-const getPlusButtonDisabledState = ({
+const getIncreaseBrightnessButtonDisabledState = ({
   currentBrightness,
   maxBrightness = 1.0,
 }) => currentBrightness >= maxBrightness
@@ -104,21 +104,23 @@ const checkBrightnessPermissionAndSet = ({
       ]
     )
   } else if (brightnessPermissionResponse !== null) {
-    alert(
-      'Die verfügt nicht über die erforderlichen Berechtigungen die Display-Helligkeit anzupassen.'
+    Alert.alert(
+      'Die App verfügt nicht über die erforderlichen Berechtigungen die Display-Helligkeit anzupassen.'
     )
   }
 }
 
 /**
+ * @param {Object} params
+ * @param {Number} [params.initialBrightness]
  * @returns {Object} PMBrightnessChanger
  */
-const PMBrightnessChanger = () => {
+const PMBrightnessChanger = ({ initialBrightness = 0.5 }) => {
   const theme = useTheme()
 
   const [brightnessPermissionResponse, requestBrightnessPermission] =
     Brightness.usePermissions()
-  const [currentBrightness, setCurrentBrightness] = useState(0.5)
+  const [currentBrightness, setCurrentBrightness] = useState(initialBrightness)
 
   useEffect(() => {
     if (brightnessPermissionResponse?.granted === true) {
@@ -126,7 +128,7 @@ const PMBrightnessChanger = () => {
     }
   }, [brightnessPermissionResponse])
 
-  const minusButtonOnPressCallback = useCallback(() => {
+  const decreaseBrightnessButtonOnPressCallback = useCallback(() => {
     checkBrightnessPermissionAndSet({
       brightnessPermissionResponse,
       requestBrightnessPermission,
@@ -145,7 +147,7 @@ const PMBrightnessChanger = () => {
     currentBrightness,
   ])
 
-  const plusButtonOnPressCallback = useCallback(() => {
+  const increaseBrightnessButtonOnPressCallback = useCallback(() => {
     checkBrightnessPermissionAndSet({
       brightnessPermissionResponse,
       requestBrightnessPermission,
@@ -167,15 +169,21 @@ const PMBrightnessChanger = () => {
   return (
     <View style={styles.container}>
       <PMButton
-        onPressCallback={minusButtonOnPressCallback}
+        onPressCallback={decreaseBrightnessButtonOnPressCallback}
         iconName={'remove-circle-outline'}
-        disabled={getMinusButtonDisabledState({ currentBrightness })}
+        disabled={getDecreaseBrightnessButtonDisabledState({
+          currentBrightness,
+        })}
+        testID={'decreaseBrightnessButton'}
       />
       <Ionicons name={'bulb-outline'} size={32} color={theme.iconColor} />
       <PMButton
-        onPressCallback={plusButtonOnPressCallback}
+        onPressCallback={increaseBrightnessButtonOnPressCallback}
         iconName={'add-circle-outline'}
-        disabled={getPlusButtonDisabledState({ currentBrightness })}
+        disabled={getIncreaseBrightnessButtonDisabledState({
+          currentBrightness,
+        })}
+        testID={'increaseBrightnessButton'}
       />
     </View>
   )

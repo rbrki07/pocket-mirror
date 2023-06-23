@@ -41,4 +41,4 @@ const useTheme = (defaultTheme = 'dark') => {
   })
 }
 
-export { useTheme }
+export { getTheme, useTheme }

@@ -13,6 +13,7 @@ import typedefs from './../typedefs'
  * @param {Number} [params.iconSize]
  * @param {Boolean} [params.selected]
  * @param {Boolean} [params.disabled]
+ * @param {String} [params.testID]
  *
  * @returns {Object} PMButton
  */
@@ -22,6 +23,7 @@ const PMButton = ({
   iconSize = 32,
   selected = false,
   disabled = false,
+  testID,
 }) => {
   const theme = useTheme()
   const styles = themedStyles(theme)
@@ -31,6 +33,7 @@ const PMButton = ({
       onPress={onPressCallback}
       // eslint-disable-next-line react-native/no-inline-styles
       style={[styles.container, { borderWidth: selected ? 1 : 0 }]}
+      testID={testID}
     >
       <Ionicons
         // @ts-ignore
@@ -39,6 +42,7 @@ const PMButton = ({
         color={theme.iconColor}
         // eslint-disable-next-line react-native/no-inline-styles
         style={{ opacity: disabled ? 0.25 : 1.0 }}
+        testID={`${testID}_${iconName}`}
       />
     </TouchableOpacity>
   )

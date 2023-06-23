@@ -22,7 +22,7 @@ const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.1 : 0.01
  *
  * @returns {Boolean}
  */
-const getMinusButtonDisabledState = ({
+const getDecreaseZoomLevelButtonDisabledState = ({
   currentZoomLevel,
   minZoomLevel = MIN_ZOOM_LEVEL,
 }) => currentZoomLevel <= minZoomLevel
@@ -52,7 +52,7 @@ const decreaseCurrentZoomLevel = ({
  *
  * @returns {Boolean}
  */
-const getPlusButtonDisabledState = ({
+const getIncreaseZoomLevelButtonDisabledState = ({
   currentZoomLevel,
   maxZoomLevel = MAX_ZOOM_LEVEL,
 }) => currentZoomLevel >= maxZoomLevel
@@ -84,7 +84,7 @@ const PMZoomChanger = () => {
     useSelector(currentZoomLevelSelector)?.value || MIN_ZOOM_LEVEL
   const dispatch = useDispatch()
 
-  const minusButtonOnPressCallback = useCallback(() => {
+  const decreaseZoomLevelButtonOnPressCallback = useCallback(() => {
     dispatch(
       updateSetting({
         key: SETTING_KEY_CURRENT_ZOOM_LEVEL,
@@ -93,7 +93,7 @@ const PMZoomChanger = () => {
     )
   }, [currentZoomLevel, dispatch])
 
-  const plusButtonOnPressCallback = useCallback(() => {
+  const increaseZoomLevelButtonOnPressCallback = useCallback(() => {
     dispatch(
       updateSetting({
         key: SETTING_KEY_CURRENT_ZOOM_LEVEL,
@@ -105,15 +105,17 @@ const PMZoomChanger = () => {
   return (
     <View style={styles.container}>
       <PMButton
-        onPressCallback={minusButtonOnPressCallback}
+        onPressCallback={decreaseZoomLevelButtonOnPressCallback}
         iconName={'remove-circle-outline'}
-        disabled={getMinusButtonDisabledState({ currentZoomLevel })}
+        disabled={getDecreaseZoomLevelButtonDisabledState({ currentZoomLevel })}
+        testID={'decreaseZoomLevelButton'}
       />
       <Ionicons name={'resize'} size={32} color={theme.iconColor} />
       <PMButton
-        onPressCallback={plusButtonOnPressCallback}
+        onPressCallback={increaseZoomLevelButtonOnPressCallback}
         iconName={'add-circle-outline'}
-        disabled={getPlusButtonDisabledState({ currentZoomLevel })}
+        disabled={getIncreaseZoomLevelButtonDisabledState({ currentZoomLevel })}
+        testID={'increaseZoomLevelButton'}
       />
     </View>
   )
