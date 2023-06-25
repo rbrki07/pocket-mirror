@@ -57,13 +57,14 @@ const MenuScreen = ({ navigation }) => {
   useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle: 'Menü',
-      headerLeft: () =>
-        Platform.OS === 'ios' ? (
-          <Button onPress={() => navigation.goBack()} title={'Schließen'} />
-        ) : (
-          <></>
-        ),
     })
+    if (Platform.OS === 'ios') {
+      navigation.setOptions({
+        headerLeft: () => (
+          <Button onPress={() => navigation.goBack()} title={'Schließen'} />
+        ),
+      })
+    }
   }, [navigation])
 
   return (
