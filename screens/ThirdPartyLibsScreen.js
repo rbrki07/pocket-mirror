@@ -2,6 +2,8 @@
 import React, { useLayoutEffect } from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { useTheme } from './../hooks/useTheme'
+import { i18n } from '../i18n'
+import { I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE } from '../i18n/keys'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -14,13 +16,15 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: 'Drittanbieter-Software',
+      headerTitle: i18n.t(I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE),
     })
   }, [navigation])
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{'Drittanbieter-Software'}</Text>
+      <Text style={styles.text}>
+        {i18n.t(I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE)}
+      </Text>
     </View>
   )
 }
