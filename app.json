@@ -49,6 +49,7 @@
       "da": "./i18n/da.json",
       "de": "./i18n/de.json",
       "en": "./i18n/en.json",
+      "fi": "./i18n/fi.json",
       "nb": "./i18n/nb.json",
       "sv": "./i18n/sv.json"
     },

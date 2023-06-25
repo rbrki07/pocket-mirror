@@ -4,6 +4,7 @@ import { I18n } from 'i18n-js'
 import { da } from './da'
 import { de } from './de'
 import { en } from './en'
+import { fi } from './fi'
 import { nb } from './nb'
 import { sv } from './sv'
 
@@ -11,6 +12,7 @@ const i18n = new I18n({
   da,
   de,
   en,
+  fi,
   nb,
   sv,
 })
