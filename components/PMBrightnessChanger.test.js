@@ -7,6 +7,11 @@ import { render, fireEvent, waitFor } from '@testing-library/react-native'
 import { configureTestStore } from '../store/StoreTestUtils'
 import { PMBrightnessChanger } from './PMBrightnessChanger'
 
+jest.mock('expo-localization', () => ({
+  ...jest.requireActual('expo-localization'),
+  getLocales: () => [{ languageCode: 'de' }],
+}))
+
 describe('PMBrightnessChanger brightness decrease and increase tests', () => {
   let brightnessSpy
   beforeEach(() => {
@@ -99,7 +104,7 @@ describe('PMBrightnessChanger permission tests', () => {
       fireEvent.press(decreaseBrightnessButton)
       expect(alertSpy).toHaveBeenCalledWith(
         'Berechtigung erteilen',
-        'Die App benötigt die Berechtigung die Display-Helligkeit anzupassen',
+        'Die App benötigt die Berechtigung, die Display-Helligkeit anzupassen.',
         expect.any(Array)
       )
     })
