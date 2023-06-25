@@ -110,7 +110,7 @@ const PMZoomChanger = () => {
         disabled={getDecreaseZoomLevelButtonDisabledState({ currentZoomLevel })}
         testID={'decreaseZoomLevelButton'}
       />
-      <Ionicons name={'resize'} size={32} color={theme.iconColor} />
+      <Ionicons name={'search-outline'} size={32} color={theme.iconColor} />
       <PMButton
         onPressCallback={increaseZoomLevelButtonOnPressCallback}
         iconName={'add-circle-outline'}
