@@ -51,6 +51,7 @@
       "en": "./i18n/en.json",
       "fi": "./i18n/fi.json",
       "nb": "./i18n/nb.json",
+      "nl": "./i18n/nl.json",
       "sv": "./i18n/sv.json"
     },
     "extra": {

@@ -1,0 +1,6 @@
+{
+    "CFBundleName": "Zakspiegel",
+    "CFBundleDisplayName": "Zakspiegel",
+    "NSCameraUsageDescription": "De app wil toegang hebben tot de camera aan de voorkant om deze als spiegel te gebruiken. Er worden geen beeldopnames opgeslagen."
+  }
+  

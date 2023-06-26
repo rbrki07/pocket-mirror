@@ -6,6 +6,7 @@ import { de } from './de'
 import { en } from './en'
 import { fi } from './fi'
 import { nb } from './nb'
+import { nl } from './nl'
 import { sv } from './sv'
 
 const i18n = new I18n({
@@ -14,6 +15,7 @@ const i18n = new I18n({
   en,
   fi,
   nb,
+  nl,
   sv,
 })
 
