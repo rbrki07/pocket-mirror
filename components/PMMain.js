@@ -34,6 +34,7 @@ const getNavigationTheme = ({ currentTheme }) => ({
   colors: {
     ...DefaultTheme.colors,
     primary: currentTheme.textColor,
+    background: currentTheme.backgroundColor,
     card: currentTheme.backgroundColor,
     text: currentTheme.textColor,
   },
