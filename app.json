@@ -16,7 +16,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "de.audience-engagement.pocket-mirror"
+      "bundleIdentifier": "de.audience-engagement.pocket-mirror",
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -37,10 +40,24 @@
       [
         "expo-camera",
         {
-          "cameraPermission": "Die App möchte auf die Front-Kamera zugreifen können, um sie als Spiegel zu verwenden. Es werden keine Bildaufnahmen gespeichert."
+          "cameraPermission": "The app wants to be able to access the front camera to use it as a mirror. No image captures are saved."
         }
-      ]
+      ],
+      "expo-localization"
     ],
+    "locales": {
+      "da": "./i18n/da.json",
+      "de": "./i18n/de.json",
+      "en": "./i18n/en.json",
+      "es": "./i18n/es.json",
+      "fi": "./i18n/fi.json",
+      "fr": "./i18n/fr.json",
+      "it": "./i18n/it.json",
+      "nb": "./i18n/nb.json",
+      "nl": "./i18n/nl.json",
+      "pt": "./i18n/pt.json",
+      "sv": "./i18n/sv.json"
+    },
     "extra": {
       "eas": {
         "projectId": "1523d6ea-e739-4e08-a634-998233267c7d"

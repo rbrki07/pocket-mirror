@@ -4,6 +4,11 @@ import { StyleSheet, View } from 'react-native'
 import { useTheme } from './../hooks/useTheme'
 import { PMSetting } from './../components/PMSetting'
 import { PMWhiteBalanceSelector } from './../components/PMWhiteBalanceSelector'
+import { i18n } from '../i18n'
+import {
+  I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
+  I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
+} from '../i18n/keys'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -16,13 +21,13 @@ const SettingScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: 'Einstellungen',
+      headerTitle: i18n.t(I18N_KEY_SCREEN_SETTING_HEADER_TITLE),
     })
   }, [navigation])
 
   return (
     <View style={styles.container}>
-      <PMSetting title={'Weißabgleich'}>
+      <PMSetting title={i18n.t(I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE)}>
         <PMWhiteBalanceSelector />
       </PMSetting>
     </View>

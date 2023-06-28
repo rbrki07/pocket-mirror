@@ -1,0 +1,6 @@
+{
+    "CFBundleName": "Taschenspiegel",
+    "CFBundleDisplayName": "Taschenspiegel",
+    "NSCameraUsageDescription": "Die App möchte auf die Front-Kamera zugreifen können, um sie als Spiegel zu verwenden. Es werden keine Bildaufnahmen gespeichert."
+  }
+  

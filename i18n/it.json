@@ -1,0 +1,6 @@
+{
+    "CFBundleName": "Specchio tascabile",
+    "CFBundleDisplayName": "Specchio tascabile",
+    "NSCameraUsageDescription": "L'applicazione vuole poter accedere alla fotocamera anteriore per utilizzarla come specchio. Non viene salvata alcuna immagine."
+  }
+  

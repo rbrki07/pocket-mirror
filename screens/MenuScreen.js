@@ -11,6 +11,16 @@ import {
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme } from './../hooks/useTheme'
+import { i18n } from '../i18n'
+import {
+  I18N_KEY_SCREEN_MENU_CLOSE_BUTTON,
+  I18N_KEY_SCREEN_MENU_HEADER_TITLE,
+  I18N_KEY_SCREEN_MENU_ITEM_ABOUT,
+  I18N_KEY_SCREEN_MENU_ITEM_IMPRINT,
+  I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
+  I18N_KEY_SCREEN_MENU_ITEM_SETTING,
+  I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
+} from '../i18n/keys'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -23,11 +33,14 @@ const MenuScreen = ({ navigation }) => {
 
   const infoItems = useMemo(
     () => [
-      { title: 'Einstellungen', route: 'Setting' },
-      { title: 'Impressum', route: 'Imprint' },
-      { title: 'Datenschutz', route: 'Privacy' },
-      { title: 'Drittanbieter-Software', route: 'ThirdPartyLibs' },
-      { title: 'App-Info', route: 'About' },
+      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_SETTING), route: 'Setting' },
+      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_IMPRINT), route: 'Imprint' },
+      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_PRIVACY), route: 'Privacy' },
+      {
+        title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS),
+        route: 'ThirdPartyLibs',
+      },
+      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_ABOUT), route: 'About' },
     ],
     []
   )
@@ -56,12 +69,15 @@ const MenuScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: 'Menü',
+      headerTitle: i18n.t(I18N_KEY_SCREEN_MENU_HEADER_TITLE),
     })
     if (Platform.OS === 'ios') {
       navigation.setOptions({
         headerLeft: () => (
-          <Button onPress={() => navigation.goBack()} title={'Schließen'} />
+          <Button
+            onPress={() => navigation.goBack()}
+            title={i18n.t(I18N_KEY_SCREEN_MENU_CLOSE_BUTTON)}
+          />
         ),
       })
     }

@@ -1,0 +1,6 @@
+{
+    "CFBundleName": "Lommespejl",
+    "CFBundleDisplayName": "Lommespejl",
+    "NSCameraUsageDescription": "Appen vil have adgang til frontkameraet for at kunne bruge det som spejl. Der gemmes ingen billeder."
+  }
+  

@@ -1,0 +1,30 @@
+// @ts-check
+export const I18N_KEY_SCREEN_ABOUT_HEADER_TITLE = 'screen_about_header_title'
+export const I18N_KEY_SCREEN_IMPRINT_HEADER_TITLE =
+  'screen_imprint_header_title'
+export const I18N_KEY_SCREEN_MENU_HEADER_TITLE = 'screen_menu_header_title'
+export const I18N_KEY_SCREEN_MENU_ITEM_SETTING = 'screen_menu_item_setting'
+export const I18N_KEY_SCREEN_MENU_ITEM_IMPRINT = 'screen_menu_item_imprint'
+export const I18N_KEY_SCREEN_MENU_ITEM_PRIVACY = 'screen_menu_item_privacy'
+export const I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS =
+  'screen_menu_item_third_party_libs'
+export const I18N_KEY_SCREEN_MENU_ITEM_ABOUT = 'screen_menu_item_about'
+export const I18N_KEY_SCREEN_MENU_CLOSE_BUTTON = 'screen_menu_close_button'
+export const I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE =
+  'screen_privacy_header_title'
+export const I18N_KEY_SCREEN_SETTING_HEADER_TITLE =
+  'screen_setting_header_title'
+export const I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE =
+  'screen_setting_item_white_balance'
+export const I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE =
+  'screen_third_party_libs_header_title'
+export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_TITLE =
+  'component_pm_brightness_changer_request_permission_dialog_title'
+export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_MESSAGE =
+  'component_pm_brightness_changer_request_permission_dialog_message'
+export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CANCEL =
+  'component_pm_brightness_changer_request_permission_dialog_cancel'
+export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CONFIRM =
+  'component_pm_brightness_changer_request_permission_dialog_confirm'
+export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_TITLE =
+  'component_pm_brightness_changer_request_permission_failed_dialog_title'

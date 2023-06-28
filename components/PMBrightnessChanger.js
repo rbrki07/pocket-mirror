@@ -5,6 +5,14 @@ import { Ionicons } from '@expo/vector-icons'
 import * as Brightness from 'expo-brightness'
 import { PMButton } from './PMButton'
 import { useTheme } from './../hooks/useTheme'
+import { i18n } from '../i18n'
+import {
+  I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CANCEL,
+  I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CONFIRM,
+  I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_MESSAGE,
+  I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_TITLE,
+  I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_TITLE,
+} from '../i18n/keys'
 
 /**
  * @param {Object} params
@@ -83,15 +91,23 @@ const checkBrightnessPermissionAndSet = ({
     setBrightness()
   } else if (brightnessPermissionResponse?.canAskAgain === true) {
     Alert.alert(
-      'Berechtigung erteilen',
-      'Die App benötigt die Berechtigung die Display-Helligkeit anzupassen',
+      i18n.t(
+        I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_TITLE
+      ),
+      i18n.t(
+        I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_MESSAGE
+      ),
       [
         {
-          text: 'Abbrechen',
+          text: i18n.t(
+            I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CANCEL
+          ),
           style: 'cancel',
         },
         {
-          text: 'OK',
+          text: i18n.t(
+            I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CONFIRM
+          ),
           style: 'default',
           onPress: () => {
             requestBrightnessPermission().then((response) => {
@@ -105,7 +121,9 @@ const checkBrightnessPermissionAndSet = ({
     )
   } else if (brightnessPermissionResponse !== null) {
     Alert.alert(
-      'Die App verfügt nicht über die erforderlichen Berechtigungen die Display-Helligkeit anzupassen.'
+      i18n.t(
+        I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_TITLE
+      )
     )
   }
 }

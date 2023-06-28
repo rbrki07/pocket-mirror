@@ -1,0 +1,6 @@
+{
+    "CFBundleName": "Taskupeili",
+    "CFBundleDisplayName": "Taskupeili",
+    "NSCameraUsageDescription": "Sovellus haluaa päästä käsiksi etukameraan ja käyttää sitä peilinä. Kuvia ei tallenneta."
+  }
+  
