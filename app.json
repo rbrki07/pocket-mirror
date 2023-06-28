@@ -49,10 +49,13 @@
       "da": "./i18n/da.json",
       "de": "./i18n/de.json",
       "en": "./i18n/en.json",
+      "es": "./i18n/es.json",
       "fi": "./i18n/fi.json",
       "fr": "./i18n/fr.json",
+      "it": "./i18n/it.json",
       "nb": "./i18n/nb.json",
       "nl": "./i18n/nl.json",
+      "pt": "./i18n/pt.json",
       "sv": "./i18n/sv.json"
     },
     "extra": {
