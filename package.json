@@ -13,7 +13,8 @@
     "eas:build:development:ios:simulator": "eas build --profile development-simulator --platform ios",
     "eas:build:development:ios:device": "eas build --profile development --platform ios",
     "eas:build:preview:android": "eas build --profile preview --platform android",
-    "eas:build:preview:ios": "eas build --profile preview --platform ios",
+    "eas:build:preview:ios:simulator": "eas build --profile preview-simulator --platform ios",
+    "eas:build:preview:ios:device": "eas build --profile preview --platform ios",
     "eas:build:run:android": "eas build:run -p android",
     "eas:build:run:ios": "eas build:run -p ios",
     "test": "jest"
