@@ -1,6 +1,6 @@
 // @ts-check
 import React from 'react'
-import { StyleSheet, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme } from '../hooks/useTheme'
 // eslint-disable-next-line no-unused-vars
@@ -9,20 +9,26 @@ import typedefs from './../typedefs'
 /**
  * @param {Object} params
  * @param {() => void} params.onPressCallback
- * @param {String} params.iconName
+ * @param {String} [params.iconName]
  * @param {Number} [params.iconSize]
+ * @param {String} [params.title]
  * @param {Boolean} [params.selected]
  * @param {Boolean} [params.disabled]
+ * @param {Number} [params.height]
+ * @param {Number} [params.width]
  * @param {String} [params.testID]
  *
  * @returns {Object} PMButton
  */
 const PMButton = ({
   onPressCallback,
-  iconName,
+  iconName = undefined,
   iconSize = 32,
+  title = undefined,
   selected = false,
   disabled = false,
+  height = 50,
+  width = 50,
   testID,
 }) => {
   const theme = useTheme()
@@ -31,19 +37,25 @@ const PMButton = ({
     <TouchableOpacity
       disabled={disabled}
       onPress={onPressCallback}
-      // eslint-disable-next-line react-native/no-inline-styles
-      style={[styles.container, { borderWidth: selected ? 1 : 0 }]}
+      style={[
+        styles.container,
+        // eslint-disable-next-line react-native/no-inline-styles
+        { borderWidth: selected ? 1 : 0, height, width },
+      ]}
       testID={testID}
     >
-      <Ionicons
-        // @ts-ignore
-        name={iconName}
-        size={iconSize}
-        color={theme.iconColor}
-        // eslint-disable-next-line react-native/no-inline-styles
-        style={{ opacity: disabled ? 0.25 : 1.0 }}
-        testID={`${testID}_${iconName}`}
-      />
+      {iconName !== undefined && (
+        <Ionicons
+          // @ts-ignore
+          name={iconName}
+          size={iconSize}
+          color={theme.iconColor}
+          // eslint-disable-next-line react-native/no-inline-styles
+          style={{ opacity: disabled ? 0.25 : 1.0 }}
+          testID={`${testID}_${iconName}`}
+        />
+      )}
+      {title !== undefined && <Text style={styles.title}>{title}</Text>}
     </TouchableOpacity>
   )
 }
@@ -61,10 +73,14 @@ const themedStyles = (currentTheme) =>
       borderColor: currentTheme.borderColor,
       borderRadius: 8,
       borderStyle: 'dashed',
-      height: 50,
-      justifyContent: 'center',
+      flexDirection: 'row',
+      justifyContent: 'space-evenly',
       margin: 8,
-      width: 50,
+    },
+    // eslint-disable-next-line react-native/no-unused-styles
+    title: {
+      fontSize: 16,
+      fontWeight: 'bold',
     },
   })
 

@@ -5,8 +5,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Camera, CameraType } from 'expo-camera'
 import { useSelector } from 'react-redux'
 import { useIsFocused } from '@react-navigation/native'
-import { PMSetting } from './PMSetting'
-import { PMButton } from './PMButton'
 import {
   currentWhiteBalanceSelector,
   currentZoomLevelSelector,
@@ -16,9 +14,6 @@ import {
  * @returns {Object} PMCameraView
  */
 const PMCameraView = () => {
-  const [cameraPermissionResponse, requestCameraPermission] =
-    Camera.useCameraPermissions()
-
   const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)?.value
   const { height: currentDisplayHeight, width: currentDisplayWidth } =
     useWindowDimensions()
@@ -62,7 +57,7 @@ const PMCameraView = () => {
       ]}
       testID={'cameraContainer'}
     >
-      {cameraPermissionResponse?.granted === true && isFocused === true && (
+      {isFocused === true && (
         <Camera
           style={{ height: cameraHeight, width: cameraWidth }}
           type={CameraType.front}
@@ -72,21 +67,6 @@ const PMCameraView = () => {
           testID={'camera'}
         />
       )}
-      {cameraPermissionResponse?.granted !== true &&
-        cameraPermissionResponse?.canAskAgain === true && (
-          <View
-            style={styles.placeholder}
-            testID={'requestCameraPermissionPlaceholder'}
-          >
-            <PMSetting title={'Front-Kamera aktivieren'}>
-              <PMButton
-                onPressCallback={requestCameraPermission}
-                iconName={'camera-outline'}
-              />
-            </PMSetting>
-          </View>
-        )}
-      {cameraPermissionResponse === null && <View style={styles.placeholder} />}
     </View>
   )
 }
@@ -97,13 +77,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     justifyContent: 'center',
     overflow: 'hidden',
-  },
-  placeholder: {
-    alignItems: 'center',
-    flex: 1,
-    height: '100%',
-    justifyContent: 'center',
-    width: '100%',
   },
 })
 
