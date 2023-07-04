@@ -43,7 +43,8 @@
           "cameraPermission": "The app wants to be able to access the front camera to use it as a mirror. No image captures are saved."
         }
       ],
-      "expo-localization"
+      "expo-localization",
+      "@mmomtchev/expo-android-localized-app-name"
     ],
     "locales": {
       "da": "./i18n/da.json",

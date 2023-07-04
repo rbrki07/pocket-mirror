@@ -17,7 +17,7 @@ jest.mock('expo-localization', () => ({
   getLocales: () => [{ languageCode: 'de' }],
 }))
 
-const NUMBER_OF_APP_METADATA_TRANSLATIONS = 3
+const NUMBER_OF_APP_METADATA_TRANSLATIONS = 4
 
 describe('i18n - da', () => {
   it('should use all i18n keys for translation', () => {

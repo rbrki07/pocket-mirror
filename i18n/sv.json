@@ -1,6 +1,6 @@
 {
-    "CFBundleName": "Fickspegel",
-    "CFBundleDisplayName": "Fickspegel",
-    "NSCameraUsageDescription": "Appen vill kunna komma åt den främre kameran för att använda den som spegel. Inga bilder sparas."
-  }
-  
+  "CFBundleName": "Fickspegel",
+  "CFBundleDisplayName": "Fickspegel",
+  "NSCameraUsageDescription": "Appen vill kunna komma åt den främre kameran för att använda den som spegel. Inga bilder sparas.",
+  "app_name": "Fickspegel"
+}
