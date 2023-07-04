@@ -1,15 +1,17 @@
 // @ts-check
-import React, { useCallback } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
+import { Camera } from 'expo-camera'
+import { StackActions } from '@react-navigation/native'
 import { PMCameraView } from './../components/PMCameraView'
 import { useTheme } from './../hooks/useTheme'
 import { PMThemeSelector } from './../components/PMThemeSelector'
 import { PMBrightnessChanger } from './../components/PMBrightnessChanger'
 import { PMButton } from './../components/PMButton'
 import { PMZoomChanger } from './../components/PMZoomChanger'
-import { MENU_MODAL_ROUTE } from './Routes'
+import { MENU_MODAL_ROUTE, WELCOME_SCREEN_ROUTE } from './Routes'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -20,6 +22,13 @@ const HomeScreen = ({ navigation }) => {
   const theme = useTheme()
   const insets = useSafeAreaInsets()
   const styles = themedStyles({ currentTheme: theme, insets })
+  const [cameraPermissionStatus] = Camera.useCameraPermissions()
+
+  useEffect(() => {
+    if (cameraPermissionStatus?.granted === false) {
+      navigation.dispatch(StackActions.replace(WELCOME_SCREEN_ROUTE))
+    }
+  }, [cameraPermissionStatus, navigation])
 
   const menuButtonOnPressCallback = useCallback(() => {
     navigation.navigate(MENU_MODAL_ROUTE)

@@ -1,4 +1,5 @@
 // @ts-check
+const WELCOME_SCREEN_ROUTE = 'Welcome'
 const HOME_SCREEN_ROUTE = 'Home'
 const MENU_SCREEN_ROUTE = 'Menu'
 const SETTING_SCREEN_ROUTE = 'Setting'
@@ -9,6 +10,7 @@ const ABOUT_SCREEN_ROUTE = 'About'
 const MENU_MODAL_ROUTE = 'MenuModal'
 
 export {
+  WELCOME_SCREEN_ROUTE,
   HOME_SCREEN_ROUTE,
   MENU_SCREEN_ROUTE,
   SETTING_SCREEN_ROUTE,

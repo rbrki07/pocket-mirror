@@ -18,6 +18,15 @@ export const I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE =
   'screen_setting_item_white_balance'
 export const I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE =
   'screen_third_party_libs_header_title'
+export const I18N_KEY_SCREEN_WELCOME_HEADLINE = 'screen_welcome_headline'
+export const I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE =
+  'screen_welcome_activate_camera_advice'
+export const I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON =
+  'screen_welcome_activate_camera_button'
+export const I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE =
+  'screen_welcome_open_settings_advice'
+export const I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON =
+  'screen_welcome_open_settings_button'
 export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_TITLE =
   'component_pm_brightness_changer_request_permission_dialog_title'
 export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_MESSAGE =

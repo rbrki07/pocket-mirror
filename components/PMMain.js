@@ -9,6 +9,8 @@ import { SettingScreen } from './../screens/SettingScreen'
 import { ImprintScreen } from './../screens/ImprintScreen'
 import { PrivacyScreen } from './../screens/PrivacyScreen'
 import { ThirdPartyLibsScreen } from './../screens/ThirdPartyLibsScreen'
+import { AboutScreen } from '../screens/AboutScreen'
+import { WelcomeScreen } from '../screens/WelcomeScreen'
 import {
   HOME_SCREEN_ROUTE,
   IMPRINT_SCREEN_ROUTE,
@@ -18,10 +20,10 @@ import {
   THIRD_PARTY_LIBS_SCREEN_ROUTE,
   MENU_SCREEN_ROUTE,
   ABOUT_SCREEN_ROUTE,
+  WELCOME_SCREEN_ROUTE,
 } from './../screens/Routes'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
-import { AboutScreen } from '../screens/AboutScreen'
 
 /**
  * @param {Object} params
@@ -72,16 +74,19 @@ const PMMain = () => {
 
   return (
     <NavigationContainer theme={navigationTheme}>
-      <MainStack.Navigator>
+      <MainStack.Navigator
+        initialRouteName={HOME_SCREEN_ROUTE}
+        screenOptions={{ headerShown: false }}
+      >
         <MainStack.Screen
-          name={HOME_SCREEN_ROUTE}
-          component={HomeScreen}
-          options={{ headerShown: false }}
+          name={WELCOME_SCREEN_ROUTE}
+          component={WelcomeScreen}
         />
+        <MainStack.Screen name={HOME_SCREEN_ROUTE} component={HomeScreen} />
         <MainStack.Screen
           name={MENU_MODAL_ROUTE}
           component={MenuModal}
-          options={{ headerShown: false, presentation: 'modal' }}
+          options={{ presentation: 'modal' }}
         />
       </MainStack.Navigator>
     </NavigationContainer>
