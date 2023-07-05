@@ -18,6 +18,7 @@ import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
+  I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -42,6 +43,8 @@ fi[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Asetukset'
 fi[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Valkotasapaino'
 fi[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] =
   'Kolmannen osapuolen ohjelmisto'
+fi[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
+  'Sovellus käyttää joitakin ilmaisia kolmannen osapuolen avoimen lähdekoodin ohjelmistokirjastoja. Luettelo sisältää kirjastojen nimet ja niiden lisenssit.'
 fi[I18N_KEY_SCREEN_WELCOME_HEADLINE] = 'Hei 👋,\nolen taskupeilisi.'
 fi[I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE] =
   '\nAktivoi etukamera, jotta se toimisi kunnolla.'

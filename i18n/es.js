@@ -18,6 +18,7 @@ import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
+  I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -40,6 +41,8 @@ es[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Protección de datos'
 es[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Ajustes'
 es[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Balance de blancos'
 es[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software de terceros'
+es[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
+  'La aplicación utiliza algunas bibliotecas gratuitas de software de código abierto de terceros. La lista contiene el nombre de las bibliotecas y sus licencias.'
 es[I18N_KEY_SCREEN_WELCOME_HEADLINE] = 'Hola 👋,\nsoy tu espejo de bolsillo.'
 es[I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE] =
   '\nPara que funcione correctamente, activa la cámara frontal.'

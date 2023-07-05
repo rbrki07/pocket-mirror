@@ -18,6 +18,7 @@ import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
+  I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -40,6 +41,8 @@ fr[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Protection de la vie privée'
 fr[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Paramètres'
 fr[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Balance des blancs'
 fr[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Logiciels tiers'
+fr[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
+  "L'application utilise certaines bibliothèques logicielles open source gratuites de fournisseurs tiers. La liste contient le nom des bibliothèques et leurs licences."
 fr[I18N_KEY_SCREEN_WELCOME_HEADLINE] = 'Salut 👋,\nje suis ton miroir de poche.'
 fr[I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE] =
   "\nPour qu'elle fonctionne correctement, activez la caméra frontale."

@@ -18,6 +18,7 @@ import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
+  I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -40,6 +41,8 @@ da[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Databeskyttelse'
 da[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Indstillinger'
 da[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Hvidbalance'
 da[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Tredjepartssoftware'
+da[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
+  'Appen bruger nogle gratis open source-softwarebiblioteker fra tredjeparter. Listen indeholder navnet på bibliotekerne og deres licenser.'
 da[I18N_KEY_SCREEN_WELCOME_HEADLINE] = 'Hej 👋,\njeg er dit lommespejl.'
 da[I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE] =
   '\nFor at fungere korrekt skal du aktivere frontkameraet.'
