@@ -18,6 +18,7 @@ import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
+  I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -41,6 +42,8 @@ sv[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Inställningar'
 sv[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Vitbalans'
 sv[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] =
   'Programvara från tredje part'
+sv[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
+  'Appen använder vissa kostnadsfria programvarubibliotek från tredje part med öppen källkod. Listan innehåller namnet på biblioteken och deras licenser.'
 sv[I18N_KEY_SCREEN_WELCOME_HEADLINE] = 'Hej 👋,\njag är din fickspegel.'
 sv[I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE] =
   '\nFör att fungera korrekt måste du aktivera den främre kameran.'

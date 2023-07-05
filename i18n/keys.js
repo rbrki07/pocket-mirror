@@ -18,6 +18,8 @@ export const I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE =
   'screen_setting_item_white_balance'
 export const I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE =
   'screen_third_party_libs_header_title'
+export const I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO =
+  'screen_third_party_libs_info'
 export const I18N_KEY_SCREEN_WELCOME_HEADLINE = 'screen_welcome_headline'
 export const I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE =
   'screen_welcome_activate_camera_advice'

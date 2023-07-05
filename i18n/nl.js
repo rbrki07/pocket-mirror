@@ -18,6 +18,7 @@ import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
+  I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -40,6 +41,8 @@ nl[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Privacy'
 nl[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Instellingen'
 nl[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Witbalans'
 nl[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software van derden'
+nl[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
+  'De app maakt gebruik van een aantal gratis open source softwarebibliotheken van derden. De lijst bevat de naam van de bibliotheken en hun licenties.'
 nl[I18N_KEY_SCREEN_WELCOME_HEADLINE] = 'Hoi 👋,\nik ben je zakspiegeltje.'
 nl[I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE] =
   '\nOm goed te werken, moet je de camera aan de voorkant activeren.'

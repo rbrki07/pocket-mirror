@@ -1,0 +1,177 @@
+[
+    {
+        "name": "@babel/core",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/babel/babel/main/LICENSE"
+    },
+    {
+        "name": "@mmomtchev/expo-android-localized-app-name",
+        "license": "ISC",
+        "uri": "https://raw.githubusercontent.com/mmomtchev/expo-android-localized-app-name/main/LICENSE"
+    },
+    {
+        "name": "@react-native-async-storage/async-storage",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/react-native-async-storage/async-storage/master/LICENSE"
+    },
+    {
+        "name": "@react-native-community/slider",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/callstack/react-native-slider/main/LICENSE.md"
+    },
+    {
+        "name": "@react-navigation/native",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/react-navigation/react-navigation/main/packages/native/LICENSE"
+    },
+    {
+        "name": "@react-navigation/native-stack",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/react-navigation/react-navigation/main/packages/native-stack/LICENSE"
+    },
+    {
+        "name": "@reduxjs/toolkit",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/reduxjs/redux-toolkit/master/LICENSE"
+    },
+    {
+        "name": "@testing-library/jest-native",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/testing-library/jest-native/main/LICENSE"
+    },
+    {
+        "name": "@testing-library/react-native",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/callstack/react-native-testing-library/main/LICENSE"
+    },
+    {
+        "name": "@types/jest",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/LICENSE"
+    },
+    {
+        "name": "eslint",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/eslint/eslint/main/LICENSE"
+    },
+    {
+        "name": "eslint-plugin-jest",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/jest-community/eslint-plugin-jest/main/LICENSE"
+    },
+    {
+        "name": "eslint-plugin-react",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/jsx-eslint/eslint-plugin-react/master/LICENSE"
+    },
+    {
+        "name": "eslint-plugin-react-hooks",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/facebook/react/main/LICENSE"
+    },
+    {
+        "name": "eslint-plugin-react-native",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/Intellicode/eslint-plugin-react-native/master/LICENSE"
+    },
+    {
+        "name": "expo",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "expo-brightness",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "expo-camera",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "expo-dev-client",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "expo-localization",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "expo-status-bar",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "expo-updates",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "i18n-js",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/fnando/i18n/main/LICENSE.md"
+    },
+    {
+        "name": "jest",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/jestjs/jest/main/LICENSE"
+    },
+    {
+        "name": "jest-expo",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
+        "name": "lottie-react-native",
+        "license": "Apache-2.0",
+        "uri": "https://raw.githubusercontent.com/lottie-react-native/lottie-react-native/master/LICENSE"
+    },
+    {
+        "name": "prettier",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/prettier/prettier/main/LICENSE"
+    },
+    {
+        "name": "react",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/facebook/react/main/LICENSE"
+    },
+    {
+        "name": "react-native",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/facebook/react-native/main/LICENSE"
+    },
+    {
+        "name": "react-native-safe-area-context",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/th3rdwave/react-native-safe-area-context/main/LICENSE"
+    },
+    {
+        "name": "react-native-screens",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/software-mansion/react-native-screens/main/LICENSE"
+    },
+    {
+        "name": "react-native-webview",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/react-native-webview/react-native-webview/master/LICENSE"
+    },
+    {
+        "name": "react-redux",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/reduxjs/react-redux/master/LICENSE.md"
+    },
+    {
+        "name": "redux",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/reduxjs/redux/master/LICENSE.md"
+    },
+    {
+        "name": "redux-persist",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/rt2zz/redux-persist/master/LICENSE"
+    }
+]

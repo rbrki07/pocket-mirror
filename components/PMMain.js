@@ -9,6 +9,7 @@ import { SettingScreen } from './../screens/SettingScreen'
 import { ImprintScreen } from './../screens/ImprintScreen'
 import { PrivacyScreen } from './../screens/PrivacyScreen'
 import { ThirdPartyLibsScreen } from './../screens/ThirdPartyLibsScreen'
+import { ThirdPartyLibsDetailScreen } from './../screens/ThirdPartyLibsDetailScreen'
 import { AboutScreen } from '../screens/AboutScreen'
 import { WelcomeScreen } from '../screens/WelcomeScreen'
 import {
@@ -18,6 +19,7 @@ import {
   MENU_MODAL_ROUTE,
   SETTING_SCREEN_ROUTE,
   THIRD_PARTY_LIBS_SCREEN_ROUTE,
+  THIRD_PARTY_LIBS_DETAIL_SCREEN_ROUTE,
   MENU_SCREEN_ROUTE,
   ABOUT_SCREEN_ROUTE,
   WELCOME_SCREEN_ROUTE,
@@ -49,7 +51,7 @@ const MenuModal = () => {
   const MenuStack = createNativeStackNavigator()
 
   return (
-    <MenuStack.Navigator>
+    <MenuStack.Navigator screenOptions={{ headerBackTitleVisible: false }}>
       <MenuStack.Screen name={MENU_SCREEN_ROUTE} component={MenuScreen} />
       <MenuStack.Screen name={SETTING_SCREEN_ROUTE} component={SettingScreen} />
       <MenuStack.Screen name={IMPRINT_SCREEN_ROUTE} component={ImprintScreen} />
@@ -57,6 +59,10 @@ const MenuModal = () => {
       <MenuStack.Screen
         name={THIRD_PARTY_LIBS_SCREEN_ROUTE}
         component={ThirdPartyLibsScreen}
+      />
+      <MenuStack.Screen
+        name={THIRD_PARTY_LIBS_DETAIL_SCREEN_ROUTE}
+        component={ThirdPartyLibsDetailScreen}
       />
       <MenuStack.Screen name={ABOUT_SCREEN_ROUTE} component={AboutScreen} />
     </MenuStack.Navigator>
