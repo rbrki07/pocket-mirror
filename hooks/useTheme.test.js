@@ -1,59 +1,120 @@
 // @ts-check
+import React from 'react'
+import { Provider } from 'react-redux'
+import { useColorScheme } from 'react-native'
+import { renderHook } from '@testing-library/react-native'
+import { configureTestStore } from '../store/StoreTestUtils'
 import { THEME } from '../style/theme'
-import { getTheme } from './useTheme'
+import { useTheme } from './useTheme'
+import { SETTING_KEY_CURRENT_THEME } from '../store/settings'
+
+jest.mock('react-native/Libraries/Utilities/useColorScheme', () => ({
+  default: jest.fn(),
+}))
 
 describe('useTheme hook', () => {
   it('should return light theme if currentTheme is light', () => {
-    const theme = getTheme({
-      currentTheme: 'light',
-      colorScheme: 'dark',
-      defaultTheme: 'dark',
-    })
-    expect(theme).toEqual(THEME['light'])
+    // @ts-ignore
+    useColorScheme.mockReturnValue('dark')
+
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: 'light',
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const wrapper = ({ children }) => (
+      <Provider store={store}>{children}</Provider>
+    )
+
+    const { result } = renderHook(() => useTheme(), { wrapper })
+    expect(result.current).toEqual(THEME['light'])
   })
 
   it('should return dark theme if currentTheme is dark', () => {
-    const theme = getTheme({
-      currentTheme: 'dark',
-      colorScheme: 'light',
-      defaultTheme: 'light',
-    })
-    expect(theme).toEqual(THEME['dark'])
+    // @ts-ignore
+    useColorScheme.mockReturnValue('light')
+
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: 'dark',
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const wrapper = ({ children }) => (
+      <Provider store={store}>{children}</Provider>
+    )
+
+    const { result } = renderHook(() => useTheme(), { wrapper })
+    expect(result.current).toEqual(THEME['dark'])
   })
 
   it('should return light theme if currentTheme is undefined and colorScheme is light', () => {
-    const theme = getTheme({
-      currentTheme: undefined,
-      colorScheme: 'light',
-      defaultTheme: 'dark',
-    })
-    expect(theme).toEqual(THEME['light'])
+    // @ts-ignore
+    useColorScheme.mockReturnValue('light')
+
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: undefined,
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const wrapper = ({ children }) => (
+      <Provider store={store}>{children}</Provider>
+    )
+
+    const { result } = renderHook(() => useTheme(), { wrapper })
+    expect(result.current).toEqual(THEME['light'])
   })
 
   it('should return dark theme if currentTheme is undefined and colorScheme is dark', () => {
-    const theme = getTheme({
-      currentTheme: undefined,
-      colorScheme: 'dark',
-      defaultTheme: 'light',
-    })
-    expect(theme).toEqual(THEME['dark'])
+    // @ts-ignore
+    useColorScheme.mockReturnValue('dark')
+
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: undefined,
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const wrapper = ({ children }) => (
+      <Provider store={store}>{children}</Provider>
+    )
+
+    const { result } = renderHook(() => useTheme(), { wrapper })
+    expect(result.current).toEqual(THEME['dark'])
   })
 
   it('should return light theme if currentTheme is undefined and colorScheme is undefined', () => {
-    const theme = getTheme({
-      currentTheme: undefined,
-      colorScheme: undefined,
-      defaultTheme: 'light',
-    })
-    expect(theme).toEqual(THEME['light'])
-  })
+    // @ts-ignore
+    useColorScheme.mockReturnValue(undefined)
 
-  it('should return dark theme if currentTheme is undefined and colorScheme is undefined', () => {
-    const theme = getTheme({
-      currentTheme: undefined,
-      colorScheme: undefined,
-      defaultTheme: 'dark',
-    })
-    expect(theme).toEqual(THEME['dark'])
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: undefined,
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const wrapper = ({ children }) => (
+      <Provider store={store}>{children}</Provider>
+    )
+
+    const { result } = renderHook(() => useTheme(), { wrapper })
+    expect(result.current).toEqual(THEME['light'])
   })
 })

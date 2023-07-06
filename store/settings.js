@@ -20,7 +20,7 @@ export {
 const SETTING_INITIAL_STATE = [
   {
     key: SETTING_KEY_CURRENT_THEME,
-    value: 'light',
+    value: undefined,
   },
   {
     key: SETTING_KEY_CURRENT_WHITE_BALANCE,

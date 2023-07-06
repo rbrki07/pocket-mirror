@@ -143,7 +143,7 @@ describe('PMThemeSelector component tests', () => {
     ).toBeUndefined()
   })
 
-  it('should show icon sunny-outline if current theme is light', async () => {
+  it('should show icon sunny-outline if current theme is light', () => {
     const preloadedState = {
       settings: [
         {
@@ -178,6 +178,69 @@ describe('PMThemeSelector component tests', () => {
       </Provider>
     )
     const themeButtonIcon = getByTestId('themeButton_moon-outline')
+    expect(themeButtonIcon).toBeOnTheScreen()
+  })
+
+  it('should show icon sunny-outline if currentTheme is undefined and colorScheme is light', () => {
+    // @ts-ignore
+    useColorScheme.mockReturnValue('light')
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: undefined,
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const { getByTestId } = render(
+      <Provider store={store}>
+        <PMThemeSelector />
+      </Provider>
+    )
+    const themeButtonIcon = getByTestId('themeButton_sunny-outline')
+    expect(themeButtonIcon).toBeOnTheScreen()
+  })
+
+  it('should show icon moon-outline if currentTheme is undefined and colorScheme is dark', () => {
+    // @ts-ignore
+    useColorScheme.mockReturnValue('dark')
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: undefined,
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const { getByTestId } = render(
+      <Provider store={store}>
+        <PMThemeSelector />
+      </Provider>
+    )
+    const themeButtonIcon = getByTestId('themeButton_moon-outline')
+    expect(themeButtonIcon).toBeOnTheScreen()
+  })
+
+  it('should show icon sunny-outline if currentTheme is undefined and colorScheme is undefined and defaultTheme light', () => {
+    // @ts-ignore
+    useColorScheme.mockReturnValue(undefined)
+    const preloadedState = {
+      settings: [
+        {
+          key: SETTING_KEY_CURRENT_THEME,
+          value: undefined,
+        },
+      ],
+    }
+    const store = configureTestStore(preloadedState)
+    const { getByTestId } = render(
+      <Provider store={store}>
+        <PMThemeSelector />
+      </Provider>
+    )
+    const themeButtonIcon = getByTestId('themeButton_sunny-outline')
     expect(themeButtonIcon).toBeOnTheScreen()
   })
 })

@@ -8,6 +8,7 @@ import {
   currentThemeSelector,
   updateSetting,
 } from './../store/settings'
+import { getThemeName } from '../utils/ThemeUtil'
 
 /**
  * @returns {Object} PMThemeSelector
@@ -44,7 +45,14 @@ const PMThemeSelector = () => {
   return (
     <PMButton
       onPressCallback={themeButtonOnPressCallback}
-      iconName={currentTheme === 'light' ? 'sunny-outline' : 'moon-outline'}
+      iconName={
+        getThemeName({
+          currentTheme,
+          colorScheme,
+        }) === 'light'
+          ? 'sunny-outline'
+          : 'moon-outline'
+      }
       testID={'themeButton'}
     />
   )
