@@ -1,5 +1,6 @@
 // @ts-check
 export const I18N_KEY_SCREEN_ABOUT_HEADER_TITLE = 'screen_about_header_title'
+export const I18N_KEY_SCREEN_ABOUT_VERSION = 'screen_about_version'
 export const I18N_KEY_SCREEN_IMPRINT_HEADER_TITLE =
   'screen_imprint_header_title'
 export const I18N_KEY_SCREEN_MENU_HEADER_TITLE = 'screen_menu_header_title'
