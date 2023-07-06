@@ -79,6 +79,7 @@ const themedStyles = (currentTheme) =>
     },
     // eslint-disable-next-line react-native/no-unused-styles
     title: {
+      color: currentTheme.textColor,
       fontSize: 16,
       fontWeight: 'bold',
     },
