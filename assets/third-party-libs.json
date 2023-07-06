@@ -90,6 +90,11 @@
         "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
     },
     {
+        "name": "expo-constants",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
+    },
+    {
         "name": "expo-dev-client",
         "license": "MIT",
         "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
