@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": true,
       "buildNumber": "1.0.0",
-      "bundleIdentifier": "de.audience-engagement.pocket-mirror",
+      "bundleIdentifier": "de.rene-wilby.pocket-mirror",
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true
       }
@@ -32,7 +32,7 @@
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO"
       ],
-      "package": "de.audience_engagement.pocket_mirror",
+      "package": "de.rene_wilby.pocket_mirror",
       "versionCode": 1
     },
     "web": {

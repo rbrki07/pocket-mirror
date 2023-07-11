@@ -10,6 +10,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+expo-pocket-mirror-app@pc-api-8822606423697644441-864.iam.gserviceaccount.com.json
 
 # macOS
 .DS_Store
