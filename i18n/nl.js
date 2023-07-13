@@ -23,6 +23,22 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL,
+  I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS,
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
@@ -57,6 +73,35 @@ nl[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software van derden'
 nl[I18N_KEY_SCREEN_MENU_ITEM_ABOUT] = 'Over de app'
 nl[I18N_KEY_SCREEN_MENU_CLOSE_BUTTON] = 'Sluit'
 nl[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Privacy'
+nl[I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE] = 'Algemeen'
+nl[I18N_KEY_SCREEN_PRIVACY_GENERAL] =
+  'De bescherming van uw gegevens is onze topprioriteit. Deze gegevensbeschermingsverklaring informeert u welke gegevens worden verzameld wanneer u de Zakspiegel-app gebruikt. Deze mededeling over gegevensbescherming is bedoeld ter informatie.'
+nl[I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE] =
+  'De verantwoordelijke persoon in de zin van de wet op de gegevensbescherming is'
+nl[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE] =
+  'Wat is de Zakspiegel-app en hoe kan ik de app gebruiken?'
+nl[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION] =
+  'De Zakspiegel app verandert je smartphone in een digitale spiegel waarmee je snel en gemakkelijk je uiterlijk kunt controleren. Nadat je de app hebt gedownload, kun je hem gebruiken zonder je te registreren.'
+nl[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE] =
+  'Wanneer verzamelt de Zakspiegel-app persoonlijke gegevens over mij?'
+nl[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA] =
+  'De Zakspiegel-app verzamelt of verwerkt op geen enkel moment persoonlijke gegevens over u. Er worden geen gegevens over u als gebruiker verzameld of verwerkt:in de app of vanaf uw eindapparaat.'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE] =
+  'Andere gegevensverzameling en -verwerking in verband met de Zakspiegel-app'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE] = 'Download de app'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD] =
+  'Als u de Zakspiegel-app downloadt via de Google Play Store of Apple App Store, worden persoonsgegevens verwerkt. Deze gegevensverwerking wordt uitsluitend uitgevoerd door de exploitant van de desbetreffende Store.'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE] = 'Leveren van updates'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES] =
+  'De Zakspiegel-app gebruikt een procedure om regelmatig te controleren of er updates beschikbaar zijn voor de app. Hiervoor vraagt de app update-informatie op bij Expo via HTTPS wanneer de app wordt geopend op het apparaat van de gebruiker. Als er een nieuwe update beschikbaar is, wordt deze naar het apparaat van de gebruiker gestuurd. Deze verzoeken bevatten geen identificerende informatie, zoals unieke apparaatidentificaties. Het verzoek bevat niet-identificerende informatie die nodig is voor de correcte verwerking van het updateverzoek, waaronder het besturingssysteem van het eindapparaat, de project-ID van de ontwikkelaar en een willekeurig token dat wordt gebruikt om te bepalen of een installatie van de app een update heeft aangevraagd. De verbindingsgegevens en informatie die tijdens het proces worden gegenereerd, worden uitsluitend verwerkt door Expo'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE] =
+  'De licentie-informatie van software van derden weergeven'
+nl[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE] =
+  'De Zakspiegel-app gebruikt enkele gratis open source softwarebibliotheken van derden. Deze bibliotheken en hun licentie-informatie worden weergegeven in de app. Bij het ophalen van de licentie-informatie wordt via HTTPS een verzoek gedaan aan GitHub, omdat de licentie-informatie daar wordt verstrekt. De resulterende verbindingsgegevens en informatie worden uitsluitend verwerkt door GitHub'
+nl[I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE] =
+  'Met wie kan ik contact opnemen als ik vragen heb?'
+nl[I18N_KEY_SCREEN_PRIVACY_QUESTIONS] =
+  'Als u vragen hebt over deze privacyverklaring, kunt u te allen tijde per e-mail contact met ons opnemen via'
 nl[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Instellingen'
 nl[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Witbalans'
 nl[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Talen'
