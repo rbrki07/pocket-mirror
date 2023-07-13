@@ -7,6 +7,8 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
+import { Ionicons } from '@expo/vector-icons'
+import { useTheme } from './../hooks/useTheme'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { i18n } from '../i18n'
 import {
@@ -21,6 +23,7 @@ import typedefs from './../typedefs'
  * @returns {Object} ThirdPartyLibsScreen
  */
 const ThirdPartyLibsScreen = ({ navigation }) => {
+  const theme = useTheme()
   const globalStyles = useGlobalStyles()
   const styles = mergedStyles(globalStyles)
 
@@ -33,9 +36,14 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
         }
       >
         <Text style={styles.text}>{item.name}</Text>
+        <Ionicons
+          name={'chevron-forward-outline'}
+          size={32}
+          color={theme.iconColor}
+        />
       </TouchableOpacity>
     ),
-    [navigation, styles]
+    [navigation, styles, theme]
   )
 
   const libListHeaderComponent = useCallback(
@@ -88,7 +96,7 @@ const mergedStyles = (globalStyles) =>
       flexDirection: 'row',
       justifyContent: 'space-between',
       marginVertical: 4,
-      minHeight: 40,
+      minHeight: 48,
     },
     // eslint-disable-next-line react-native/no-unused-styles
     libListHeaderComponent: {

@@ -111,7 +111,7 @@ const mergedStyles = (globalStyles) =>
       flexDirection: 'row',
       justifyContent: 'space-between',
       marginVertical: 4,
-      minHeight: 40,
+      minHeight: 48,
     },
   })
 
