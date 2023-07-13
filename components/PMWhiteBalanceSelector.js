@@ -3,7 +3,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
 import { WhiteBalance } from 'expo-camera'
-import { useTheme } from './../hooks/useTheme'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { PMButton } from './PMButton'
 import {
   SETTING_KEY_CURRENT_WHITE_BALANCE,
@@ -17,8 +17,9 @@ import typedefs from './../typedefs'
  * @returns {Object} PMWhiteBalanceSelector
  */
 const PMWhiteBalanceSelector = () => {
-  const theme = useTheme()
-  const styles = themedStyles(theme)
+  const globalStyles = useGlobalStyles()
+  const styles = mergedStyles(globalStyles)
+
   const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)?.value
   const dispatch = useDispatch()
 
@@ -66,21 +67,18 @@ const PMWhiteBalanceSelector = () => {
 }
 
 /**
- * @param {typedefs.Theme} currentTheme
+ * @param {typedefs.GlobalStyle} globalStyles
  *
  * @returns {Object}
  */
-const themedStyles = (currentTheme) =>
+const mergedStyles = (globalStyles) =>
   StyleSheet.create({
+    ...globalStyles,
     // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       flex: 1,
       justifyContent: 'flex-start',
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    text: {
-      color: currentTheme.textColor,
     },
   })
 

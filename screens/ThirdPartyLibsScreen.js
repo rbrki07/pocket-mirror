@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import { useTheme } from './../hooks/useTheme'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { i18n } from '../i18n'
 import {
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
@@ -21,8 +21,8 @@ import typedefs from './../typedefs'
  * @returns {Object} ThirdPartyLibsScreen
  */
 const ThirdPartyLibsScreen = ({ navigation }) => {
-  const theme = useTheme()
-  const styles = themedStyles(theme)
+  const globalStyles = useGlobalStyles()
+  const styles = mergedStyles(globalStyles)
 
   const renderLibItem = useCallback(
     ({ item }) => (
@@ -32,7 +32,7 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
           navigation.navigate(THIRD_PARTY_LIBS_DETAIL_SCREEN_ROUTE, { item })
         }
       >
-        <Text style={styles.libItemText}>{item.name}</Text>
+        <Text style={styles.text}>{item.name}</Text>
       </TouchableOpacity>
     ),
     [navigation, styles]
@@ -50,7 +50,7 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
   )
 
   const libItemSeparatorComponent = useCallback(
-    () => <View style={styles.libItemSeparatorComponent} />,
+    () => <View style={styles.itemSeparatorComponent} />,
     [styles]
   )
 
@@ -74,48 +74,26 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
 }
 
 /**
- * @param {typedefs.Theme} currentTheme
+ * @param {typedefs.GlobalStyle} globalStyles
  *
  * @returns {Object}
  */
-const themedStyles = (currentTheme) =>
+const mergedStyles = (globalStyles) =>
   StyleSheet.create({
-    // eslint-disable-next-line react-native/no-unused-styles
-    container: {
-      backgroundColor: currentTheme.backgroundColor,
-      flex: 1,
-    },
+    ...globalStyles,
     // eslint-disable-next-line react-native/no-unused-styles
     libItemContainer: {
       alignItems: 'center',
       flex: 1,
       flexDirection: 'row',
-      height: 44,
       justifyContent: 'space-between',
-      marginHorizontal: 12,
       marginVertical: 4,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    libItemSeparatorComponent: {
-      borderBottomColor: currentTheme.borderColor,
-      borderBottomWidth: StyleSheet.hairlineWidth,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    libItemText: {
-      color: currentTheme.textColor,
-      fontSize: 17,
+      minHeight: 40,
     },
     // eslint-disable-next-line react-native/no-unused-styles
     libListHeaderComponent: {
       alignItems: 'center',
       justifyContent: 'center',
-      margin: 8,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    text: {
-      color: currentTheme.textColor,
-      fontSize: 16,
-      lineHeight: 20,
     },
   })
 

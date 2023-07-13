@@ -1,7 +1,7 @@
 // @ts-check
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { useTheme } from '../hooks/useTheme'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -13,8 +13,9 @@ import typedefs from './../typedefs'
  * @returns {Object} PMSetting
  */
 const PMSetting = ({ title, children }) => {
-  const theme = useTheme()
-  const styles = themedStyles(theme)
+  const globalStyles = useGlobalStyles()
+  const styles = mergedStyles(globalStyles)
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
@@ -24,12 +25,13 @@ const PMSetting = ({ title, children }) => {
 }
 
 /**
- * @param {typedefs.Theme} currentTheme
+ * @param {typedefs.GlobalStyle} globalStyles
  *
  * @returns {Object}
  */
-const themedStyles = (currentTheme) =>
+const mergedStyles = (globalStyles) =>
   StyleSheet.create({
+    ...globalStyles,
     // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
@@ -40,11 +42,6 @@ const themedStyles = (currentTheme) =>
     options: {
       flexDirection: 'row',
       height: 84,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    title: {
-      color: currentTheme.textColor,
-      fontSize: 16,
     },
   })
 

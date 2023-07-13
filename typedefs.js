@@ -49,4 +49,13 @@
  * @property {Setting} [payload]
  */
 
+/**
+ * @typedef {Object} GlobalStyle
+ * @property {Object} container
+ * @property {Object} itemSeparatorComponent
+ * @property {Object} link
+ * @property {Object} text
+ * @property {Object} title
+ */
+
 exports.unused = {}

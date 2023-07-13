@@ -11,6 +11,7 @@ import {
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme } from './../hooks/useTheme'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { i18n } from '../i18n'
 import {
   I18N_KEY_SCREEN_MENU_CLOSE_BUTTON,
@@ -29,7 +30,8 @@ import typedefs from './../typedefs'
  */
 const MenuScreen = ({ navigation }) => {
   const theme = useTheme()
-  const styles = themedStyles(theme)
+  const globalStyles = useGlobalStyles()
+  const styles = mergedStyles(globalStyles)
 
   const infoItems = useMemo(
     () => [
@@ -51,7 +53,7 @@ const MenuScreen = ({ navigation }) => {
         style={styles.infoItemContainer}
         onPress={() => navigation.navigate(item.route)}
       >
-        <Text style={styles.infoItemText}>{item.title}</Text>
+        <Text style={styles.text}>{item.title}</Text>
         <Ionicons
           name={'chevron-forward-outline'}
           size={32}
@@ -63,7 +65,7 @@ const MenuScreen = ({ navigation }) => {
   )
 
   const infoItemSeparatorComponent = useCallback(
-    () => <View style={styles.infoItemSeparatorComponent} />,
+    () => <View style={styles.itemSeparatorComponent} />,
     [styles]
   )
 
@@ -95,36 +97,21 @@ const MenuScreen = ({ navigation }) => {
 }
 
 /**
- * @param {typedefs.Theme} currentTheme
+ * @param {typedefs.GlobalStyle} globalStyles
  *
  * @returns {Object}
  */
-const themedStyles = (currentTheme) =>
+const mergedStyles = (globalStyles) =>
   StyleSheet.create({
-    // eslint-disable-next-line react-native/no-unused-styles
-    container: {
-      backgroundColor: currentTheme.backgroundColor,
-      flex: 1,
-    },
+    ...globalStyles,
     // eslint-disable-next-line react-native/no-unused-styles
     infoItemContainer: {
       alignItems: 'center',
       flex: 1,
       flexDirection: 'row',
-      height: 44,
       justifyContent: 'space-between',
-      marginHorizontal: 12,
       marginVertical: 4,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    infoItemSeparatorComponent: {
-      borderBottomColor: currentTheme.borderColor,
-      borderBottomWidth: StyleSheet.hairlineWidth,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    infoItemText: {
-      color: currentTheme.textColor,
-      fontSize: 17,
+      minHeight: 40,
     },
   })
 
