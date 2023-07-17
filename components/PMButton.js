@@ -1,8 +1,9 @@
 // @ts-check
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, TouchableOpacity } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme } from '../hooks/useTheme'
+import { PMLocaleAwareText } from './PMLocaleAwareText'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -55,7 +56,9 @@ const PMButton = ({
           testID={`${testID}_${iconName}`}
         />
       )}
-      {title !== undefined && <Text style={styles.title}>{title}</Text>}
+      {title !== undefined && (
+        <PMLocaleAwareText i18nKey={title} style={styles.title} />
+      )}
     </TouchableOpacity>
   )
 }

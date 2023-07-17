@@ -28,6 +28,10 @@ const useGlobalStyles = () => {
       textDecorationColor: theme.textColor,
       textDecorationLine: 'underline',
     },
+    listHeaderFooterComponent: {
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
     text: {
       color: theme.textColor,
       fontSize: 16,

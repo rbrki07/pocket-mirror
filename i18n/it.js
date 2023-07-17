@@ -20,10 +20,13 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_IMPRINT,
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
+  I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
+  I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
+  I18N_KEY_SCREEN_LANGUAGE_INFO,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
   I18N_KEY_SCREEN_WELCOME_HEADLINE,
@@ -48,6 +51,7 @@ it[I18N_KEY_SCREEN_IMPRINT_ODR] =
   'La Commissione europea mette a disposizione una piattaforma per la risoluzione delle controversie online (ODR).'
 it[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 it[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Impostazioni'
+it[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Le lingue'
 it[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Impronta'
 it[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Protezione dei dati'
 it[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software di terze parti'
@@ -56,6 +60,9 @@ it[I18N_KEY_SCREEN_MENU_CLOSE_BUTTON] = 'Chiudere'
 it[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Protezione dei dati'
 it[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Impostazioni'
 it[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Bilanciamento del bianco'
+it[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Le lingue'
+it[I18N_KEY_SCREEN_LANGUAGE_INFO] =
+  "Volete aggiungere altre lingue o migliorare le traduzioni esistenti? Inviate un'e-mail in qualsiasi momento a"
 it[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software di terze parti'
 it[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   "L'applicazione utilizza alcune librerie software open source gratuite di terze parti. L'elenco contiene il nome delle librerie e le relative licenze."

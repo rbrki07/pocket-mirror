@@ -7,11 +7,6 @@ import { NavigationContainer } from '@react-navigation/native'
 import { configureTestStore } from '../store/StoreTestUtils'
 import { WelcomeScreen } from './WelcomeScreen'
 
-jest.mock('expo-localization', () => ({
-  ...jest.requireActual('expo-localization'),
-  getLocales: () => [{ languageCode: 'de' }],
-}))
-
 describe('WelcomeScreen tests', () => {
   it('should dispatch navigation stack action to HomeScreen, if camera permission is granted', async () => {
     jest

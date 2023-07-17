@@ -15,7 +15,7 @@ import { getThemeName } from '../utils/ThemeUtil'
  */
 const PMThemeSelector = () => {
   const colorScheme = useColorScheme()
-  const currentTheme = useSelector(currentThemeSelector)?.value
+  const currentTheme = useSelector(currentThemeSelector)
   const dispatch = useDispatch()
 
   const themeButtonOnPressCallback = useCallback(() => {

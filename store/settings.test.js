@@ -10,6 +10,8 @@ const {
   currentZoomLevelSelector,
   settingsReducer,
   updateSetting,
+  SETTING_KEY_CURRENT_LANGUAGE_CODE,
+  currentLanguageCodeSelector,
 } = require('./settings')
 
 describe('Setting selectors', () => {
@@ -24,7 +26,7 @@ describe('Setting selectors', () => {
 
     // @ts-ignore
     const result = currentThemeSelector(state)
-    expect(result).toEqual(setting)
+    expect(result).toEqual(setting.value)
   })
 
   it('should select undefined as current theme if current theme is not available', () => {
@@ -47,7 +49,7 @@ describe('Setting selectors', () => {
 
     // @ts-ignore
     const result = currentWhiteBalanceSelector(state)
-    expect(result).toEqual(setting)
+    expect(result).toEqual(setting.value)
   })
 
   it('should select undefined as current white-balance if current white-balance is not available', () => {
@@ -70,7 +72,7 @@ describe('Setting selectors', () => {
 
     // @ts-ignore
     const result = currentZoomLevelSelector(state)
-    expect(result).toEqual(setting)
+    expect(result).toEqual(setting.value)
   })
 
   it('should select undefined as current zoom-level if current zoom-level is not available', () => {
@@ -79,6 +81,29 @@ describe('Setting selectors', () => {
     }
 
     const result = currentZoomLevelSelector(state)
+    expect(result).toBeUndefined()
+  })
+
+  it('should select de as current language-code if current language-code is available', () => {
+    const setting = {
+      key: SETTING_KEY_CURRENT_LANGUAGE_CODE,
+      value: 'de',
+    }
+    const state = {
+      settings: [setting],
+    }
+
+    // @ts-ignore
+    const result = currentLanguageCodeSelector(state)
+    expect(result).toEqual(setting.value)
+  })
+
+  it('should select undefined as current language-code if current language-code is not available', () => {
+    const state = {
+      settings: [],
+    }
+
+    const result = currentLanguageCodeSelector(state)
     expect(result).toBeUndefined()
   })
 })

@@ -15,7 +15,7 @@ const useTheme = () => {
   const currentTheme = useSelector(currentThemeSelector)
   return THEME[
     getThemeName({
-      currentTheme: currentTheme?.value,
+      currentTheme: currentTheme,
       colorScheme,
     })
   ]

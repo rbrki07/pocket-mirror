@@ -8,11 +8,6 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { configureTestStore } from '../store/StoreTestUtils'
 import { HomeScreen } from './HomeScreen'
 
-jest.mock('expo-localization', () => ({
-  ...jest.requireActual('expo-localization'),
-  getLocales: () => [{ languageCode: 'de' }],
-}))
-
 describe('HomeScreen tests', () => {
   it('should dispatch navigation stack action to WelcomeScreen, if camera permission is not granted', async () => {
     jest

@@ -15,6 +15,7 @@ export const I18N_KEY_SCREEN_IMPRINT_ODR = 'screen_imprint_odr'
 // MenuScreen
 export const I18N_KEY_SCREEN_MENU_HEADER_TITLE = 'screen_menu_header_title'
 export const I18N_KEY_SCREEN_MENU_ITEM_SETTING = 'screen_menu_item_setting'
+export const I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE = 'screen_menu_item_language'
 export const I18N_KEY_SCREEN_MENU_ITEM_IMPRINT = 'screen_menu_item_imprint'
 export const I18N_KEY_SCREEN_MENU_ITEM_PRIVACY = 'screen_menu_item_privacy'
 export const I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS =
@@ -29,6 +30,10 @@ export const I18N_KEY_SCREEN_SETTING_HEADER_TITLE =
   'screen_setting_header_title'
 export const I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE =
   'screen_setting_item_white_balance'
+// LanguageScreen
+export const I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE =
+  'screen_language_header_title'
+export const I18N_KEY_SCREEN_LANGUAGE_INFO = 'screen_language_info'
 // ThirdPartyLibsScreen
 export const I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE =
   'screen_third_party_libs_header_title'

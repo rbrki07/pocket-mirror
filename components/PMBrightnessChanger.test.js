@@ -7,11 +7,6 @@ import { render, fireEvent, waitFor } from '@testing-library/react-native'
 import { configureTestStore } from '../store/StoreTestUtils'
 import { PMBrightnessChanger } from './PMBrightnessChanger'
 
-jest.mock('expo-localization', () => ({
-  ...jest.requireActual('expo-localization'),
-  getLocales: () => [{ languageCode: 'de' }],
-}))
-
 describe('PMBrightnessChanger brightness decrease and increase tests', () => {
   let brightnessSpy
   beforeEach(() => {
