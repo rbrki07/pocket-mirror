@@ -1,0 +1,16 @@
+name: Run expo-doctor
+on: [pull_request]
+jobs:
+  run-expo-doctor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+      - name: Run expo-doctor
+        run: |
+          npm i --save-dev --silent expo-doctor@latest
+          npx expo-doctor >> results.txt
+          head -n -1 results.txt
+          cat results.txt | grep "Didn't find any issues with the project"
