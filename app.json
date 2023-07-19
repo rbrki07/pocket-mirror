@@ -43,7 +43,7 @@
         "READ_MEDIA_VISUAL_USER_SELECTED"
       ],
       "package": "de.rene_wilby.pocket_mirror",
-      "versionCode": 4
+      "versionCode": 5
     },
     "web": {
       "favicon": "./assets/favicon.png"
