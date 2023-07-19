@@ -1,6 +1,6 @@
 {
-  "CFBundleName": "Espejo de bolsillo",
-  "CFBundleDisplayName": "Espejo de bolsillo",
+  "CFBundleName": "Espejo de Bolsillo",
+  "CFBundleDisplayName": "Espejo de Bolsillo",
   "NSCameraUsageDescription": "La aplicación quiere poder acceder a la cámara frontal para usarla como espejo. No se guarda ninguna captura de imagen.",
-  "app_name": "Espejo de bolsillo"
+  "app_name": "Espejo de Bolsillo"
 }

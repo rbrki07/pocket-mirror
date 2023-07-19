@@ -23,6 +23,22 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL,
+  I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS,
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
@@ -52,11 +68,41 @@ de[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menü'
 de[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Einstellungen'
 de[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Sprachen'
 de[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Impressum'
-de[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Datenschutz'
+de[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Datenschutzhinweis'
 de[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Drittanbieter-Software'
 de[I18N_KEY_SCREEN_MENU_ITEM_ABOUT] = 'Über die App'
 de[I18N_KEY_SCREEN_MENU_CLOSE_BUTTON] = 'Schließen'
-de[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Datenschutz'
+de[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Datenschutzhinweis'
+de[I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE] = 'Allgemeines'
+de[I18N_KEY_SCREEN_PRIVACY_GENERAL] =
+  'Der Schutz Deiner Daten steht an erste Stelle. Dieser Datenschutzhinweis informiert Dich, welche Daten erhoben werden, wenn Du die Taschenspiegel-App nutzt. Dieser Datenschutzhinweis dient Deiner Information.'
+de[I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE] =
+  'Verantwortlicher im Sinne des Datenschutzrechts ist'
+de[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE] =
+  'Was ist die Taschenspiegel-App und wie kann ich die App nutzen?'
+de[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION] =
+  'Die Taschenspiegel App macht Dein Smartphone zu einem digitalen Spiegel, mit dem Du Deinen Look schnell und unkompliziert überprüfen kannst. Du kannst die App nach dem Download ohne Registrierung nutzen.'
+de[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE] =
+  'Wann erhebt die Taschenspiegel-App personenbezogene Daten über mich?'
+de[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA] =
+  'Die Taschenspiegel-App erhebt und verarbeitet zu keinem Zeitpunkt personenbezogene Daten über Dich. Es werden weder Daten zu Dir als Nutzer:in der App, noch von Deinem Endgerät erhoben oder verarbeitet.'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE] =
+  'Sonstige Datenerhebung und –verarbeitung im Zusammenhang mit der Taschenspiegel-App'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE] = 'Download der App'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD] =
+  'Wenn Du die Taschenspiegel-App über den Google Play Store oder Apple App-Store herunterlädst, werden dabei personenbezogene Daten verarbeitet. Diese Datenverarbeitung geschieht ausschließlich durch den Betreiber des jeweiligen Stores.'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE] =
+  'Bereitstellung von Updates'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES] =
+  'Die Taschenspiegel-App nutzt ein Verfahren, um regelmäßig zu überprüfen, ob Updates für die App bereitstehen. Dazu fordert die App Update-Informationen über HTTPS von Expo an, wenn die App auf dem Endgerät der Nutzer:innen geöffnet wird. Wenn ein neues Update verfügbar ist, wird das neue Update an das Endgerät der Nutzer:innen gesendet. Diese Anfragen enthalten keine identifizierenden Informationen, wie bspw. eindeutige Gerätekennungen. Die Anfrage enthält nicht-identifizierende Informationen, die für die korrekte Verarbeitung der Update-Anfrage erforderlich sind, einschließlich des Betriebssystems des Endgerätes, der Projekt-ID des Entwicklers und eines zufälligen Tokens, mit dem festgestellt wird, ob eine Installation der App ein Update angefordert hat. Die dabei anfallenden Verbindungsdaten und Informationen werden ausschließlich durch Expo verarbeitet'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE] =
+  'Darstellung der Lizenz-Informationen von Drittanbieter-Software'
+de[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE] =
+  'Die Taschenspiegel-App nutzt einige kostenfreie Open-Source-Software-Bibliotheken von Drittanbietern. Diese Bibliotheken und ihre Lizenz-Informationen sind in der App dargestellt. Beim Abruf der Lizenz-Informationen wird eine Anfrage per HTTPS an GitHub gestellt, da die Lizenz-Informationen dort bereitgestellt werden. Die dabei anfallenden Verbindungsdaten und Informationen werden ausschließlich durch GitHub verarbeitet'
+de[I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE] =
+  'An wen kann ich mich bei Fragen wenden?'
+de[I18N_KEY_SCREEN_PRIVACY_QUESTIONS] =
+  'Falls Du Fragen zu diesem Datenschutzhinweis hast, kannst Du Dich jederzeit per E-Mail melden'
 de[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Einstellungen'
 de[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Weißabgleich'
 de[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Sprachen'

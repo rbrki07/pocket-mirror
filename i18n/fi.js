@@ -23,6 +23,22 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL,
+  I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS,
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
@@ -58,6 +74,37 @@ fi[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] =
 fi[I18N_KEY_SCREEN_MENU_ITEM_ABOUT] = 'Tietoja sovelluksesta'
 fi[I18N_KEY_SCREEN_MENU_CLOSE_BUTTON] = 'Sulje'
 fi[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Tietosuoja'
+fi[I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE] = 'Yleistä'
+fi[I18N_KEY_SCREEN_PRIVACY_GENERAL] =
+  'Tietojesi suojaaminen on meille etusijalla. Tässä tietosuojailmoituksessa kerrotaan, mitä tietoja kerätään, kun käytät Taskupeili-sovellusta. Tämä tietosuojailmoitus on tarkoitettu tiedoksi.'
+fi[I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE] =
+  'Tietosuojalainsäädännön mukainen vastuuhenkilö on seuraava henkilö'
+fi[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE] =
+  'Mikä on Taskupeili-sovellus ja miten voin käyttää sitä?'
+fi[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION] =
+  'Taskupeili-sovellus tekee älypuhelimestasi digitaalisen peilin, jonka avulla voit tarkistaa ulkonäkösi nopeasti ja helposti. Kun olet ladannut sovelluksen, voit käyttää sitä ilman rekisteröitymistä.'
+fi[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE] =
+  'Milloin Taskupeili-sovellus kerää minusta henkilötietoja?'
+fi[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA] =
+  'Taskupeili-sovellus ei kerää tai käsittele henkilötietojasi missään vaiheessa. Mitään tietoja ei kerätä tai käsitellä sinusta sovelluksen käyttäjänä eikä laitteestasi.'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE] =
+  'Muu tietojen keruu ja käsittely yhdessä Taskupeili-sovelluksen kanssa.'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE] =
+  'Sovelluksen lataaminen'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD] =
+  'Jos lataat Taskupeili-sovelluksen Google Play Storen tai Applen App Storen kautta, henkilötietoja käsitellään. Tietojen käsittelystä vastaa yksinomaan kyseisen kaupan Storen.'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE] =
+  'Päivitysten toimittaminen'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES] =
+  'Taskupeili-sovellus tarkistaa säännöllisesti, onko sovellukseen saatavilla päivityksiä. Tätä varten sovellus pyytää päivitystietoja HTTPS:n kautta Expolta, kun sovellus avataan loppukäyttäjän laitteessa. Jos uusi päivitys on saatavilla, uusi päivitys lähetetään loppukäyttäjän laitteeseen. Nämä pyynnöt eivät sisällä tunnistetietoja, kuten yksilöllisiä laitetunnisteita. Pyyntö sisältää tunnistamattomia tietoja, jotka ovat tarpeen päivityspyynnön oikeaa käsittelyä varten, kuten loppukäyttäjien laitteen käyttöjärjestelmän, kehittäjän projektitunnuksen ja satunnaisen tunnisteen, jonka avulla määritetään, onko sovelluksen asennus pyytänyt päivitystä. Prosessissa syntyviä yhteystietoja ja tietoja käsittelee yksinomaan Expo'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE] =
+  'Kolmannen osapuolen ohjelmistojen lisenssitietojen näyttäminen'
+fi[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE] =
+  'Taskupeili-sovellus käyttää joitakin ilmaisia kolmannen osapuolen avoimen lähdekoodin ohjelmistokirjastoja. Nämä kirjastot ja niiden lisenssitiedot näkyvät sovelluksessa. Lisenssitietoja haettaessa tehdään HTTPS-pyyntö GitHubiin, koska lisenssitiedot annetaan siellä. Tuloksena saatuja yhteystietoja ja tietoja käsittelee yksinomaan GitHub'
+fi[I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE] =
+  'Keneen voin ottaa yhteyttä, jos minulla on kysyttävää?'
+fi[I18N_KEY_SCREEN_PRIVACY_QUESTIONS] =
+  'Jos sinulla on kysyttävää tästä tietosuojaselosteesta, ota meihin yhteyttä sähköpostitse milloin tahansa osoitteeseen'
 fi[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Asetukset'
 fi[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Valkotasapaino'
 fi[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Kielet'

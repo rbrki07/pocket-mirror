@@ -1,6 +1,6 @@
 {
-  "CFBundleName": "Miroir de poche",
-  "CFBundleDisplayName": "Miroir de poche",
+  "CFBundleName": "Miroir de Poche",
+  "CFBundleDisplayName": "Miroir de Poche",
   "NSCameraUsageDescription": "L'application veut pouvoir accéder à la caméra frontale pour l'utiliser comme miroir. Aucune image n'est enregistrée.",
-  "app_name": "Miroir de poche"
+  "app_name": "Miroir de Poche"
 }

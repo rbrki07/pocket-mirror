@@ -1,6 +1,6 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
-import { Linking, ScrollView, Text, TouchableOpacity } from 'react-native'
+import { Linking, ScrollView, Text } from 'react-native'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
 import {
@@ -47,34 +47,40 @@ const ImprintScreen = ({ navigation }) => {
         i18nKey={I18N_KEY_SCREEN_IMPRINT_CONTACT}
         style={styles.title}
       />
-      <TouchableOpacity onPress={() => Linking.openURL(`tel:${PHONE_NUMBER}`)}>
-        <Text style={styles.text}>
-          <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_PHONE} />
-          <Text>{': '}</Text>
-          <Text style={styles.link}>{PHONE_NUMBER}</Text>
-          <Text>{'.'}</Text>
+      <Text style={styles.text}>
+        <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_PHONE} />
+        <Text>{': '}</Text>
+        <Text
+          onPress={() => Linking.openURL(`tel:${PHONE_NUMBER}`)}
+          style={styles.link}
+        >
+          {PHONE_NUMBER}
         </Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => Linking.openURL(`mailto:${MAIL}`)}>
-        <Text style={styles.text}>
-          <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_MAIL} />
-          <Text>{': '}</Text>
-          <Text style={styles.link}>{MAIL}</Text>
-          <Text>{'.'}</Text>
+        <Text>{'.'}</Text>
+      </Text>
+      <Text style={styles.text}>
+        <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_MAIL} />
+        <Text>{': '}</Text>
+        <Text
+          onPress={() => Linking.openURL(`mailto:${MAIL}`)}
+          style={styles.link}
+        >
+          {MAIL}
         </Text>
-      </TouchableOpacity>
+        <Text>{'.'}</Text>
+      </Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION}
         style={styles.title}
       />
-      <TouchableOpacity onPress={() => Linking.openURL(EU_ODR_URL)}>
-        <Text style={styles.text}>
-          <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_ODR} />
-          <Text>{': '}</Text>
-          <Text style={styles.link}>{EU_ODR_URL}</Text>
-          <Text>{'.'}</Text>
+      <Text style={styles.text}>
+        <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_ODR} />
+        <Text>{': '}</Text>
+        <Text onPress={() => Linking.openURL(EU_ODR_URL)} style={styles.link}>
+          {EU_ODR_URL}
         </Text>
-      </TouchableOpacity>
+        <Text>{'.'}</Text>
+      </Text>
     </ScrollView>
   )
 }

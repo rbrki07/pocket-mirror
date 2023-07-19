@@ -23,6 +23,22 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL,
+  I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS,
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
@@ -58,6 +74,36 @@ it[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software di terze parti'
 it[I18N_KEY_SCREEN_MENU_ITEM_ABOUT] = "Informazioni sull'app"
 it[I18N_KEY_SCREEN_MENU_CLOSE_BUTTON] = 'Chiudere'
 it[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Protezione dei dati'
+it[I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE] = 'Generale'
+it[I18N_KEY_SCREEN_PRIVACY_GENERAL] =
+  "La protezione dei vostri dati è la nostra massima priorità. La presente informativa sulla protezione dei dati informa sui dati raccolti durante l'utilizzo dell'app Specchio Tascabile. La presente informativa sulla protezione dei dati è a titolo informativo."
+it[I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE] =
+  'Il responsabile ai sensi della legge sulla protezione dei dati è'
+it[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE] =
+  "Che cos'è l'app Specchio Tascabile e come si usa?"
+it[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION] =
+  "L'applicazione Specchio Tascabile trasforma il vostro smartphone in uno specchio digitale con il quale potete controllare il vostro aspetto in modo semplice e veloce. Dopo aver scaricato l'app, è possibile utilizzarla senza registrarsi."
+it[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE] =
+  "Quando l'app Specchio Tascabile raccoglie dati personali su di me?"
+it[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA] =
+  "L'applicazione Specchio Tascabile non raccoglie né elabora in alcun momento i dati personali dell'utente. Nessun dato viene raccolto o elaborato su di voi come utente: nell'app o dal vostro dispositivo finale."
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE] =
+  "Altri dati raccolti ed elaborati in relazione all'applicazione Specchio Tascabile"
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE] = "Scaricare l'app"
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD] =
+  "Se scaricate l'applicazione Specchio Tascabile tramite il Google Play Store o l'Apple App Store, verranno elaborati i vostri dati personali. Questo trattamento dei dati viene effettuato esclusivamente dall'operatore del rispettivo Store."
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE] =
+  'Fornitura di aggiornamenti'
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES] =
+  "L'applicazione Specchio Tascabile utilizza una procedura per verificare regolarmente se sono disponibili aggiornamenti per l'applicazione. A tal fine, l'app richiede informazioni sugli aggiornamenti a Expo tramite HTTPS quando l'app viene aperta sul dispositivo dell'utente. Se è disponibile un nuovo aggiornamento, questo viene inviato al dispositivo dell'utente. Queste richieste non contengono informazioni identificative, come gli identificatori univoci del dispositivo. La richiesta contiene informazioni non identificative necessarie per la corretta elaborazione della richiesta di aggiornamento, tra cui il sistema operativo del dispositivo finale, l'ID del progetto dello sviluppatore e un token casuale utilizzato per determinare se un'installazione dell'app ha richiesto un aggiornamento. I dati di connessione e le informazioni generate nel processo vengono elaborati esclusivamente da Expo"
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE] =
+  'Visualizzazione delle informazioni sulla licenza del software di terzi'
+it[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE] =
+  "L'applicazione Specchio Tascabile utilizza alcune librerie software open source gratuite di terze parti. Queste librerie e le relative informazioni di licenza sono visualizzate nell'app. Quando si recuperano le informazioni sulla licenza, viene effettuata una richiesta via HTTPS a GitHub, in quanto le informazioni sulla licenza sono fornite lì. I dati di connessione e le informazioni risultanti vengono elaborati esclusivamente da GitHub"
+it[I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE] =
+  'Chi posso contattare in caso di domande?'
+it[I18N_KEY_SCREEN_PRIVACY_QUESTIONS] =
+  "In caso di domande sulla presente informativa sulla protezione dei dati, si prega di inviare un'e-mail in qualsiasi momento a"
 it[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Impostazioni'
 it[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Bilanciamento del bianco'
 it[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Le lingue'

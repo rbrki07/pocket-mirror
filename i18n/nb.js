@@ -23,6 +23,22 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_GENERAL,
+  I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE,
+  I18N_KEY_SCREEN_PRIVACY_QUESTIONS,
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
   I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
@@ -57,6 +73,36 @@ nb[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Tredjeparts programvare'
 nb[I18N_KEY_SCREEN_MENU_ITEM_ABOUT] = 'Om appen'
 nb[I18N_KEY_SCREEN_MENU_CLOSE_BUTTON] = 'Lukk'
 nb[I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE] = 'Personvern'
+nb[I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE] = 'Generelt'
+nb[I18N_KEY_SCREEN_PRIVACY_GENERAL] =
+  'Beskyttelsen av dine data er vår høyeste prioritet. Denne personvernerklæringen informerer deg om hvilke opplysninger som samles inn når du bruker Lommespeil-appen. Denne personvernerklæringen er til din informasjon.'
+nb[I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE] =
+  'Den ansvarlige personen i henhold til personvernlovgivningen er'
+nb[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE] =
+  'Hva er Lommespeil-appen, og hvordan kan jeg bruke den?'
+nb[I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION] =
+  'Lommespeil-appen gjør smarttelefonen din til et digitalt speil som du raskt og enkelt kan bruke til å sjekke utseendet ditt. Når du har lastet ned appen, kan du bruke den uten å registrere deg.'
+nb[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE] =
+  'Når samler Lommespeil-appen inn personopplysninger om meg?'
+nb[I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA] =
+  'Lommespeil-appen samler ikke inn eller behandler noen personopplysninger om deg på noe tidspunkt. Det samles ikke inn eller behandles noen opplysninger om deg som bruker:i appen eller fra sluttapparatet ditt.'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE] =
+  'Annen datainnsamling og -behandling i forbindelse med Lommespeil-appen'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE] = 'Last ned appen'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD] =
+  'Hvis du laster ned Lommespeil-appen via Google Play Store eller Apple App Store, vil personopplysninger bli behandlet. Denne databehandlingen utføres utelukkende av operatøren av den respektive Store.'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE] =
+  'Levering av oppdateringer'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES] =
+  'Lommespeil-appen bruker en prosedyre for regelmessig å sjekke om oppdateringer er tilgjengelige for appen. Dette gjøres ved at appen ber om oppdateringsinformasjon fra Expo via HTTPS når appen åpnes på brukerens enhet. Hvis en ny oppdatering er tilgjengelig, sendes den nye oppdateringen til brukerens enhet. Disse forespørslene inneholder ikke identifiserende informasjon, for eksempel unike enhetsidentifikatorer. Forespørselen inneholder ikke-identifiserende informasjon som er nødvendig for korrekt behandling av oppdateringsforespørselen, inkludert operativsystemet til sluttapparatet, utviklerens prosjekt-ID og et tilfeldig token som brukes til å avgjøre om en installasjon av appen har bedt om en oppdatering. Tilkoblingsdataene og informasjonen som genereres i prosessen, behandles utelukkende av Expo'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE] =
+  'Visning av lisensinformasjon for tredjepartsprogramvare'
+nb[I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE] =
+  'Lommespeil-appen bruker noen gratis programvarebiblioteker med åpen kildekode fra tredjeparter. Disse bibliotekene og lisensinformasjonen for dem vises i appen. Når lisensinformasjonen hentes, sendes det en forespørsel via HTTPS til GitHub, siden lisensinformasjonen finnes der. De resulterende tilkoblingsdataene og informasjonen behandles utelukkende av GitHub'
+nb[I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE] =
+  'Hvem kan jeg kontakte hvis jeg har spørsmål?'
+nb[I18N_KEY_SCREEN_PRIVACY_QUESTIONS] =
+  'Hvis du har spørsmål om denne personvernerklæringen, kan du når som helst ta kontakt med oss via e-post til'
 nb[I18N_KEY_SCREEN_SETTING_HEADER_TITLE] = 'Innstillinger'
 nb[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Hvitbalanse'
 nb[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Språk'

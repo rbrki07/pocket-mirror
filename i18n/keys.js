@@ -25,6 +25,35 @@ export const I18N_KEY_SCREEN_MENU_CLOSE_BUTTON = 'screen_menu_close_button'
 // PrivacyScreen
 export const I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE =
   'screen_privacy_header_title'
+export const I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE =
+  'screen_privacy_general_headline'
+export const I18N_KEY_SCREEN_PRIVACY_GENERAL = 'screen_privacy_general'
+export const I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE = 'screen_privacy_responsible'
+export const I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE =
+  'screen_privacy_usage_description_headline'
+export const I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION =
+  'screen_privacy_usage_description'
+export const I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA_HEADLINE =
+  'screen_privacy_personal_data_headline'
+export const I18N_KEY_SCREEN_PRIVACY_PERSONAL_DATA =
+  'screen_privacy_personal_data'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_HEADLINE =
+  'screen_privacy_other_data_headline'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD_HEADLINE =
+  'screen_privacy_other_data_download_headline'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_DOWNLOAD =
+  'screen_privacy_other_data_download'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES_HEADLINE =
+  'screen_privacy_other_data_updates_headline'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_UPDATES =
+  'screen_privacy_other_data_updates'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE =
+  'screen_privacy_other_data_license_headline'
+export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE =
+  'screen_privacy_other_data_license'
+export const I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE =
+  'screen_privacy_questions_headline'
+export const I18N_KEY_SCREEN_PRIVACY_QUESTIONS = 'screen_privacy_questions'
 // SettingScreen
 export const I18N_KEY_SCREEN_SETTING_HEADER_TITLE =
   'screen_setting_header_title'
