@@ -14,7 +14,7 @@ import {
  * @returns {Object} PMCameraView
  */
 const PMCameraView = () => {
-  const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)?.value
+  const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)
   const { height: currentDisplayHeight, width: currentDisplayWidth } =
     useWindowDimensions()
   const insets = useSafeAreaInsets()
@@ -35,7 +35,7 @@ const PMCameraView = () => {
     bottomMenuHeight
   const [cameraWidth, setCameraWidth] = useState(currentDisplayWidth)
 
-  const currentZoomLevel = useSelector(currentZoomLevelSelector)?.value || 0.0
+  const currentZoomLevel = useSelector(currentZoomLevelSelector) || 0.0
 
   useEffect(() => {
     if (Platform.OS === 'android') {

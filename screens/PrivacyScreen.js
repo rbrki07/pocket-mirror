@@ -1,8 +1,8 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
-import { Text, View } from 'react-native'
+import { View } from 'react-native'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
-import { i18n } from '../i18n'
+import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
 import { I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE } from '../i18n/keys'
 
 /**
@@ -13,15 +13,21 @@ const PrivacyScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: i18n.t(I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE),
+      headerTitle: () => (
+        <PMLocaleAwareText
+          i18nKey={I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE}
+          style={styles.title}
+        />
+      ),
     })
-  }, [navigation])
+  }, [navigation, styles])
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>
-        {i18n.t(I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE)}
-      </Text>
+      <PMLocaleAwareText
+        i18nKey={I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE}
+        style={styles.title}
+      />
     </View>
   )
 }

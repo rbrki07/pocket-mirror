@@ -10,7 +10,7 @@ import {
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme } from './../hooks/useTheme'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
-import { i18n } from '../i18n'
+import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
 import {
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
@@ -48,10 +48,8 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
 
   const libListHeaderComponent = useCallback(
     () => (
-      <View style={styles.libListHeaderComponent}>
-        <Text style={styles.text}>
-          {i18n.t(I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO)}
-        </Text>
+      <View style={styles.listHeaderFooterComponent}>
+        <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO} />
       </View>
     ),
     [styles]
@@ -64,9 +62,14 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: i18n.t(I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE),
+      headerTitle: () => (
+        <PMLocaleAwareText
+          i18nKey={I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE}
+          style={styles.title}
+        />
+      ),
     })
-  }, [navigation])
+  }, [navigation, styles])
 
   return (
     <View style={styles.container}>
@@ -97,11 +100,6 @@ const mergedStyles = (globalStyles) =>
       justifyContent: 'space-between',
       marginVertical: 4,
       minHeight: 48,
-    },
-    // eslint-disable-next-line react-native/no-unused-styles
-    libListHeaderComponent: {
-      alignItems: 'center',
-      justifyContent: 'center',
     },
   })
 

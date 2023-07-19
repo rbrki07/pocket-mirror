@@ -1,12 +1,11 @@
 // @ts-check
 import React, { useEffect } from 'react'
-import { Linking, StyleSheet, Text } from 'react-native'
+import { Linking, StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
 import { Camera } from 'expo-camera'
 import { StackActions } from '@react-navigation/native'
 import { useTheme } from './../hooks/useTheme'
-import { i18n } from '../i18n'
 import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -15,8 +14,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
 } from '../i18n/keys'
 import { HOME_SCREEN_ROUTE } from './Routes'
-import { PMLottieViewCameraPermission } from '../components/PMLottieViewCameraPermission'
-import { PMButton } from '../components/PMButton'
+import { PMLottieViewCameraPermission } from './../components/PMLottieViewCameraPermission'
+import { PMButton } from './../components/PMButton'
+import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -37,19 +37,21 @@ const WelcomeScreen = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>
-        {i18n.t(I18N_KEY_SCREEN_WELCOME_HEADLINE)}
-      </Text>
+      <PMLocaleAwareText
+        i18nKey={I18N_KEY_SCREEN_WELCOME_HEADLINE}
+        style={styles.title}
+      />
       {cameraPermissionStatus?.granted === false &&
         cameraPermissionStatus.canAskAgain === true && (
           <>
-            <Text style={styles.title}>
-              {i18n.t(I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE)}
-            </Text>
+            <PMLocaleAwareText
+              i18nKey={I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE}
+              style={styles.title}
+            />
             <PMLottieViewCameraPermission />
             <PMButton
               onPressCallback={requestCameraPermission}
-              title={i18n.t(I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON)}
+              title={I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON}
               width={200}
               selected={true}
               testID={'requestCameraPermissionButton'}
@@ -59,13 +61,14 @@ const WelcomeScreen = ({ navigation }) => {
       {cameraPermissionStatus?.granted === false &&
         cameraPermissionStatus.canAskAgain === false && (
           <>
-            <Text style={styles.title}>
-              {i18n.t(I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE)}
-            </Text>
+            <PMLocaleAwareText
+              i18nKey={I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE}
+              style={styles.title}
+            />
             <PMLottieViewCameraPermission />
             <PMButton
               onPressCallback={Linking.openSettings}
-              title={i18n.t(I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON)}
+              title={I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON}
               width={200}
               selected={true}
               testID={'openSettingsButton'}

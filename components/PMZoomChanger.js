@@ -81,7 +81,7 @@ const increaseCurrentZoomLevel = ({
 const PMZoomChanger = () => {
   const theme = useTheme()
   const currentZoomLevel =
-    useSelector(currentZoomLevelSelector)?.value || MIN_ZOOM_LEVEL
+    useSelector(currentZoomLevelSelector) || MIN_ZOOM_LEVEL
   const dispatch = useDispatch()
 
   const decreaseZoomLevelButtonOnPressCallback = useCallback(() => {

@@ -20,7 +20,7 @@ const PMWhiteBalanceSelector = () => {
   const globalStyles = useGlobalStyles()
   const styles = mergedStyles(globalStyles)
 
-  const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)?.value
+  const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)
   const dispatch = useDispatch()
 
   const whiteBalanceValues = [
@@ -43,9 +43,9 @@ const PMWhiteBalanceSelector = () => {
   ]
 
   return (
-    <>
+    <View style={styles.container}>
       {whiteBalanceValues.map((entry) => (
-        <View key={entry.value} style={styles.container}>
+        <View key={entry.value} style={styles.entry}>
           <PMButton
             onPressCallback={() => {
               dispatch(
@@ -62,7 +62,7 @@ const PMWhiteBalanceSelector = () => {
           <Text style={styles.text}>{entry.value}</Text>
         </View>
       ))}
-    </>
+    </View>
   )
 }
 
@@ -76,6 +76,11 @@ const mergedStyles = (globalStyles) =>
     ...globalStyles,
     // eslint-disable-next-line react-native/no-unused-styles
     container: {
+      flexDirection: 'row',
+      height: 84,
+    },
+    // eslint-disable-next-line react-native/no-unused-styles
+    entry: {
       alignItems: 'center',
       flex: 1,
       justifyContent: 'flex-start',

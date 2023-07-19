@@ -1,18 +1,20 @@
 // @ts-check
 import React, { useCallback, useEffect, useState } from 'react'
+import { useSelector } from 'react-redux'
 import { Alert, StyleSheet, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import * as Brightness from 'expo-brightness'
 import { PMButton } from './PMButton'
 import { useTheme } from './../hooks/useTheme'
-import { i18n } from '../i18n'
+import { currentLanguageCodeSelector } from './../store/settings'
+import { i18n } from './../i18n'
 import {
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CANCEL,
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CONFIRM,
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_MESSAGE,
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_TITLE,
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_TITLE,
-} from '../i18n/keys'
+} from './../i18n/keys'
 
 /**
  * @param {Object} params
@@ -135,6 +137,11 @@ const checkBrightnessPermissionAndSet = ({
  */
 const PMBrightnessChanger = ({ initialBrightness = 0.5 }) => {
   const theme = useTheme()
+  const currentLanguageCode = useSelector(currentLanguageCodeSelector)
+
+  if (currentLanguageCode) {
+    i18n.locale = currentLanguageCode
+  }
 
   const [brightnessPermissionResponse, requestBrightnessPermission] =
     Brightness.usePermissions()

@@ -5,23 +5,32 @@ import {
   FlatList,
   Platform,
   StyleSheet,
-  Text,
   TouchableOpacity,
   View,
 } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import { useTheme } from './../hooks/useTheme'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
-import { i18n } from '../i18n'
+import {
+  ABOUT_SCREEN_ROUTE,
+  IMPRINT_SCREEN_ROUTE,
+  LANGUAGE_SCREEN_ROUTE,
+  PRIVACY_SCREEN_ROUTE,
+  SETTING_SCREEN_ROUTE,
+  THIRD_PARTY_LIBS_SCREEN_ROUTE,
+} from './Routes'
+import { i18n } from './../i18n'
 import {
   I18N_KEY_SCREEN_MENU_CLOSE_BUTTON,
   I18N_KEY_SCREEN_MENU_HEADER_TITLE,
   I18N_KEY_SCREEN_MENU_ITEM_ABOUT,
   I18N_KEY_SCREEN_MENU_ITEM_IMPRINT,
+  I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
 } from '../i18n/keys'
+import { PMLocaleAwareText } from '../components/PMLocaleAwareText'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 
@@ -35,14 +44,18 @@ const MenuScreen = ({ navigation }) => {
 
   const infoItems = useMemo(
     () => [
-      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_SETTING), route: 'Setting' },
-      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_IMPRINT), route: 'Imprint' },
-      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_PRIVACY), route: 'Privacy' },
+      { title: I18N_KEY_SCREEN_MENU_ITEM_SETTING, route: SETTING_SCREEN_ROUTE },
       {
-        title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS),
-        route: 'ThirdPartyLibs',
+        title: I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+        route: LANGUAGE_SCREEN_ROUTE,
       },
-      { title: i18n.t(I18N_KEY_SCREEN_MENU_ITEM_ABOUT), route: 'About' },
+      { title: I18N_KEY_SCREEN_MENU_ITEM_IMPRINT, route: IMPRINT_SCREEN_ROUTE },
+      { title: I18N_KEY_SCREEN_MENU_ITEM_PRIVACY, route: PRIVACY_SCREEN_ROUTE },
+      {
+        title: I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
+        route: THIRD_PARTY_LIBS_SCREEN_ROUTE,
+      },
+      { title: I18N_KEY_SCREEN_MENU_ITEM_ABOUT, route: ABOUT_SCREEN_ROUTE },
     ],
     []
   )
@@ -53,7 +66,7 @@ const MenuScreen = ({ navigation }) => {
         style={styles.infoItemContainer}
         onPress={() => navigation.navigate(item.route)}
       >
-        <Text style={styles.text}>{item.title}</Text>
+        <PMLocaleAwareText i18nKey={item.title} />
         <Ionicons
           name={'chevron-forward-outline'}
           size={32}
@@ -71,7 +84,12 @@ const MenuScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: i18n.t(I18N_KEY_SCREEN_MENU_HEADER_TITLE),
+      headerTitle: () => (
+        <PMLocaleAwareText
+          i18nKey={I18N_KEY_SCREEN_MENU_HEADER_TITLE}
+          style={styles.title}
+        />
+      ),
     })
     if (Platform.OS === 'ios') {
       navigation.setOptions({
@@ -83,7 +101,7 @@ const MenuScreen = ({ navigation }) => {
         ),
       })
     }
-  }, [navigation])
+  }, [navigation, styles])
 
   return (
     <View style={styles.container}>

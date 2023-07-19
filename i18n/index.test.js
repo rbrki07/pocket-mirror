@@ -12,11 +12,6 @@ import { nl } from './nl'
 import { pt } from './pt'
 import { sv } from './sv'
 
-jest.mock('expo-localization', () => ({
-  ...jest.requireActual('expo-localization'),
-  getLocales: () => [{ languageCode: 'de' }],
-}))
-
 const NUMBER_OF_APP_METADATA_TRANSLATIONS = 4
 
 describe('i18n - da', () => {

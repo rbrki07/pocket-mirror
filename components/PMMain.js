@@ -6,6 +6,7 @@ import { useTheme } from './../hooks/useTheme'
 import { HomeScreen } from './../screens/HomeScreen'
 import { MenuScreen } from '../screens/MenuScreen'
 import { SettingScreen } from './../screens/SettingScreen'
+import { LanguageScreen } from '../screens/LanguageScreen'
 import { ImprintScreen } from './../screens/ImprintScreen'
 import { PrivacyScreen } from './../screens/PrivacyScreen'
 import { ThirdPartyLibsScreen } from './../screens/ThirdPartyLibsScreen'
@@ -23,6 +24,7 @@ import {
   MENU_SCREEN_ROUTE,
   ABOUT_SCREEN_ROUTE,
   WELCOME_SCREEN_ROUTE,
+  LANGUAGE_SCREEN_ROUTE,
 } from './../screens/Routes'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
@@ -54,6 +56,10 @@ const MenuModal = () => {
     <MenuStack.Navigator screenOptions={{ headerBackTitleVisible: false }}>
       <MenuStack.Screen name={MENU_SCREEN_ROUTE} component={MenuScreen} />
       <MenuStack.Screen name={SETTING_SCREEN_ROUTE} component={SettingScreen} />
+      <MenuStack.Screen
+        name={LANGUAGE_SCREEN_ROUTE}
+        component={LanguageScreen}
+      />
       <MenuStack.Screen name={IMPRINT_SCREEN_ROUTE} component={ImprintScreen} />
       <MenuStack.Screen name={PRIVACY_SCREEN_ROUTE} component={PrivacyScreen} />
       <MenuStack.Screen

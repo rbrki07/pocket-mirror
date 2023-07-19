@@ -2,7 +2,7 @@
 import React, { useLayoutEffect } from 'react'
 import { Linking, ScrollView, Text, TouchableOpacity } from 'react-native'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
-import { i18n } from '../i18n'
+import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
 import {
   I18N_KEY_SCREEN_IMPRINT_CONTACT,
   I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION,
@@ -14,7 +14,7 @@ import {
 } from '../i18n/keys'
 
 const PHONE_NUMBER = '+4943153025887'
-const MAIL = 'kontakt@rene-wilby.de'
+const MAIL = 'contact@rene-wilby.de'
 const EU_ODR_URL = 'https://ec.europa.eu/consumers/odr/'
 
 /**
@@ -25,41 +25,52 @@ const ImprintScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: i18n.t(I18N_KEY_SCREEN_IMPRINT_HEADER_TITLE),
+      headerTitle: () => (
+        <PMLocaleAwareText
+          i18nKey={I18N_KEY_SCREEN_IMPRINT_HEADER_TITLE}
+          style={styles.title}
+        />
+      ),
     })
-  }, [navigation])
+  }, [navigation, styles])
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>
-        {i18n.t(I18N_KEY_SCREEN_IMPRINT_RESPONSIBLE)}
-      </Text>
+      <PMLocaleAwareText
+        i18nKey={I18N_KEY_SCREEN_IMPRINT_RESPONSIBLE}
+        style={styles.title}
+      />
       <Text style={styles.text}>{'René Wilby'}</Text>
       <Text style={styles.text}>{'Burbarg 15'}</Text>
       <Text style={styles.text}>{'24226 Heikendorf'}</Text>
-      <Text style={styles.title}>
-        {i18n.t(I18N_KEY_SCREEN_IMPRINT_CONTACT)}
-      </Text>
+      <PMLocaleAwareText
+        i18nKey={I18N_KEY_SCREEN_IMPRINT_CONTACT}
+        style={styles.title}
+      />
       <TouchableOpacity onPress={() => Linking.openURL(`tel:${PHONE_NUMBER}`)}>
         <Text style={styles.text}>
-          <Text>{`${i18n.t(I18N_KEY_SCREEN_IMPRINT_PHONE)}: `}</Text>
+          <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_PHONE} />
+          <Text>{': '}</Text>
           <Text style={styles.link}>{PHONE_NUMBER}</Text>
           <Text>{'.'}</Text>
         </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => Linking.openURL(`mailto:${MAIL}`)}>
         <Text style={styles.text}>
-          <Text>{`${i18n.t(I18N_KEY_SCREEN_IMPRINT_MAIL)}: `}</Text>
+          <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_MAIL} />
+          <Text>{': '}</Text>
           <Text style={styles.link}>{MAIL}</Text>
           <Text>{'.'}</Text>
         </Text>
       </TouchableOpacity>
-      <Text style={styles.title}>
-        {i18n.t(I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION)}
-      </Text>
+      <PMLocaleAwareText
+        i18nKey={I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION}
+        style={styles.title}
+      />
       <TouchableOpacity onPress={() => Linking.openURL(EU_ODR_URL)}>
         <Text style={styles.text}>
-          <Text>{`${i18n.t(I18N_KEY_SCREEN_IMPRINT_ODR)}: `}</Text>
+          <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_ODR} />
+          <Text>{': '}</Text>
           <Text style={styles.link}>{EU_ODR_URL}</Text>
           <Text>{'.'}</Text>
         </Text>

@@ -1,9 +1,9 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
-import { ScrollView, Text } from 'react-native'
+import { Platform, ScrollView, Text } from 'react-native'
 import Constants from 'expo-constants'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
-import { i18n } from '../i18n'
+import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
 import {
   I18N_KEY_SCREEN_ABOUT_HEADER_TITLE,
   I18N_KEY_SCREEN_ABOUT_VERSION,
@@ -17,15 +17,24 @@ const AboutScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      headerTitle: i18n.t(I18N_KEY_SCREEN_ABOUT_HEADER_TITLE),
+      headerTitle: () => (
+        <PMLocaleAwareText
+          i18nKey={I18N_KEY_SCREEN_ABOUT_HEADER_TITLE}
+          style={styles.title}
+        />
+      ),
     })
-  }, [navigation])
+  }, [navigation, styles])
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.title}>{`${i18n.t(I18N_KEY_SCREEN_ABOUT_VERSION)}: ${
-        Constants.expoConfig?.version
-      }`}</Text>
+      <Text style={styles.title}>
+        <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_ABOUT_VERSION} />
+        <Text>{`: ${Constants.expoConfig?.version}`}</Text>
+        {Platform.OS === 'android' && (
+          <Text>{` (${Constants.expoConfig?.android?.versionCode})`}</Text>
+        )}
+      </Text>
       <Text style={styles.title}>{'MIT License'}</Text>
       <Text style={styles.title}>{'Copyright (c) 2023 René Wilby'}</Text>
       <Text style={styles.text}>
