@@ -124,7 +124,8 @@ describe('PMBrightnessChanger permission tests', () => {
       const decreaseBrightnessButton = getByTestId('decreaseBrightnessButton')
       fireEvent.press(decreaseBrightnessButton)
       expect(alertSpy).toHaveBeenCalledWith(
-        'Die App verfügt nicht über die erforderlichen Berechtigungen die Display-Helligkeit anzupassen.'
+        'Fehlende Berechtigung',
+        'Die App verfügt nicht über die erforderliche Berechtigung, um die Display-Helligkeit anzupassen. Bitte öffne die Einstellungen und erlaube der App, die Display-Helligkeit anzupassen.'
       )
     })
   })
