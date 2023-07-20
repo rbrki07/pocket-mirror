@@ -1,23 +1,14 @@
-name: Run test suite
-
+name: Run test suites
 on: [pull_request]
-
 jobs:
-  build:
-
+  run-test-suites:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install and test
+          node-version: 16.x
+      - name: Run test suites
         run: |
           npm ci
           npm test
