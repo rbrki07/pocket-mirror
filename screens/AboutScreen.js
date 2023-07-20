@@ -1,6 +1,6 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
-import { Platform, ScrollView, Text } from 'react-native'
+import { Linking, Platform, ScrollView, Text } from 'react-native'
 import Constants from 'expo-constants'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
@@ -8,6 +8,8 @@ import {
   I18N_KEY_SCREEN_ABOUT_HEADER_TITLE,
   I18N_KEY_SCREEN_ABOUT_VERSION,
 } from '../i18n/keys'
+
+const SOURCE_CODE_URL = 'https://github.com/rbrki07/pocket-mirror'
 
 /**
  * @returns {Object} AboutScreen
@@ -53,6 +55,13 @@ const AboutScreen = ({ navigation }) => {
         {
           'THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.'
         }
+      </Text>
+      <Text style={styles.title}>{'Source code'}</Text>
+      <Text
+        onPress={() => Linking.openURL(SOURCE_CODE_URL)}
+        style={styles.text}
+      >
+        {SOURCE_CODE_URL}
       </Text>
     </ScrollView>
   )
