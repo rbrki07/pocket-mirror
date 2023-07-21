@@ -1,6 +1,6 @@
 // @ts-check
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
 import { WhiteBalance } from 'expo-camera'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
@@ -10,8 +10,15 @@ import {
   currentWhiteBalanceSelector,
   updateSetting,
 } from './../store/settings'
+import {
+  I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_AUTOMATIC,
+  I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_CLOUDY,
+  I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_SHADY,
+  I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_SUNNY,
+} from './../i18n/keys'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
+import { PMLocaleAwareText } from './PMLocaleAwareText'
 
 /**
  * @returns {Object} PMWhiteBalanceSelector
@@ -27,18 +34,22 @@ const PMWhiteBalanceSelector = () => {
     {
       value: WhiteBalance.auto,
       icon: 'ios-aperture',
+      title: I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_AUTOMATIC,
     },
     {
       value: WhiteBalance.sunny,
       icon: 'sunny',
+      title: I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_SUNNY,
     },
     {
       value: WhiteBalance.cloudy,
       icon: 'cloudy',
+      title: I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_CLOUDY,
     },
     {
       value: WhiteBalance.shadow,
-      icon: 'ios-bulb',
+      icon: 'glasses',
+      title: I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_SHADY,
     },
   ]
 
@@ -59,7 +70,11 @@ const PMWhiteBalanceSelector = () => {
             selected={entry.value === currentWhiteBalance}
             testID={'whiteBalanceButton'}
           />
-          <Text style={styles.text}>{entry.value}</Text>
+          <PMLocaleAwareText
+            i18nKey={entry.title}
+            // @ts-ignore
+            numberOfLines={1}
+          />
         </View>
       ))}
     </View>
