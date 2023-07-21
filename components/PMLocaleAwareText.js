@@ -13,7 +13,7 @@ import { useGlobalStyles } from './../hooks/useGlobalStyles'
  *
  * @returns {Object} PMLocaleAwareText
  */
-const PMLocaleAwareText = ({ i18nKey, style = {} }) => {
+const PMLocaleAwareText = ({ i18nKey, style = {}, ...rest }) => {
   const styles = useGlobalStyles()
   const currentLanguageCode = useSelector(currentLanguageCodeSelector)
 
@@ -21,7 +21,11 @@ const PMLocaleAwareText = ({ i18nKey, style = {} }) => {
     i18n.locale = currentLanguageCode
   }
 
-  return <Text style={[styles.text, style]}>{i18n.t(i18nKey)}</Text>
+  return (
+    <Text style={[styles.text, style]} {...rest}>
+      {i18n.t(i18nKey)}
+    </Text>
+  )
 }
 
 export { PMLocaleAwareText }
