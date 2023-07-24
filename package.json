@@ -58,7 +58,7 @@
     "@react-navigation/native": "^6.1.7",
     "@react-navigation/native-stack": "^6.9.13",
     "@reduxjs/toolkit": "^1.9.5",
-    "expo": "^49.0.3",
+    "expo": "^49.0.4",
     "expo-brightness": "~11.4.0",
     "expo-camera": "~13.4.2",
     "expo-constants": "~14.4.2",
