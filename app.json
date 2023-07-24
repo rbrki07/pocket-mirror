@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "1.0.0",
+      "buildNumber": "1.0.0.8",
       "bundleIdentifier": "de.rene-wilby.pocket-mirror",
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true

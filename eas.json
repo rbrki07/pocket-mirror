@@ -64,6 +64,10 @@
       "android": {
         "serviceAccountKeyPath": "./expo-pocket-mirror-app@pc-api-8822606423697644441-864.iam.gserviceaccount.com.json",
         "track": "production"
+      },
+      "ios": {
+        "ascAppId": "6452469416",
+        "sku": "0002"
       }
     }
   }

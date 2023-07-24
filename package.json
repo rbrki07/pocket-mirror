@@ -23,7 +23,7 @@
     "eas:submit:alpha:android": "eas submit --profile alpha --platform android",
     "eas:submit:beta:android": "eas submit --profile beta --platform android",
     "eas:submit:production:android": "eas submit --profile production --platform android",
-    "eas:submit:ios": "eas submit --platform ios",
+    "eas:submit:production:ios": "eas submit --profile production --platform ios",
     "test": "jest"
   },
   "jest": {
