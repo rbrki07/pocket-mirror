@@ -10,6 +10,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+eas.json
 *iam.gserviceaccount.com.json
 
 # macOS
