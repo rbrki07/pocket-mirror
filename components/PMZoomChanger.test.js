@@ -38,7 +38,7 @@ describe('PMZoomChanger component test', () => {
       settings: [
         {
           key: SETTING_KEY_CURRENT_ZOOM_LEVEL,
-          value: 0.05,
+          value: 0.02,
         },
       ],
     }
@@ -56,7 +56,7 @@ describe('PMZoomChanger component test', () => {
         .settings.find(
           (setting) => setting.key === SETTING_KEY_CURRENT_ZOOM_LEVEL
         )?.value
-    ).toEqual(0.06)
+    ).toEqual(0.03)
   })
 
   it('should set decrease zoom level button in disabled state if minimum zoom level is reached ', () => {
@@ -83,7 +83,7 @@ describe('PMZoomChanger component test', () => {
       settings: [
         {
           key: SETTING_KEY_CURRENT_ZOOM_LEVEL,
-          value: 0.1,
+          value: 0.5,
         },
       ],
     }
