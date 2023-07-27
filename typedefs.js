@@ -17,7 +17,7 @@
 
 /**
  * @typedef {Object} Setting
- * @property {'currentTheme' | 'currentWhiteBalance' | 'currentZoomLevel' | 'currentLanguageCode'} key
+ * @property {'currentTheme' | 'currentWhiteBalance' | 'currentZoomLevel' | 'currentLanguageCode' | 'cameraContainerHeight' | 'cameraContainerWidth' | 'cameraHeight' | 'cameraWidth'} key
  * @property {ColorScheme | import("expo-camera").WhiteBalance | Number | String} value
  */
 
@@ -43,6 +43,38 @@
  * @typedef {Object} CurrentLanguageCodeSetting
  * @property {'currentLanguageCode'} key
  * @property {String} value
+ */
+
+/**
+ * @typedef {Object} CameraContainerHeightSetting
+ * @property {'cameraContainerHeight'} key
+ * @property {Number} value
+ */
+
+/**
+ * @typedef {Object} CameraContainerWidthSetting
+ * @property {'cameraContainerWidth'} key
+ * @property {Number} value
+ */
+
+/**
+ * @typedef {Object} CameraHeightSetting
+ * @property {'cameraHeight'} key
+ * @property {Number} value
+ */
+
+/**
+ * @typedef {Object} CameraWidthSetting
+ * @property {'cameraWidth'} key
+ * @property {Number} value
+ */
+
+/**
+ * @typedef {Object} CameraDimensions
+ * @property {Number} cameraContainerHeight
+ * @property {Number} cameraContainerWidth
+ * @property {Number} cameraHeight
+ * @property {Number} cameraWidth
  */
 
 /**
