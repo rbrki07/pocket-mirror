@@ -9,12 +9,20 @@ const SETTING_KEY_CURRENT_THEME = 'currentTheme'
 const SETTING_KEY_CURRENT_WHITE_BALANCE = 'currentWhiteBalance'
 const SETTING_KEY_CURRENT_ZOOM_LEVEL = 'currentZoomLevel'
 const SETTING_KEY_CURRENT_LANGUAGE_CODE = 'currentLanguageCode'
+const SETTING_KEY_CAMERA_CONTAINER_HEIGHT = 'cameraContainerHeight'
+const SETTING_KEY_CAMERA_CONTAINER_WIDTH = 'cameraContainerWidth'
+const SETTING_KEY_CAMERA_HEIGHT = 'cameraHeight'
+const SETTING_KEY_CAMERA_WIDTH = 'cameraWidth'
 
 export {
   SETTING_KEY_CURRENT_THEME,
   SETTING_KEY_CURRENT_WHITE_BALANCE,
   SETTING_KEY_CURRENT_ZOOM_LEVEL,
   SETTING_KEY_CURRENT_LANGUAGE_CODE,
+  SETTING_KEY_CAMERA_CONTAINER_HEIGHT,
+  SETTING_KEY_CAMERA_CONTAINER_WIDTH,
+  SETTING_KEY_CAMERA_HEIGHT,
+  SETTING_KEY_CAMERA_WIDTH,
 }
 
 /**
@@ -37,6 +45,22 @@ const SETTING_INITIAL_STATE = [
     key: SETTING_KEY_CURRENT_LANGUAGE_CODE,
     value: getLocales()[0].languageCode,
   },
+  {
+    key: SETTING_KEY_CAMERA_CONTAINER_HEIGHT,
+    value: undefined,
+  },
+  {
+    key: SETTING_KEY_CAMERA_CONTAINER_WIDTH,
+    value: undefined,
+  },
+  {
+    key: SETTING_KEY_CAMERA_HEIGHT,
+    value: undefined,
+  },
+  {
+    key: SETTING_KEY_CAMERA_WIDTH,
+    value: undefined,
+  },
 ]
 
 export const migrations = {
@@ -49,6 +73,31 @@ export const migrations = {
         {
           key: SETTING_KEY_CURRENT_LANGUAGE_CODE,
           value: getLocales()[0].languageCode,
+        },
+      ],
+    }
+  },
+  2: (state) => {
+    // add SETTING_KEY_CAMERA_CONTAINER_HEIGHT, SETTING_KEY_CAMERA_CONTAINER_WIDTH, SETTING_KEY_CAMERA_HEIGHT and SETTING_KEY_CAMERA_WIDTH
+    return {
+      ...state,
+      settings: [
+        ...state.settings,
+        {
+          key: SETTING_KEY_CAMERA_CONTAINER_HEIGHT,
+          value: undefined,
+        },
+        {
+          key: SETTING_KEY_CAMERA_CONTAINER_WIDTH,
+          value: undefined,
+        },
+        {
+          key: SETTING_KEY_CAMERA_HEIGHT,
+          value: undefined,
+        },
+        {
+          key: SETTING_KEY_CAMERA_WIDTH,
+          value: undefined,
         },
       ],
     }
@@ -147,4 +196,48 @@ export const currentLanguageCodeSelector = createSelector(
     settings.find(
       (setting) => setting.key === SETTING_KEY_CURRENT_LANGUAGE_CODE
     )?.value
+)
+
+export const cameraContainerHeightSelector = createSelector(
+  settingsSelector,
+  /**
+   * @returns {Number | undefined}
+   */
+  (settings) =>
+    // @ts-ignore
+    settings.find(
+      (setting) => setting.key === SETTING_KEY_CAMERA_CONTAINER_HEIGHT
+    )?.value
+)
+
+export const cameraContainerWidthSelector = createSelector(
+  settingsSelector,
+  /**
+   * @returns {Number | undefined}
+   */
+  (settings) =>
+    // @ts-ignore
+    settings.find(
+      (setting) => setting.key === SETTING_KEY_CAMERA_CONTAINER_WIDTH
+    )?.value
+)
+
+export const cameraHeightSelector = createSelector(
+  settingsSelector,
+  /**
+   * @returns {Number | undefined}
+   */
+  (settings) =>
+    // @ts-ignore
+    settings.find((setting) => setting.key === SETTING_KEY_CAMERA_HEIGHT)?.value
+)
+
+export const cameraWidthSelector = createSelector(
+  settingsSelector,
+  /**
+   * @returns {Number | undefined}
+   */
+  (settings) =>
+    // @ts-ignore
+    settings.find((setting) => setting.key === SETTING_KEY_CAMERA_WIDTH)?.value
 )

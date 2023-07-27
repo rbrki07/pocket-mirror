@@ -12,6 +12,14 @@ const {
   updateSetting,
   SETTING_KEY_CURRENT_LANGUAGE_CODE,
   currentLanguageCodeSelector,
+  cameraContainerHeightSelector,
+  SETTING_KEY_CAMERA_CONTAINER_HEIGHT,
+  SETTING_KEY_CAMERA_CONTAINER_WIDTH,
+  cameraContainerWidthSelector,
+  SETTING_KEY_CAMERA_HEIGHT,
+  cameraHeightSelector,
+  SETTING_KEY_CAMERA_WIDTH,
+  cameraWidthSelector,
 } = require('./settings')
 
 describe('Setting selectors', () => {
@@ -104,6 +112,98 @@ describe('Setting selectors', () => {
     }
 
     const result = currentLanguageCodeSelector(state)
+    expect(result).toBeUndefined()
+  })
+
+  it('should select a number as cameraContainerHeight if cameraContainerHeight is available', () => {
+    const setting = {
+      key: SETTING_KEY_CAMERA_CONTAINER_HEIGHT,
+      value: 111,
+    }
+    const state = {
+      settings: [setting],
+    }
+
+    // @ts-ignore
+    const result = cameraContainerHeightSelector(state)
+    expect(result).toEqual(setting.value)
+  })
+
+  it('should select undefined as cameraContainerHeight if cameraContainerHeight is not available', () => {
+    const state = {
+      settings: [],
+    }
+
+    const result = cameraContainerHeightSelector(state)
+    expect(result).toBeUndefined()
+  })
+
+  it('should select a number as cameraContainerWidth if cameraContainerWidth is available', () => {
+    const setting = {
+      key: SETTING_KEY_CAMERA_CONTAINER_WIDTH,
+      value: 111,
+    }
+    const state = {
+      settings: [setting],
+    }
+
+    // @ts-ignore
+    const result = cameraContainerWidthSelector(state)
+    expect(result).toEqual(setting.value)
+  })
+
+  it('should select undefined as cameraContainerWidth if cameraContainerWidth is not available', () => {
+    const state = {
+      settings: [],
+    }
+
+    const result = cameraContainerWidthSelector(state)
+    expect(result).toBeUndefined()
+  })
+
+  it('should select a number as cameraHeight if cameraHeight is available', () => {
+    const setting = {
+      key: SETTING_KEY_CAMERA_HEIGHT,
+      value: 111,
+    }
+    const state = {
+      settings: [setting],
+    }
+
+    // @ts-ignore
+    const result = cameraHeightSelector(state)
+    expect(result).toEqual(setting.value)
+  })
+
+  it('should select undefined as cameraHeight if cameraHeight is not available', () => {
+    const state = {
+      settings: [],
+    }
+
+    const result = cameraHeightSelector(state)
+    expect(result).toBeUndefined()
+  })
+
+  it('should select a number as cameraWidth if cameraWidth is available', () => {
+    const setting = {
+      key: SETTING_KEY_CAMERA_WIDTH,
+      value: 111,
+    }
+    const state = {
+      settings: [setting],
+    }
+
+    // @ts-ignore
+    const result = cameraWidthSelector(state)
+    expect(result).toEqual(setting.value)
+  })
+
+  it('should select undefined as cameraWidth if cameraWidth is not available', () => {
+    const state = {
+      settings: [],
+    }
+
+    const result = cameraWidthSelector(state)
     expect(result).toBeUndefined()
   })
 })
