@@ -12,7 +12,7 @@ import {
 } from './../store/settings'
 
 const MIN_ZOOM_LEVEL = 0.0
-const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 1.0 : 0.1
+const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 0.5 : 0.05
 const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.1 : 0.01
 
 /**
