@@ -32,9 +32,12 @@ const AboutScreen = ({ navigation }) => {
     <ScrollView style={styles.container}>
       <Text style={styles.title}>
         <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_ABOUT_VERSION} />
-        <Text>{`: ${Constants.expoConfig?.version}`}</Text>
+        <Text>{`: `}</Text>
+        {Platform.OS === 'ios' && (
+          <Text>{Constants.expoConfig?.ios?.buildNumber}</Text>
+        )}
         {Platform.OS === 'android' && (
-          <Text>{` (${Constants.expoConfig?.android?.versionCode})`}</Text>
+          <Text>{`${Constants.expoConfig?.version} (${Constants.expoConfig?.android?.versionCode})`}</Text>
         )}
       </Text>
       <Text style={styles.title}>{'MIT License'}</Text>
