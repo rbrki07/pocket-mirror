@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons'
 import * as Brightness from 'expo-brightness'
 import { PMButton } from './PMButton'
 import { useTheme } from './../hooks/useTheme'
+import { useAppInForeground } from '../hooks/useAppInForeground'
 import { currentLanguageCodeSelector } from './../store/settings'
 import { i18n } from './../i18n'
 import {
@@ -137,7 +138,11 @@ const checkBrightnessPermissionAndSet = ({
 /**
  * @param {Object} params
  * @param {Number} [params.initialBrightness]
+ *
  * @returns {Object} PMBrightnessChanger
+ *
+ * On Android, there is a global system-wide brightness setting, and each app has its own brightness setting that can optionally override the global setting. It is possible to set either of these values with this API.
+ * On iOS, the system brightness setting cannot be changed programmatically; instead, any changes to the screen brightness will persist until the device is locked or powered off.
  */
 const PMBrightnessChanger = ({ initialBrightness = 0.5 }) => {
   const theme = useTheme()
@@ -151,11 +156,16 @@ const PMBrightnessChanger = ({ initialBrightness = 0.5 }) => {
     Brightness.usePermissions()
   const [currentBrightness, setCurrentBrightness] = useState(initialBrightness)
 
+  const appInForeground = useAppInForeground()
+
   useEffect(() => {
-    if (brightnessPermissionResponse?.granted === true) {
+    if (
+      appInForeground === true &&
+      brightnessPermissionResponse?.granted === true
+    ) {
       Brightness.getBrightnessAsync().then(setCurrentBrightness)
     }
-  }, [brightnessPermissionResponse])
+  }, [appInForeground, brightnessPermissionResponse])
 
   const decreaseBrightnessButtonOnPressCallback = useCallback(() => {
     checkBrightnessPermissionAndSet({
