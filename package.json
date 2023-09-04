@@ -60,7 +60,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "expo": "^49.0.9",
     "expo-brightness": "~11.4.0",
-    "expo-camera": "~13.4.2",
+    "expo-camera": "~13.4.3",
     "expo-constants": "~14.4.2",
     "expo-dev-client": "~2.4.8",
     "expo-localization": "~14.3.0",
