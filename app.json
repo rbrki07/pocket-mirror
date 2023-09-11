@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "buildNumber": "1.0.0.12",
+      "buildNumber": "1.0.0.13",
       "bundleIdentifier": "de.rene-wilby.pocket-mirror",
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true
@@ -43,7 +43,7 @@
         "READ_MEDIA_VISUAL_USER_SELECTED"
       ],
       "package": "de.rene_wilby.pocket_mirror",
-      "versionCode": 12
+      "versionCode": 13
     },
     "web": {
       "favicon": "./assets/favicon.png"
