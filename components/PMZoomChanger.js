@@ -12,8 +12,8 @@ import {
 } from './../store/settings'
 
 const MIN_ZOOM_LEVEL = 0.0
-const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 0.5 : 0.05
-const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.1 : 0.01
+const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 0.5 : 0.025
+const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.1 : 0.005
 
 /**
  * @param {Object} params
@@ -39,7 +39,7 @@ const decreaseCurrentZoomLevel = ({
   minZoomLevel = MIN_ZOOM_LEVEL,
 }) => {
   if (currentZoomLevel > minZoomLevel) {
-    return Math.round((currentZoomLevel - ZOOM_LEVEL_STEP) * 100) / 100
+    return Math.round((currentZoomLevel - ZOOM_LEVEL_STEP) * 1000) / 1000
   } else {
     return currentZoomLevel
   }
@@ -69,7 +69,7 @@ const increaseCurrentZoomLevel = ({
   maxZoomLevel = MAX_ZOOM_LEVEL,
 }) => {
   if (currentZoomLevel < maxZoomLevel) {
-    return Math.round((currentZoomLevel + ZOOM_LEVEL_STEP) * 100) / 100
+    return Math.round((currentZoomLevel + ZOOM_LEVEL_STEP) * 1000) / 1000
   } else {
     return currentZoomLevel
   }
