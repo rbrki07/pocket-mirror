@@ -22,6 +22,7 @@ const PMCameraView = () => {
   } = useCameraDimensions()
   const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)
   const currentZoomLevel = useSelector(currentZoomLevelSelector) || 0.0
+  const [cameraPermissionStatus] = Camera.useCameraPermissions()
   const isFocused = useIsFocused()
 
   return (
@@ -35,7 +36,7 @@ const PMCameraView = () => {
       ]}
       testID={'cameraContainer'}
     >
-      {isFocused === true && (
+      {cameraPermissionStatus?.granted === true && isFocused === true && (
         <Camera
           style={{ height: cameraHeight, width: cameraWidth }}
           type={CameraType.front}
