@@ -1,6 +1,6 @@
 // @ts-check
 import React, { useCallback } from 'react'
-import { Platform, StyleSheet, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
 import { Ionicons } from '@expo/vector-icons'
 import { PMButton } from './PMButton'
@@ -10,10 +10,12 @@ import {
   currentZoomLevelSelector,
   updateSetting,
 } from './../store/settings'
-
-const MIN_ZOOM_LEVEL = 0.0
-const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 0.5 : 0.025
-const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.1 : 0.005
+import {
+  MIN_ZOOM_LEVEL,
+  MAX_ZOOM_LEVEL,
+  decreaseCurrentZoomLevel,
+  increaseCurrentZoomLevel,
+} from './../utils/ZoomUtil'
 
 /**
  * @param {Object} params
@@ -30,24 +32,6 @@ const getDecreaseZoomLevelButtonDisabledState = ({
 /**
  * @param {Object} params
  * @param {Number} params.currentZoomLevel
- * @param {Number} [params.minZoomLevel]
- *
- * @returns {Number}
- */
-const decreaseCurrentZoomLevel = ({
-  currentZoomLevel,
-  minZoomLevel = MIN_ZOOM_LEVEL,
-}) => {
-  if (currentZoomLevel > minZoomLevel) {
-    return Math.round((currentZoomLevel - ZOOM_LEVEL_STEP) * 1000) / 1000
-  } else {
-    return currentZoomLevel
-  }
-}
-
-/**
- * @param {Object} params
- * @param {Number} params.currentZoomLevel
  * @param {Number} [params.maxZoomLevel]
  *
  * @returns {Boolean}
@@ -56,24 +40,6 @@ const getIncreaseZoomLevelButtonDisabledState = ({
   currentZoomLevel,
   maxZoomLevel = MAX_ZOOM_LEVEL,
 }) => currentZoomLevel >= maxZoomLevel
-
-/**
- * @param {Object} params
- * @param {Number} params.currentZoomLevel
- * @param {Number} [params.maxZoomLevel]
- *
- * @returns {Number}
- */
-const increaseCurrentZoomLevel = ({
-  currentZoomLevel,
-  maxZoomLevel = MAX_ZOOM_LEVEL,
-}) => {
-  if (currentZoomLevel < maxZoomLevel) {
-    return Math.round((currentZoomLevel + ZOOM_LEVEL_STEP) * 1000) / 1000
-  } else {
-    return currentZoomLevel
-  }
-}
 
 /**
  * @returns {Object} PMZoomChanger
