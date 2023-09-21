@@ -155,6 +155,16 @@
         "uri": "https://raw.githubusercontent.com/facebook/react-native/main/LICENSE"
     },
     {
+        "name": "react-native-gesture-handler",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/software-mansion/react-native-gesture-handler/main/LICENSE"
+    },
+    {
+        "name": "react-native-reanimated",
+        "license": "MIT",
+        "uri": "https://raw.githubusercontent.com/software-mansion/react-native-reanimated/main/LICENSE"
+    },
+    {
         "name": "react-native-safe-area-context",
         "license": "MIT",
         "uri": "https://raw.githubusercontent.com/th3rdwave/react-native-safe-area-context/main/LICENSE"
