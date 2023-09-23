@@ -1,6 +1,6 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
-import { Linking, Platform, ScrollView, Text } from 'react-native'
+import { Linking, ScrollView, Text } from 'react-native'
 import Constants from 'expo-constants'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
@@ -32,13 +32,7 @@ const AboutScreen = ({ navigation }) => {
     <ScrollView style={styles.container}>
       <Text style={styles.title}>
         <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_ABOUT_VERSION} />
-        <Text>{`: `}</Text>
-        {Platform.OS === 'ios' && (
-          <Text>{Constants.expoConfig?.ios?.buildNumber}</Text>
-        )}
-        {Platform.OS === 'android' && (
-          <Text>{`${Constants.expoConfig?.version} (${Constants.expoConfig?.android?.versionCode})`}</Text>
-        )}
+        <Text>{`: ${Constants.expoConfig?.version}`}</Text>
       </Text>
       <Text style={styles.title}>{'MIT License'}</Text>
       <Text style={styles.title}>{'Copyright (c) 2023 René Wilby'}</Text>

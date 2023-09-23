@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const it = {}
@@ -73,6 +77,7 @@ it[I18N_KEY_SCREEN_IMPRINT_ODR] =
 it[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 it[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Impostazioni'
 it[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Le lingue'
+it[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Aiuto'
 it[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Impronta'
 it[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Protezione dei dati'
 it[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software di terze parti'
@@ -114,6 +119,10 @@ it[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Bilanciamento del bianco'
 it[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Le lingue'
 it[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   "Volete aggiungere altre lingue o migliorare le traduzioni esistenti? Inviate un'e-mail in qualsiasi momento a"
+it[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Aiuto'
+it[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Funzione zoom'
+it[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Sono disponibili 4 diverse opzioni:\n1. Utilizzare i pulsanti "+" e "-" accanto alla lente di ingrandimento. In questo modo è possibile ingrandire o ridurre l\'anteprima della fotocamera passo dopo passo. I pulsanti si trovano sul lato destro sopra la visualizzazione della fotocamera.\n2. Utilizzare il consueto movimento a due dita ("Pinch-to-Zoom") direttamente sulla vista della fotocamera. In questo modo è possibile ingrandire o ridurre l\'anteprima della fotocamera.\n3. Toccare due volte la vista della fotocamera per ingrandire gradualmente l\'anteprima della fotocamera.\n4. Premere più a lungo sulla vista della telecamera per ridurre completamente lo zoom dell\'anteprima della telecamera.'
 it[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software di terze parti'
 it[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   "L'applicazione utilizza alcune librerie software open source gratuite di terze parti. L'elenco contiene il nome delle librerie e le relative licenze."

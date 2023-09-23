@@ -18,6 +18,8 @@ import {
 } from './../store/settings'
 import { useCameraDimensions } from './../hooks/useCameraDimensions'
 import {
+  MAX_ZOOM_LEVEL,
+  ZOOM_LEVEL_STEP,
   decreaseCurrentZoomLevel,
   increaseCurrentZoomLevel,
 } from './../utils/ZoomUtil'
@@ -38,13 +40,13 @@ const PMCameraView = () => {
   } = useCameraDimensions()
   const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)
   const currentZoomLevel = useSelector(currentZoomLevelSelector) || 0.0
-  const [pinchZoomLevel, setPinchZoomLevel] = useState(0.0)
+  const [zoomLevel, setZoomLevel] = useState(0.0)
   const dispatch = useDispatch()
   const [cameraPermissionStatus] = Camera.useCameraPermissions()
   const isFocused = useIsFocused()
 
   useEffect(() => {
-    setPinchZoomLevel(currentZoomLevel)
+    setZoomLevel(currentZoomLevel)
   }, [currentZoomLevel])
 
   const updateCurrentZoomLevel = useCallback(
@@ -61,30 +63,30 @@ const PMCameraView = () => {
 
   const decreaseZoomLevelWrapper = useCallback(
     (zoomLevelStep) => {
-      setPinchZoomLevel(
+      setZoomLevel(
         decreaseCurrentZoomLevel({
-          currentZoomLevel: pinchZoomLevel,
+          currentZoomLevel: zoomLevel,
           zoomLevelStep,
         })
       )
     },
-    [pinchZoomLevel]
+    [zoomLevel]
   )
 
   const increaseZoomLevelWrapper = useCallback(
     (zoomLevelStep) => {
-      setPinchZoomLevel(
+      setZoomLevel(
         increaseCurrentZoomLevel({
-          currentZoomLevel: pinchZoomLevel,
+          currentZoomLevel: zoomLevel,
           zoomLevelStep,
         })
       )
     },
-    [pinchZoomLevel]
+    [zoomLevel]
   )
 
   const scale = useSharedValue(1)
-  const gesture = useMemo(
+  const panGesture = useMemo(
     () =>
       Gesture.Pinch()
         .onUpdate((e) => {
@@ -100,15 +102,36 @@ const PMCameraView = () => {
         })
         .onEnd(() => {
           scale.value = 1
-          runOnJS(updateCurrentZoomLevel)(pinchZoomLevel)
+          runOnJS(updateCurrentZoomLevel)(zoomLevel)
         }),
     [
       decreaseZoomLevelWrapper,
       increaseZoomLevelWrapper,
-      pinchZoomLevel,
+      zoomLevel,
       scale,
       updateCurrentZoomLevel,
     ]
+  )
+
+  const doubleTapGesture = useMemo(
+    () =>
+      Gesture.Tap()
+        .numberOfTaps(2)
+        .maxDuration(250)
+        .onStart(() => {
+          runOnJS(increaseZoomLevelWrapper)(ZOOM_LEVEL_STEP)
+        }),
+    [increaseZoomLevelWrapper]
+  )
+
+  const longPressGesture = useMemo(
+    () =>
+      Gesture.LongPress()
+        .minDuration(750)
+        .onStart(() => {
+          runOnJS(decreaseZoomLevelWrapper)(MAX_ZOOM_LEVEL)
+        }),
+    [decreaseZoomLevelWrapper]
   )
 
   return (
@@ -124,13 +147,19 @@ const PMCameraView = () => {
     >
       {cameraPermissionStatus?.granted === true && isFocused === true && (
         <GestureHandlerRootView>
-          <GestureDetector gesture={gesture}>
+          <GestureDetector
+            gesture={Gesture.Race(
+              panGesture,
+              doubleTapGesture,
+              longPressGesture
+            )}
+          >
             <Camera
               style={{ height: cameraHeight, width: cameraWidth }}
               type={CameraType.front}
               useCamera2Api={false}
               whiteBalance={currentWhiteBalance}
-              zoom={pinchZoomLevel}
+              zoom={zoomLevel}
               testID={'camera'}
             />
           </GestureDetector>

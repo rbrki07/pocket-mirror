@@ -54,6 +54,7 @@ const increaseCurrentZoomLevel = ({
 export {
   MIN_ZOOM_LEVEL,
   MAX_ZOOM_LEVEL,
+  ZOOM_LEVEL_STEP,
   decreaseCurrentZoomLevel,
   increaseCurrentZoomLevel,
 }

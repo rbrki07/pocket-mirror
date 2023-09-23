@@ -13,6 +13,7 @@ import { useTheme } from './../hooks/useTheme'
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import {
   ABOUT_SCREEN_ROUTE,
+  HELP_SCREEN_ROUTE,
   IMPRINT_SCREEN_ROUTE,
   LANGUAGE_SCREEN_ROUTE,
   PRIVACY_SCREEN_ROUTE,
@@ -24,6 +25,7 @@ import {
   I18N_KEY_SCREEN_MENU_CLOSE_BUTTON,
   I18N_KEY_SCREEN_MENU_HEADER_TITLE,
   I18N_KEY_SCREEN_MENU_ITEM_ABOUT,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_IMPRINT,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
@@ -48,6 +50,10 @@ const MenuScreen = ({ navigation }) => {
       {
         title: I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
         route: LANGUAGE_SCREEN_ROUTE,
+      },
+      {
+        title: I18N_KEY_SCREEN_MENU_ITEM_HELP,
+        route: HELP_SCREEN_ROUTE,
       },
       { title: I18N_KEY_SCREEN_MENU_ITEM_IMPRINT, route: IMPRINT_SCREEN_ROUTE },
       { title: I18N_KEY_SCREEN_MENU_ITEM_PRIVACY, route: PRIVACY_SCREEN_ROUTE },

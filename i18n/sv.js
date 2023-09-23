@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const sv = {}
@@ -72,6 +76,7 @@ sv[I18N_KEY_SCREEN_IMPRINT_ODR] =
 sv[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Meny'
 sv[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Inställningar'
 sv[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Språk'
+sv[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Hjälp'
 sv[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Avtryck'
 sv[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Dataskydd'
 sv[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Programvara från tredje part'
@@ -113,6 +118,10 @@ sv[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Vitbalans'
 sv[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Språk'
 sv[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Vill du lägga till fler språk eller förbättra befintliga översättningar? Skicka ett e-postmeddelande när som helst till'
+sv[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Hjälp'
+sv[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoomfunktion'
+sv[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Du har 4 olika alternativ:\n1. Använd knapparna "+" och "-" bredvid förstoringsglaset. På så sätt kan du zooma in eller ut kamerans förhandsgranskning steg för steg. Du hittar knapparna på höger sida ovanför kameravyn.\n2. Använd den välbekanta 2-finger-svep-gestiken ("Pinch-to-Zoom") direkt på kameravyn. På så sätt kan du zooma in eller ut i kamerans förhandsgranskning.\n3. Dubbeltryck på kameravyn för att gradvis zooma in på förhandsgranskningen av kameran.\n4. Tryck på kameravyn under en längre tid för att helt minska zoomningen av förhandsgranskningen av kameran igen.'
 sv[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] =
   'Programvara från tredje part'
 sv[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =

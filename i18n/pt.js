@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const pt = {}
@@ -72,6 +76,7 @@ pt[I18N_KEY_SCREEN_IMPRINT_ODR] =
 pt[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 pt[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Definições'
 pt[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Línguas'
+pt[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Ajuda'
 pt[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Impressão'
 pt[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Proteção de dados'
 pt[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software de terceiros'
@@ -114,6 +119,10 @@ pt[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Balanço de brancos'
 pt[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Línguas'
 pt[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Pretende acrescentar mais línguas ou melhorar as traduções existentes? Envie uma mensagem de correio eletrónico em qualquer altura para'
+pt[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Ajuda'
+pt[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Função de zoom'
+pt[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Tem 4 opções diferentes:\n1. Utilizar os botões "+" e "-" junto à lupa. Desta forma, pode aumentar ou diminuir a pré-visualização da câmara passo a passo. Pode encontrar os botões no lado direito, por cima da vista da câmara.\n2. Utilize o conhecido gesto de deslizar 2 dedos ("Pinch-to-Zoom") diretamente na vista da câmara. Desta forma, pode aumentar ou diminuir o zoom na pré-visualização da câmara.\n3. Toque duas vezes na vista da câmara para aumentar gradualmente o zoom na pré-visualização da câmara.\n4. Prima a vista da câmara durante um período de tempo mais longo para reduzir completamente o zoom da pré-visualização da câmara.'
 pt[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software de terceiros'
 pt[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'A aplicação utiliza algumas bibliotecas gratuitas de software de fonte aberta de terceiros. A lista contém o nome das bibliotecas e as respectivas licenças.'

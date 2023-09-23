@@ -25,9 +25,11 @@ import {
   ABOUT_SCREEN_ROUTE,
   WELCOME_SCREEN_ROUTE,
   LANGUAGE_SCREEN_ROUTE,
+  HELP_SCREEN_ROUTE,
 } from './../screens/Routes'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
+import { HelpScreen } from '../screens/HelpScreen'
 
 /**
  * @param {Object} params
@@ -60,6 +62,7 @@ const MenuModal = () => {
         name={LANGUAGE_SCREEN_ROUTE}
         component={LanguageScreen}
       />
+      <MenuStack.Screen name={HELP_SCREEN_ROUTE} component={HelpScreen} />
       <MenuStack.Screen name={IMPRINT_SCREEN_ROUTE} component={ImprintScreen} />
       <MenuStack.Screen name={PRIVACY_SCREEN_ROUTE} component={PrivacyScreen} />
       <MenuStack.Screen

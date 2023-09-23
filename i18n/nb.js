@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const nb = {}
@@ -72,6 +76,7 @@ nb[I18N_KEY_SCREEN_IMPRINT_ODR] =
 nb[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Meny'
 nb[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Innstillinger'
 nb[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Språk'
+nb[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Hjelp'
 nb[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Avtrykk'
 nb[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Personvern'
 nb[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Tredjeparts programvare'
@@ -113,6 +118,10 @@ nb[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Hvitbalanse'
 nb[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Språk'
 nb[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Ønsker du å legge til flere språk eller forbedre eksisterende oversettelser? Du kan når som helst sende en e-post til'
+nb[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Hjelp'
+nb[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoom-funksjon'
+nb[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Du har 4 forskjellige alternativer:\n1. Bruk knappene "+" og "-" ved siden av forstørrelsesglasset. På denne måten kan du zoome inn eller ut av kameraforhåndsvisningen trinn for trinn. Du finner knappene på høyre side over kameravisningen.\n2. Bruk den velkjente 2-finger-sveipebevegelsen ("Pinch-to-Zoom") direkte i kameravisningen. På denne måten kan du zoome inn eller ut i kameraforhåndsvisningen.\n3. Dobbelttrykk på kameravisningen for å zoome gradvis inn på kameraforhåndsvisningen.\n4. Trykk på kameravisningen i lengre tid for å redusere zoomingen av kameraforhåndsvisningen helt igjen.'
 nb[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Tredjeparts programvare'
 nb[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'Appen bruker noen gratis tredjeparts biblioteker med åpen kildekode. Listen inneholder navnet på bibliotekene og lisensene deres.'

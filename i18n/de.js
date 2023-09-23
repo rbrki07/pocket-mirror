@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const de = {}
@@ -72,6 +76,7 @@ de[I18N_KEY_SCREEN_IMPRINT_ODR] =
 de[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menü'
 de[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Einstellungen'
 de[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Sprachen'
+de[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Hilfe'
 de[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Impressum'
 de[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Datenschutzhinweis'
 de[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Drittanbieter-Software'
@@ -113,6 +118,10 @@ de[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Weißabgleich'
 de[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Sprachen'
 de[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Möchtest Du weitere Sprachen hinzufügen, oder bestehende Übersetzungen verbessern? Dann melde Dich gerne per E-Mail'
+de[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Hilfe'
+de[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoom-Funktion'
+de[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Dir stehen 4 verschiedene Optionen zur Verfügung:\n1. Nutze die Schaltflächen "+" und "-" neben der Lupe. So kannst Du schrittweise den Bildausschnitt der Kamera vergrößern oder verkleiner. Du findest die Schaltflächen rechts über dem Kamerabild.\n2. Nutze die bekannte 2-Finger-Wisch-Geste ("Pinch-to-Zoom") direkt auf dem Kamerabild. So vergrößerst oder verkleinerst Du den Bildausschnitt der Kamera.\n3. Tippe doppelt auf das Kamerabild, um den Bildausschnitt der Kamera schrittweise zu vergrößern.\n4. Drücke für längere Zeit auf das Kamerabild, um den Bildausschnitt der Kamera wieder vollständig zu verkleinern.'
 de[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Drittanbieter-Software'
 de[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'Die App nutzt einige kostenfreie Open-Source-Software-Bibliotheken von Drittanbietern. Die Liste enthält die Bezeichnung der Bibliotheken und ihre Lizenzen.'

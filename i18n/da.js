@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const da = {}
@@ -72,6 +76,7 @@ da[I18N_KEY_SCREEN_IMPRINT_ODR] =
 da[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 da[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Indstillinger'
 da[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Sprog'
+da[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Hjælp'
 da[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Aftryk'
 da[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Databeskyttelse'
 da[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Tredjepartssoftware'
@@ -113,6 +118,10 @@ da[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Hvidbalance'
 da[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Sprog'
 da[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Ønsker du at tilføje flere sprog eller forbedre eksisterende oversættelser? Send en e-mail til enhver tid på'
+da[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Hjælp'
+da[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoom-funktion'
+da[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Du har 4 forskellige muligheder:\n1. Brug knapperne "+" og "-" ved siden af forstørrelsesglasset. På den måde kan du zoome ind eller ud på kameraets preview trin for trin. Du kan finde knapperne i højre side over kameravisningen.\n2. Brug den velkendte 2-finger-swipe-bevægelse ("Pinch-to-Zoom") direkte på kameravisningen. På denne måde kan du zoome ind eller ud på kameraets preview.\n3. Dobbelttryk på kameravisningen for gradvist at zoome ind på kameraeksemplet.\n4. Tryk på kameravisningen i længere tid for at reducere zoomen på kameraeksemplet helt igen.'
 da[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Tredjepartssoftware'
 da[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'Appen bruger nogle gratis open source-softwarebiblioteker fra tredjeparter. Listen indeholder navnet på bibliotekerne og deres licenser.'

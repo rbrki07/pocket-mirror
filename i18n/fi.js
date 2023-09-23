@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const fi = {}
@@ -72,6 +76,7 @@ fi[I18N_KEY_SCREEN_IMPRINT_ODR] =
 fi[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Valikko'
 fi[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Asetukset'
 fi[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Kielet'
+fi[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Apua'
 fi[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Jälki'
 fi[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Tietosuoja'
 fi[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] =
@@ -115,6 +120,10 @@ fi[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Valkotasapaino'
 fi[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Kielet'
 fi[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Haluatko lisätä uusia kieliä tai parantaa nykyisiä käännöksiä? Lähetä sähköpostia milloin tahansa osoitteeseen'
+fi[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Apua'
+fi[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoom-toiminto'
+fi[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Sinulla on 4 eri vaihtoehtoa:\n1. Käytä suurennuslasin vieressä olevia "+" ja "-" -painikkeita. Näin voit suurentaa tai pienentää kameran esikatselua vaiheittain. Löydät painikkeet oikealta puolelta kameranäkymän yläpuolelta.\n2. Käytä tuttua 2-sormen pyyhkäisyliikettä ("Pinch-to-Zoom") suoraan kameranäkymässä. Näin voit suurentaa tai pienentää kameran esikatselua.\n3. Kaksoisnapauttamalla kameranäkymää voit zoomata kameran esikatselua asteittain.\n4. Paina kameranäkymää pidemmän aikaa, jolloin kameran esikatselun zoomaus vähenee taas kokonaan.'
 fi[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] =
   'Kolmannen osapuolen ohjelmisto'
 fi[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =

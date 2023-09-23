@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const es = {}
@@ -73,6 +77,7 @@ es[I18N_KEY_SCREEN_IMPRINT_ODR] =
 es[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menú'
 es[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Ajustes'
 es[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Idiomas'
+es[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Ayuda'
 es[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Pie de imprenta'
 es[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Protección de datos'
 es[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software de terceros'
@@ -115,6 +120,10 @@ es[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Balance de blancos'
 es[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Idiomas'
 es[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   '¿Desea añadir más idiomas o mejorar las traducciones existentes? Envíe un correo electrónico en cualquier momento a'
+es[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Ayuda'
+es[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Función zoom'
+es[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Tiene 4 opciones diferentes:\n1. Utiliza los botones "+" y "-" situados junto a la lupa. De esta forma puedes acercar o alejar la vista previa de la cámara paso a paso. Puedes encontrar los botones en el lado derecho encima de la vista de la cámara.\n2. Utilice el conocido gesto de deslizar 2 dedos ("Pinch-to-Zoom") directamente en la vista de la cámara. De esta forma puedes acercar o alejar la vista previa de la cámara.\n3. Pulse dos veces sobre la vista de la cámara para ampliar gradualmente la vista previa de la cámara.\n4. Pulse durante más tiempo sobre la vista de la cámara para volver a reducir completamente el zoom de la vista previa de la cámara.'
 es[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software de terceros'
 es[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'La aplicación utiliza algunas bibliotecas gratuitas de software de código abierto de terceros. La lista contiene el nombre de las bibliotecas y sus licencias.'

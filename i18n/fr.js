@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const fr = {}
@@ -72,6 +76,7 @@ fr[I18N_KEY_SCREEN_IMPRINT_ODR] =
 fr[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 fr[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Paramètres'
 fr[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Langues'
+fr[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Aide'
 fr[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Mentions légales'
 fr[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Protection de la vie privée'
 fr[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Logiciels tiers'
@@ -114,6 +119,10 @@ fr[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Balance des blancs'
 fr[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Langues'
 fr[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   "Vous souhaitez ajouter d'autres langues ou améliorer les traductions existantes ? Envoyez-nous un courriel à tout moment à l'adresse suivante"
+fr[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Aide'
+fr[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Fonction zoom'
+fr[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Vous avez 4 options différentes:\n1. Utilisez les boutons "+" et "-" situés à côté de la loupe. De cette façon, vous pouvez zoomer ou dézoomer l\'aperçu de la caméra étape par étape. Ces boutons se trouvent sur le côté droit, au-dessus de la vue de la caméra.\n2. Utilisez le geste familier de 2 doigts ("Pinch-to-Zoom") directement sur la vue de la caméra. Vous pouvez ainsi effectuer un zoom avant ou arrière sur l\'aperçu de la caméra.\n3. Double-cliquez sur la vue de l\'appareil photo pour effectuer un zoom avant progressif sur l\'aperçu de l\'appareil photo.\n4. Appuyez plus longtemps sur la vue de la caméra pour réduire à nouveau complètement le zoom sur l\'aperçu de la caméra.'
 fr[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Logiciels tiers'
 fr[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   "L'application utilise certaines bibliothèques logicielles open source gratuites de fournisseurs tiers. La liste contient le nom des bibliothèques et leurs licences."

@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const nl = {}
@@ -72,6 +76,7 @@ nl[I18N_KEY_SCREEN_IMPRINT_ODR] =
 nl[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 nl[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Instellingen'
 nl[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Talen'
+nl[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Help'
 nl[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Afdruk'
 nl[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Privacy'
 nl[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Software van derden'
@@ -112,6 +117,10 @@ nl[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'Witbalans'
 nl[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Talen'
 nl[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Wil je meer talen toevoegen of bestaande vertalingen verbeteren? Stuur dan een e-mail naar'
+nl[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Help'
+nl[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoomfunctie'
+nl[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'Je hebt 4 verschillende opties:\n1. Gebruik de knoppen "+" en "-" naast het vergrootglas. Op deze manier kun je stap voor stap in- of uitzoomen op het camerabeeld. Je vindt de knoppen aan de rechterkant boven de cameraweergave.\n2. Gebruik de bekende veegbeweging met 2 vingers ("Pinch-to-Zoom") direct op de cameraweergave. Op deze manier kunt u in- of uitzoomen op het camerabeeld.\n3. Dubbeltik op de cameraweergave om geleidelijk in te zoomen op de preview van de camera.\n4. Druk langere tijd op de cameraweergave om de zoom van de preview van de camera weer volledig te verminderen.'
 nl[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Software van derden'
 nl[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'De app maakt gebruik van een aantal gratis open source softwarebibliotheken van derden. De lijst bevat de naam van de bibliotheken en hun licenties.'

@@ -26,6 +26,7 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
+  I18N_KEY_SCREEN_MENU_ITEM_HELP,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
   I18N_KEY_SCREEN_PRIVACY_HEADER_TITLE,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -55,6 +56,9 @@ import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
+  I18N_KEY_SCREEN_HELP_HEADER_TITLE,
+  I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE,
+  I18N_KEY_SCREEN_HELP_ZOOM,
 } from './keys'
 
 const en = {}
@@ -72,6 +76,7 @@ en[I18N_KEY_SCREEN_IMPRINT_ODR] =
 en[I18N_KEY_SCREEN_MENU_HEADER_TITLE] = 'Menu'
 en[I18N_KEY_SCREEN_MENU_ITEM_SETTING] = 'Settings'
 en[I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE] = 'Languages'
+en[I18N_KEY_SCREEN_MENU_ITEM_HELP] = 'Help'
 en[I18N_KEY_SCREEN_MENU_ITEM_IMPRINT] = 'Imprint'
 en[I18N_KEY_SCREEN_MENU_ITEM_PRIVACY] = 'Data protection notice'
 en[I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS] = 'Third-party Software'
@@ -112,6 +117,10 @@ en[I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE] = 'White Balance'
 en[I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE] = 'Languages'
 en[I18N_KEY_SCREEN_LANGUAGE_INFO] =
   'Do you want to add more languages or improve existing translations? Please send an email at any time at'
+en[I18N_KEY_SCREEN_HELP_HEADER_TITLE] = 'Help'
+en[I18N_KEY_SCREEN_HELP_ZOOM_HEADLINE] = 'Zoom function'
+en[I18N_KEY_SCREEN_HELP_ZOOM] =
+  'You have 4 different options:\n1. Use the "+" and "-" buttons next to the magnifying glass. This way you can zoom in or out the camera preview step by step. You can find the buttons on the right side above the camera view.\n2. Use the familiar 2-finger "pinch-to-zoom" gesture directly on the camera view. This way you can zoom in or out on the camera preview.\n3. Double-tap on the camera view to gradually zoom in on the camera preview.\n4. Press on the camera view for a longer period of time to completely reduce the zoom of the camera preview again.'
 en[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE] = 'Third-party Software'
 en[I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO] =
   'The app uses some free third-party open source software libraries. The list contains the name of the libraries and their licenses.'
