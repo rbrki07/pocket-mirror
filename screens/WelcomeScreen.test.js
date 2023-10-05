@@ -88,4 +88,16 @@ describe('WelcomeScreen tests', () => {
       expect(openSettingsButton).toBeOnTheScreen()
     })
   })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <NavigationContainer>
+            <WelcomeScreen navigation={jest.fn} />
+          </NavigationContainer>
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
 })

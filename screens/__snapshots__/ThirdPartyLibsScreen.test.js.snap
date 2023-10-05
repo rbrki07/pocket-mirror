@@ -1,0 +1,942 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThirdPartyLibsScreen snapshot test should render correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "marginBottom": 0,
+      "marginHorizontal": 8,
+      "marginTop": 8,
+    }
+  }
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListHeaderComponent={[Function]}
+    data={
+      [
+        {
+          "license": "MIT",
+          "name": "@babel/core",
+          "uri": "https://raw.githubusercontent.com/babel/babel/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@expo/metro-config",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "ISC",
+          "name": "@mmomtchev/expo-android-localized-app-name",
+          "uri": "https://raw.githubusercontent.com/mmomtchev/expo-android-localized-app-name/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@react-native-async-storage/async-storage",
+          "uri": "https://raw.githubusercontent.com/react-native-async-storage/async-storage/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@react-native-community/slider",
+          "uri": "https://raw.githubusercontent.com/callstack/react-native-slider/main/LICENSE.md",
+        },
+        {
+          "license": "MIT",
+          "name": "@react-navigation/native",
+          "uri": "https://raw.githubusercontent.com/react-navigation/react-navigation/main/packages/native/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@react-navigation/native-stack",
+          "uri": "https://raw.githubusercontent.com/react-navigation/react-navigation/main/packages/native-stack/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@reduxjs/toolkit",
+          "uri": "https://raw.githubusercontent.com/reduxjs/redux-toolkit/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@testing-library/jest-native",
+          "uri": "https://raw.githubusercontent.com/testing-library/jest-native/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@testing-library/react-native",
+          "uri": "https://raw.githubusercontent.com/callstack/react-native-testing-library/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "@types/jest",
+          "uri": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "eslint",
+          "uri": "https://raw.githubusercontent.com/eslint/eslint/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "eslint-plugin-jest",
+          "uri": "https://raw.githubusercontent.com/jest-community/eslint-plugin-jest/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "eslint-plugin-react",
+          "uri": "https://raw.githubusercontent.com/jsx-eslint/eslint-plugin-react/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "eslint-plugin-react-hooks",
+          "uri": "https://raw.githubusercontent.com/facebook/react/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "eslint-plugin-react-native",
+          "uri": "https://raw.githubusercontent.com/Intellicode/eslint-plugin-react-native/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-brightness",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-camera",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-constants",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-dev-client",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-localization",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-status-bar",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "expo-updates",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "i18n-js",
+          "uri": "https://raw.githubusercontent.com/fnando/i18n/main/LICENSE.md",
+        },
+        {
+          "license": "MIT",
+          "name": "jest",
+          "uri": "https://raw.githubusercontent.com/jestjs/jest/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "jest-expo",
+          "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE",
+        },
+        {
+          "license": "Apache-2.0",
+          "name": "lottie-react-native",
+          "uri": "https://raw.githubusercontent.com/lottie-react-native/lottie-react-native/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "prettier",
+          "uri": "https://raw.githubusercontent.com/prettier/prettier/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react",
+          "uri": "https://raw.githubusercontent.com/facebook/react/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-native",
+          "uri": "https://raw.githubusercontent.com/facebook/react-native/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-native-gesture-handler",
+          "uri": "https://raw.githubusercontent.com/software-mansion/react-native-gesture-handler/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-native-reanimated",
+          "uri": "https://raw.githubusercontent.com/software-mansion/react-native-reanimated/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-native-safe-area-context",
+          "uri": "https://raw.githubusercontent.com/th3rdwave/react-native-safe-area-context/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-native-screens",
+          "uri": "https://raw.githubusercontent.com/software-mansion/react-native-screens/main/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-native-webview",
+          "uri": "https://raw.githubusercontent.com/react-native-webview/react-native-webview/master/LICENSE",
+        },
+        {
+          "license": "MIT",
+          "name": "react-redux",
+          "uri": "https://raw.githubusercontent.com/reduxjs/react-redux/master/LICENSE.md",
+        },
+        {
+          "license": "MIT",
+          "name": "redux",
+          "uri": "https://raw.githubusercontent.com/reduxjs/redux/master/LICENSE.md",
+        },
+        {
+          "license": "MIT",
+          "name": "redux-persist",
+          "uri": "https://raw.githubusercontent.com/rt2zz/redux-persist/master/LICENSE",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#000",
+                  "fontSize": 16,
+                  "lineHeight": 22,
+                },
+                {},
+              ]
+            }
+          >
+            Die App nutzt einige kostenfreie Open-Source-Software-Bibliotheken von Drittanbietern. Die Liste enthält die Bezeichnung der Bibliotheken und ihre Lizenzen.
+          </Text>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @babel/core
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @expo/metro-config
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @mmomtchev/expo-android-localized-app-name
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @react-native-async-storage/async-storage
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @react-native-community/slider
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @react-navigation/native
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @react-navigation/native-stack
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @reduxjs/toolkit
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @testing-library/jest-native
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 4,
+              "minHeight": 48,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#000",
+                "fontSize": 16,
+                "lineHeight": 22,
+              }
+            }
+          >
+            @testing-library/react-native
+          </Text>
+          <Text />
+        </View>
+        <View
+          style={
+            {
+              "borderBottomColor": "#000",
+              "borderBottomWidth": 0.5,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "height": 0,
+          }
+        }
+      />
+    </View>
+  </RCTScrollView>
+</View>
+`;

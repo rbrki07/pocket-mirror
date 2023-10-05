@@ -1,0 +1,574 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen tests should render correctly 1`] = `
+<RNCSafeAreaView
+  edges={
+    {
+      "bottom": "additive",
+      "left": "additive",
+      "right": "additive",
+      "top": "additive",
+    }
+  }
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+          "width": "95%",
+        },
+        {
+          "alignItems": "flex-start",
+          "justifyContent": "space-between",
+          "position": "absolute",
+          "top": 0,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#000",
+          "borderRadius": 8,
+          "borderStyle": "dashed",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 50,
+          "justifyContent": "space-evenly",
+          "margin": 8,
+          "opacity": 1,
+          "width": 50,
+        }
+      }
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 32,
+            },
+            {
+              "opacity": 1,
+            },
+            {
+              "fontFamily": "ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+        testID="undefined_menu-outline"
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderColor": "#000",
+            "borderRadius": 8,
+            "borderStyle": "dashed",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "space-evenly",
+            "margin": 8,
+            "opacity": 1,
+            "width": 50,
+          }
+        }
+        testID="decreaseZoomLevelButton"
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "#000",
+                "fontSize": 32,
+              },
+              {
+                "opacity": 0.25,
+              },
+              {
+                "fontFamily": "ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+          testID="decreaseZoomLevelButton_remove-circle-outline"
+        >
+          
+        </Text>
+      </View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 32,
+            },
+            undefined,
+            {
+              "fontFamily": "ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderColor": "#000",
+            "borderRadius": 8,
+            "borderStyle": "dashed",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "space-evenly",
+            "margin": 8,
+            "opacity": 1,
+            "width": 50,
+          }
+        }
+        testID="increaseZoomLevelButton"
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "#000",
+                "fontSize": 32,
+              },
+              {
+                "opacity": 1,
+              },
+              {
+                "fontFamily": "ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+          testID="increaseZoomLevelButton_add-circle-outline"
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "borderRadius": 8,
+          "justifyContent": "center",
+          "overflow": "hidden",
+        },
+        {
+          "height": 1198,
+          "width": 742,
+        },
+      ]
+    }
+    testID="cameraContainer"
+  >
+    <View>
+      <ViewManagerAdapter_ExponentCamera
+        collapsable={false}
+        faceDetectorSettings={{}}
+        focusDepth={0}
+        onCameraReady={[Function]}
+        onFacesDetected={[Function]}
+        onMountError={[Function]}
+        onPictureSaved={[Function]}
+        onResponsiveOrientationChanged={[Function]}
+        style={
+          {
+            "height": 1198,
+            "width": 742,
+          }
+        }
+        testID="camera"
+        zoom={0}
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+          "width": "95%",
+        },
+        {
+          "alignItems": "flex-end",
+          "bottom": 0,
+          "justifyContent": "space-between",
+          "position": "absolute",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderColor": "#000",
+            "borderRadius": 8,
+            "borderStyle": "dashed",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "space-evenly",
+            "margin": 8,
+            "opacity": 1,
+            "width": 50,
+          }
+        }
+        testID="decreaseBrightnessButton"
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "#000",
+                "fontSize": 32,
+              },
+              {
+                "opacity": 1,
+              },
+              {
+                "fontFamily": "ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+          testID="decreaseBrightnessButton_remove-circle-outline"
+        >
+          
+        </Text>
+      </View>
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 32,
+            },
+            undefined,
+            {
+              "fontFamily": "ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+      >
+        
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "borderColor": "#000",
+            "borderRadius": 8,
+            "borderStyle": "dashed",
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "height": 50,
+            "justifyContent": "space-evenly",
+            "margin": 8,
+            "opacity": 1,
+            "width": 50,
+          }
+        }
+        testID="increaseBrightnessButton"
+      >
+        <Text
+          allowFontScaling={false}
+          selectable={false}
+          style={
+            [
+              {
+                "color": "#000",
+                "fontSize": 32,
+              },
+              {
+                "opacity": 1,
+              },
+              {
+                "fontFamily": "ionicons",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+              {},
+            ]
+          }
+          testID="increaseBrightnessButton_add-circle-outline"
+        >
+          
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "borderColor": "#000",
+          "borderRadius": 8,
+          "borderStyle": "dashed",
+          "borderWidth": 0,
+          "flexDirection": "row",
+          "height": 50,
+          "justifyContent": "space-evenly",
+          "margin": 8,
+          "opacity": 1,
+          "width": 50,
+        }
+      }
+      testID="themeButton"
+    >
+      <Text
+        allowFontScaling={false}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 32,
+            },
+            {
+              "opacity": 1,
+            },
+            {
+              "fontFamily": "ionicons",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+            {},
+          ]
+        }
+        testID="themeButton_sunny-outline"
+      >
+        
+      </Text>
+    </View>
+  </View>
+</RNCSafeAreaView>
+`;

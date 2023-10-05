@@ -1,0 +1,412 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrivacyScreen snapshot test should render correctly 1`] = `
+<RCTScrollView
+  style={
+    {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "marginBottom": 0,
+      "marginHorizontal": 8,
+      "marginTop": 8,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Allgemeines
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {},
+        ]
+      }
+    >
+      Der Schutz Deiner Daten steht an erste Stelle. Dieser Datenschutzhinweis informiert Dich, welche Daten erhoben werden, wenn Du die Taschenspiegel-App nutzt. Dieser Datenschutzhinweis dient Deiner Information.
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {},
+        ]
+      }
+    >
+      Verantwortlicher im Sinne des Datenschutzrechts ist
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      René Wilby
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      Burbarg 15
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      24226 Heikendorf
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Was ist die Taschenspiegel-App und wie kann ich die App nutzen?
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {},
+        ]
+      }
+    >
+      Die Taschenspiegel App macht Dein Smartphone zu einem digitalen Spiegel, mit dem Du Deinen Look schnell und unkompliziert überprüfen kannst. Du kannst die App nach dem Download ohne Registrierung nutzen.
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Wann erhebt die Taschenspiegel-App personenbezogene Daten über mich?
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {},
+        ]
+      }
+    >
+      Die Taschenspiegel-App erhebt und verarbeitet zu keinem Zeitpunkt personenbezogene Daten über Dich. Es werden weder Daten zu Dir als Nutzer:in der App, noch von Deinem Endgerät erhoben oder verarbeitet.
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Sonstige Datenerhebung und –verarbeitung im Zusammenhang mit der Taschenspiegel-App
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Download der App
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {},
+        ]
+      }
+    >
+      Wenn Du die Taschenspiegel-App über den Google Play Store oder Apple App-Store herunterlädst, werden dabei personenbezogene Daten verarbeitet. Diese Datenverarbeitung geschieht ausschließlich durch den Betreiber des jeweiligen Stores.
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Bereitstellung von Updates
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            {},
+          ]
+        }
+      >
+        Die Taschenspiegel-App nutzt ein Verfahren, um regelmäßig zu überprüfen, ob Updates für die App bereitstehen. Dazu fordert die App Update-Informationen über HTTPS von Expo an, wenn die App auf dem Endgerät der Nutzer:innen geöffnet wird. Wenn ein neues Update verfügbar ist, wird das neue Update an das Endgerät der Nutzer:innen gesendet. Diese Anfragen enthalten keine identifizierenden Informationen, wie bspw. eindeutige Gerätekennungen. Die Anfrage enthält nicht-identifizierende Informationen, die für die korrekte Verarbeitung der Update-Anfrage erforderlich sind, einschließlich des Betriebssystems des Endgerätes, der Projekt-ID des Entwicklers und eines zufälligen Tokens, mit dem festgestellt wird, ob eine Installation der App ein Update angefordert hat. Die dabei anfallenden Verbindungsdaten und Informationen werden ausschließlich durch Expo verarbeitet
+      </Text>
+      <Text>
+        : 
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          {
+            "textDecorationColor": "#000",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        https://expo.dev
+      </Text>
+      <Text>
+        .
+      </Text>
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Darstellung der Lizenz-Informationen von Drittanbieter-Software
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            {},
+          ]
+        }
+      >
+        Die Taschenspiegel-App nutzt einige kostenfreie Open-Source-Software-Bibliotheken von Drittanbietern. Diese Bibliotheken und ihre Lizenz-Informationen sind in der App dargestellt. Beim Abruf der Lizenz-Informationen wird eine Anfrage per HTTPS an GitHub gestellt, da die Lizenz-Informationen dort bereitgestellt werden. Die dabei anfallenden Verbindungsdaten und Informationen werden ausschließlich durch GitHub verarbeitet
+      </Text>
+      <Text>
+        : 
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          {
+            "textDecorationColor": "#000",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        https://github.com
+      </Text>
+      <Text>
+        .
+      </Text>
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      An wen kann ich mich bei Fragen wenden?
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            {},
+          ]
+        }
+      >
+        Falls Du Fragen zu diesem Datenschutzhinweis hast, kannst Du Dich jederzeit per E-Mail melden
+      </Text>
+      <Text>
+        : 
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          {
+            "textDecorationColor": "#000",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        contakt@rene-wilby.de
+      </Text>
+      <Text>
+        .
+      </Text>
+    </Text>
+  </View>
+</RCTScrollView>
+`;

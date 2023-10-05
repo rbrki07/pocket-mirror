@@ -96,4 +96,14 @@ describe('PMZoomChanger component test', () => {
     const increaseZoomLevelButton = getByTestId('increaseZoomLevelButton')
     expect(increaseZoomLevelButton).toBeDisabled()
   })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <PMZoomChanger />
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
 })

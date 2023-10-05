@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HelpScreen snapshot test should render correctly 1`] = `
+<RCTScrollView
+  style={
+    {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "marginBottom": 0,
+      "marginHorizontal": 8,
+      "marginTop": 8,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Zoom-Funktion
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {},
+        ]
+      }
+    >
+      Dir stehen 4 verschiedene Optionen zur Verfügung:
+1. Nutze die Schaltflächen "+" und "-" neben der Lupe. So kannst Du schrittweise den Bildausschnitt der Kamera vergrößern oder verkleiner. Du findest die Schaltflächen rechts über dem Kamerabild.
+2. Nutze die bekannte 2-Finger-Wisch-Geste ("Pinch-to-Zoom") direkt auf dem Kamerabild. So vergrößerst oder verkleinerst Du den Bildausschnitt der Kamera.
+3. Tippe doppelt auf das Kamerabild, um den Bildausschnitt der Kamera schrittweise zu vergrößern.
+4. Drücke für längere Zeit auf das Kamerabild, um den Bildausschnitt der Kamera wieder vollständig zu verkleinern.
+    </Text>
+  </View>
+</RCTScrollView>
+`;

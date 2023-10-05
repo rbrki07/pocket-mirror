@@ -8,10 +8,6 @@ import { THEME } from '../style/theme'
 import { useTheme } from './useTheme'
 import { SETTING_KEY_CURRENT_THEME } from '../store/settings'
 
-jest.mock('react-native/Libraries/Utilities/useColorScheme', () => ({
-  default: jest.fn(),
-}))
-
 describe('useTheme hook', () => {
   it('should return light theme if currentTheme is light', () => {
     // @ts-ignore

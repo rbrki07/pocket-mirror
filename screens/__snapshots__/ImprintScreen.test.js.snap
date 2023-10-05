@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImprintScreen snapshot test should render correctly 1`] = `
+<RCTScrollView
+  style={
+    {
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "marginBottom": 0,
+      "marginHorizontal": 8,
+      "marginTop": 8,
+    }
+  }
+>
+  <View>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Verantwortlich für den Inhalt
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      René Wilby
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      Burbarg 15
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      24226 Heikendorf
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      Kontakt
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            {},
+          ]
+        }
+      >
+        Telefon
+      </Text>
+      <Text>
+        : 
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          {
+            "textDecorationColor": "#000",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        +4943153025887
+      </Text>
+      <Text>
+        .
+      </Text>
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            {},
+          ]
+        }
+      >
+        E-Mail
+      </Text>
+      <Text>
+        : 
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          {
+            "textDecorationColor": "#000",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        contact@rene-wilby.de
+      </Text>
+      <Text>
+        .
+      </Text>
+    </Text>
+    <Text
+      style={
+        [
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "lineHeight": 22,
+          },
+          {
+            "color": "#000",
+            "fontSize": 16,
+            "fontWeight": "bold",
+            "lineHeight": 22,
+            "marginBottom": 4,
+            "marginTop": 8,
+          },
+        ]
+      }
+    >
+      EU-Streitschlichtung
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#000",
+          "fontSize": 16,
+          "lineHeight": 22,
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#000",
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            {},
+          ]
+        }
+      >
+        Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit
+      </Text>
+      <Text>
+        : 
+      </Text>
+      <Text
+        onPress={[Function]}
+        style={
+          {
+            "textDecorationColor": "#000",
+            "textDecorationLine": "underline",
+          }
+        }
+      >
+        https://ec.europa.eu/consumers/odr/
+      </Text>
+      <Text>
+        .
+      </Text>
+    </Text>
+  </View>
+</RCTScrollView>
+`;

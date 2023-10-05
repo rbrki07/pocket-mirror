@@ -79,4 +79,14 @@ describe('PMButton component tests', () => {
     fireEvent.press(testButton)
     expect(onPressCallback).toHaveBeenCalled()
   })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <PMButton onPressCallback={jest.fn()} />
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
 })

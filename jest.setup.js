@@ -6,3 +6,17 @@ jest.mock('expo-localization', () => ({
   ...jest.requireActual('expo-localization'),
   getLocales: () => [{ languageCode: 'de' }],
 }))
+
+jest.mock('react-native/Libraries/Utilities/useColorScheme', () => ({
+  default: jest.fn(),
+}))
+
+jest.mock('@react-native-async-storage/async-storage', () =>
+  require('@react-native-async-storage/async-storage/jest/async-storage-mock')
+)
+
+jest.mock('react-native/Libraries/LogBox/LogBox', () => ({
+  default: {
+    ignoreLogs: jest.fn(),
+  },
+}))

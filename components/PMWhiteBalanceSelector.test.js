@@ -90,4 +90,14 @@ describe('PMWhiteBalanceSelector component tests', () => {
         )?.value
     ).not.toBeUndefined()
   })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <PMWhiteBalanceSelector />
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
 })

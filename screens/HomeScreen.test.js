@@ -59,4 +59,18 @@ describe('HomeScreen tests', () => {
       expect(camera).toBeOnTheScreen()
     })
   })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <NavigationContainer>
+            <SafeAreaProvider>
+              <HomeScreen navigation={jest.fn()} />
+            </SafeAreaProvider>
+          </NavigationContainer>
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
 })

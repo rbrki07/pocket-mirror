@@ -8,9 +8,8 @@ import { LanguageScreen } from './LanguageScreen'
 
 describe('LanguageScreen tests', () => {
   it('should highlight the language item, if it is selected', () => {
-    const setOptionsMock = jest.fn()
     const navigationMock = {
-      setOptions: setOptionsMock,
+      setOptions: jest.fn(),
     }
 
     const { getByText } = render(
@@ -26,9 +25,8 @@ describe('LanguageScreen tests', () => {
   it('it should update the current language-code in store, if an item is selected', () => {
     const store = configureTestStore()
 
-    const setOptionsMock = jest.fn()
     const navigationMock = {
-      setOptions: setOptionsMock,
+      setOptions: jest.fn(),
     }
 
     const { getByText } = render(
@@ -46,5 +44,18 @@ describe('LanguageScreen tests', () => {
           (setting) => setting.key === SETTING_KEY_CURRENT_LANGUAGE_CODE
         )?.value
     ).toBe('en')
+  })
+
+  it('should render correctly', () => {
+    const navigationMock = {
+      setOptions: jest.fn(),
+    }
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <LanguageScreen navigation={navigationMock} />
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
   })
 })

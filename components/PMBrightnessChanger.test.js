@@ -130,3 +130,15 @@ describe('PMBrightnessChanger permission tests', () => {
     })
   })
 })
+
+describe('PMBrightnessChanger snapshot test', () => {
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <PMBrightnessChanger />
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
+})

@@ -80,4 +80,18 @@ describe('PMCameraView component tests', () => {
     const camera = queryByTestId('camera')
     expect(camera).toBeNull()
   })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <NavigationContainer>
+            <SafeAreaProvider>
+              <PMCameraView />
+            </SafeAreaProvider>
+          </NavigationContainer>
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
+  })
 })

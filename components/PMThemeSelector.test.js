@@ -7,10 +7,6 @@ import { configureTestStore } from '../store/StoreTestUtils'
 import { PMThemeSelector } from './PMThemeSelector'
 import { SETTING_KEY_CURRENT_THEME } from '../store/settings'
 
-jest.mock('react-native/Libraries/Utilities/useColorScheme', () => ({
-  default: jest.fn(),
-}))
-
 describe('PMThemeSelector component tests', () => {
   it('should set theme to dark if current theme is light', () => {
     const preloadedState = {
@@ -242,5 +238,15 @@ describe('PMThemeSelector component tests', () => {
     )
     const themeButtonIcon = getByTestId('themeButton_sunny-outline')
     expect(themeButtonIcon).toBeOnTheScreen()
+  })
+
+  it('should render correctly', () => {
+    expect(
+      render(
+        <Provider store={configureTestStore()}>
+          <PMThemeSelector />
+        </Provider>
+      ).toJSON()
+    ).toMatchSnapshot()
   })
 })
