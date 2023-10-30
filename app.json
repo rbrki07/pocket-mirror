@@ -2,7 +2,7 @@
   "expo": {
     "name": "Pocket Mirror",
     "slug": "pocket-mirror",
-    "version": "1.2.2",
+    "version": "1.2.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -16,7 +16,7 @@
     ],
     "ios": {
       "supportsTablet": false,
-      "buildNumber": "1.2.2.18",
+      "buildNumber": "1.2.3.19",
       "bundleIdentifier": "de.rene-wilby.pocket-mirror",
       "infoPlist": {
         "CFBundleAllowMixedLocalizations": true
@@ -43,7 +43,7 @@
         "READ_MEDIA_VISUAL_USER_SELECTED"
       ],
       "package": "de.rene_wilby.pocket_mirror",
-      "versionCode": 18
+      "versionCode": 19
     },
     "web": {
       "favicon": "./assets/favicon.png"
