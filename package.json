@@ -85,7 +85,7 @@
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.4.0",
     "@types/jest": "^29.5.10",
-    "@types/react": "^18.2.38",
+    "@types/react": "^18.2.41",
     "eslint": "^8.54.0",
     "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-react": "^7.33.2",
