@@ -22,7 +22,9 @@ The app does not contain any advertising.
 
 ## Where can I download the Pocket Mirror app?
 
-The app is currently in closed beta and it will be available in the Google Play Store soon. Afterwards the app will be available in the Apple App Store as well.
+You can download the Picket Mirror App for iOS and Android devices:
+- [Apple App Store](https://apps.apple.com/us/app/simple-pocket-mirror/id6452469416)
+- [Google Play Store](https://play.google.com/store/apps/details?id=de.rene_wilby.pocket_mirror)
 
 ## Can I build and run the Pocket Mirror app on my own computer and device?
 
