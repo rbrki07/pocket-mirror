@@ -76,7 +76,7 @@ exports[`PMZoomChanger component test should render correctly 1`] = `
       }
       testID="decreaseZoomLevelButton_remove-circle-outline"
     >
-      
+      
     </Text>
   </View>
   <Text
@@ -98,7 +98,7 @@ exports[`PMZoomChanger component test should render correctly 1`] = `
       ]
     }
   >
-    
+    
   </Text>
   <View
     accessibilityState={
@@ -167,7 +167,7 @@ exports[`PMZoomChanger component test should render correctly 1`] = `
       }
       testID="increaseZoomLevelButton_add-circle-outline"
     >
-      
+      
     </Text>
   </View>
 </View>

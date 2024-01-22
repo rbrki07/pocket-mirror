@@ -68,7 +68,7 @@ exports[`PMThemeSelector component tests should render correctly 1`] = `
     }
     testID="themeButton_sunny-outline"
   >
-    
+    
   </Text>
 </View>
 `;

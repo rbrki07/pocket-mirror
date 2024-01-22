@@ -20,3 +20,11 @@ jest.mock('react-native/Libraries/LogBox/LogBox', () => ({
     ignoreLogs: jest.fn(),
   },
 }))
+
+jest.mock('react-native-webview', () => {
+  const React = require('react')
+  return {
+    // https://github.com/react-native-webview/react-native-webview/issues/3233
+    WebView: () => React.Fragment,
+  }
+})

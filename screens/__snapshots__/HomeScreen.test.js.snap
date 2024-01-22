@@ -101,7 +101,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
         }
         testID="undefined_menu-outline"
       >
-        
+        
       </Text>
     </View>
     <View
@@ -179,7 +179,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
           }
           testID="decreaseZoomLevelButton_remove-circle-outline"
         >
-          
+          
         </Text>
       </View>
       <Text
@@ -201,7 +201,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
           ]
         }
       >
-        
+        
       </Text>
       <View
         accessibilityState={
@@ -270,7 +270,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
           }
           testID="increaseZoomLevelButton_add-circle-outline"
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -293,7 +293,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
     testID="cameraContainer"
   >
     <View>
-      <ViewManagerAdapter_ExponentCamera
+      <ViewManagerAdapter_ExpoCamera
         collapsable={false}
         faceDetectorSettings={{}}
         focusDepth={0}
@@ -404,7 +404,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
           }
           testID="decreaseBrightnessButton_remove-circle-outline"
         >
-          
+          
         </Text>
       </View>
       <Text
@@ -426,7 +426,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
           ]
         }
       >
-        
+        
       </Text>
       <View
         accessibilityState={
@@ -495,7 +495,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
           }
           testID="increaseBrightnessButton_add-circle-outline"
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -566,7 +566,7 @@ exports[`HomeScreen tests should render correctly 1`] = `
         }
         testID="themeButton_sunny-outline"
       >
-        
+        
       </Text>
     </View>
   </View>

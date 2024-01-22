@@ -33,7 +33,7 @@ const PMWhiteBalanceSelector = () => {
   const whiteBalanceValues = [
     {
       value: WhiteBalance.auto,
-      icon: 'ios-aperture',
+      icon: 'aperture',
       title: I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_AUTOMATIC,
     },
     {

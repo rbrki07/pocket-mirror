@@ -6,7 +6,9 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { store, persitor } from './store'
 import { PMMain } from './components/PMMain'
 
-LogBox.ignoreLogs(['new NativeEventEmitter'])
+LogBox.ignoreLogs([
+  "[Reanimated] Couldn't determine the version of the native part of Reanimated.",
+])
 
 export default function App() {
   return (
