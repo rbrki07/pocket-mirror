@@ -52,7 +52,7 @@
     ]
   },
   "dependencies": {
-    "@expo/metro-config": "~0.17.1",
+    "@expo/metro-config": "~0.17.5",
     "@mmomtchev/expo-android-localized-app-name": "^1.0.1",
     "@react-native-async-storage/async-storage": "1.21.0",
     "@react-native-community/slider": "4.4.2",
