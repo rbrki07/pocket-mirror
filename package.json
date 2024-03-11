@@ -92,7 +92,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-native": "^4.1.0",
     "jest": "^29.7.0",
-    "jest-expo": "~50.0.2",
+    "jest-expo": "~50.0.3",
     "prettier": "^3.2.5"
   },
   "private": true
