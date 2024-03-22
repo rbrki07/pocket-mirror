@@ -95,11 +95,6 @@
         "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
     },
     {
-        "name": "expo-build-properties",
-        "license": "MIT",
-        "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
-    },
-    {
         "name": "expo-camera",
         "license": "MIT",
         "uri": "https://raw.githubusercontent.com/expo/expo/main/LICENSE"
