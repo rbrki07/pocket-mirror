@@ -74,6 +74,11 @@ exports[`ThirdPartyLibsScreen snapshot test should render correctly 1`] = `
         },
         {
           "license": "MIT",
+          "name": "@types/react",
+          "uri": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/master/LICENSE",
+        },
+        {
+          "license": "MIT",
           "name": "eslint",
           "uri": "https://raw.githubusercontent.com/eslint/eslint/main/LICENSE",
         },
