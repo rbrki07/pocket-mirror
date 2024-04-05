@@ -27,8 +27,8 @@
     "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "format": "prettier . --check",
-    "format:fix": "prettier . --write"
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
   },
   "jest": {
     "preset": "jest-expo",
