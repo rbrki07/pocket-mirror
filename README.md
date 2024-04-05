@@ -23,6 +23,7 @@ The app does not contain any advertising.
 ## Where can I download the Pocket Mirror app?
 
 You can download the Picket Mirror App for iOS and Android devices:
+
 - [Apple App Store](https://apps.apple.com/us/app/simple-pocket-mirror/id6452469416)
 - [Google Play Store](https://play.google.com/store/apps/details?id=de.rene_wilby.pocket_mirror)
 
@@ -41,4 +42,3 @@ I like app development and I'm in this business for quite a while. I'm also a fr
 You are welcome to raise an issue if you encounter any problems with the app. Although the feature scope of Pocket Mirror is limited you can suggest new features.
 
 At the moment I could need some help with the existing translations. The app is available in different languages but most of the translations is translated using a software. I bet there is room for improvements. I would appreciate every improvement or new translations to support event more languages. If you are familiar with GitHub just create a pull request. Otherwise you can reach out to me via mail: [contact@rene-wilby.de](mailto:contact@rene-wilby.de).
-

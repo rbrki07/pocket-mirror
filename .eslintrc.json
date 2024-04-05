@@ -1,12 +1,8 @@
 {
-    "root": true,
-    "extends": [
-        "universe/native"
-    ],
-    "plugins": [
-        "jest"
-    ],
-    "rules": {
-        "react-hooks/exhaustive-deps": "warn"
-    }
+  "root": true,
+  "extends": ["universe/native"],
+  "plugins": ["jest"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn"
+  }
 }

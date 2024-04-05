@@ -1,46 +1,46 @@
 [
-    {
-        "name": "Dansk",
-        "code": "da"
-    },
-    {
-        "name": "Deutsch",
-        "code": "de"
-    },
-    {
-        "name": "English",
-        "code": "en"
-    },
-    {
-        "name": "Español",
-        "code": "es"
-    },
-    {
-        "name": "Français",
-        "code": "fr"
-    },
-    {
-        "name": "Italiano",
-        "code": "it"
-    },
-    {
-        "name": "Nederlands",
-        "code": "nl"
-    },
-    {
-        "name": "Norsk",
-        "code": "nb"
-    },
-    {
-        "name": "Português",
-        "code": "pt"
-    },
-    {
-        "name": "Suomi",
-        "code": "fi"
-    },
-    {
-        "name": "Svenska",
-        "code": "sv"
-    }
+  {
+    "name": "Dansk",
+    "code": "da"
+  },
+  {
+    "name": "Deutsch",
+    "code": "de"
+  },
+  {
+    "name": "English",
+    "code": "en"
+  },
+  {
+    "name": "Español",
+    "code": "es"
+  },
+  {
+    "name": "Français",
+    "code": "fr"
+  },
+  {
+    "name": "Italiano",
+    "code": "it"
+  },
+  {
+    "name": "Nederlands",
+    "code": "nl"
+  },
+  {
+    "name": "Norsk",
+    "code": "nb"
+  },
+  {
+    "name": "Português",
+    "code": "pt"
+  },
+  {
+    "name": "Suomi",
+    "code": "fi"
+  },
+  {
+    "name": "Svenska",
+    "code": "sv"
+  }
 ]
