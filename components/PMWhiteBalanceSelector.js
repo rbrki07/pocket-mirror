@@ -90,10 +90,12 @@ const PMWhiteBalanceSelector = () => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
+    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       flexDirection: 'row',
       height: 84,
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     entry: {
       alignItems: 'center',
       flex: 1,

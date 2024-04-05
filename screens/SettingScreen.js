@@ -51,6 +51,7 @@ const SettingScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
+    // eslint-disable-next-line react-native/no-unused-styles
     row: {
       alignItems: 'center',
       height: 110,

@@ -63,22 +63,26 @@ const HomeScreen = ({ navigation }) => {
  */
 const themedStyles = ({ currentTheme, insets }) =>
   StyleSheet.create({
+    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       backgroundColor: currentTheme.backgroundColor,
       flex: 1,
       justifyContent: 'center',
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     menu: {
       flexDirection: 'row',
       width: '95%',
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     menuBottom: {
       alignItems: 'flex-end',
       bottom: insets.bottom,
       justifyContent: 'space-between',
       position: 'absolute',
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     menuTop: {
       alignItems: 'flex-start',
       justifyContent: 'space-between',

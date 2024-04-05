@@ -88,12 +88,14 @@ const WelcomeScreen = ({ navigation }) => {
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
+    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       backgroundColor: currentTheme.backgroundColor,
       flex: 1,
       justifyContent: 'center',
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     title: {
       color: currentTheme.textColor,
       fontSize: 18,

@@ -127,6 +127,7 @@ const LanguageScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
+    // eslint-disable-next-line react-native/no-unused-styles
     libItemContainer: {
       alignItems: 'center',
       flex: 1,

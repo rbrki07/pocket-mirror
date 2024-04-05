@@ -38,12 +38,14 @@ const PMLottieViewCameraPermission = () => {
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
+    // eslint-disable-next-line react-native/no-unused-styles
     animation: {
       backgroundColor: currentTheme.backgroundColor,
       height: 300,
       marginTop: 4,
       width: 300,
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       height: 120,

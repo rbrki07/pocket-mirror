@@ -41,6 +41,7 @@ const PMButton = ({
       onPress={onPressCallback}
       style={[
         styles.container,
+        // eslint-disable-next-line react-native/no-inline-styles
         { borderWidth: selected ? 1 : 0, height, width },
       ]}
       testID={testID}
@@ -51,6 +52,7 @@ const PMButton = ({
           name={iconName}
           size={iconSize}
           color={theme.iconColor}
+          // eslint-disable-next-line react-native/no-inline-styles
           style={{ opacity: disabled ? 0.25 : 1.0 }}
           testID={`${testID}_${iconName}`}
         />
@@ -69,6 +71,7 @@ const PMButton = ({
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
+    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       borderColor: currentTheme.borderColor,
@@ -78,6 +81,7 @@ const themedStyles = (currentTheme) =>
       justifyContent: 'space-evenly',
       margin: 8,
     },
+    // eslint-disable-next-line react-native/no-unused-styles
     title: {
       color: currentTheme.textColor,
       fontSize: 16,

@@ -129,6 +129,7 @@ const MenuScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
+    // eslint-disable-next-line react-native/no-unused-styles
     infoItemContainer: {
       alignItems: 'center',
       flex: 1,
