@@ -1,11 +1,18 @@
 // @ts-check
+import { StackActions } from '@react-navigation/native'
+import { Camera } from 'expo-camera'
+import { StatusBar } from 'expo-status-bar'
 import React, { useEffect } from 'react'
 import { Linking, StyleSheet } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { StatusBar } from 'expo-status-bar'
-import { Camera } from 'expo-camera'
-import { StackActions } from '@react-navigation/native'
+
+import { PMButton } from './../components/PMButton'
+import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
+import { PMLottieViewCameraPermission } from './../components/PMLottieViewCameraPermission'
 import { useTheme } from './../hooks/useTheme'
+// eslint-disable-next-line no-unused-vars
+import typedefs from './../typedefs'
+import { HOME_SCREEN_ROUTE } from './Routes'
 import {
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_ADVICE,
   I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON,
@@ -13,12 +20,6 @@ import {
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_ADVICE,
   I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON,
 } from '../i18n/keys'
-import { HOME_SCREEN_ROUTE } from './Routes'
-import { PMLottieViewCameraPermission } from './../components/PMLottieViewCameraPermission'
-import { PMButton } from './../components/PMButton'
-import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
-// eslint-disable-next-line no-unused-vars
-import typedefs from './../typedefs'
 
 /**
  * @returns {Object} WelcomeScreen
@@ -53,8 +54,8 @@ const WelcomeScreen = ({ navigation }) => {
               onPressCallback={requestCameraPermission}
               title={I18N_KEY_SCREEN_WELCOME_ACTIVATE_CAMERA_BUTTON}
               width={200}
-              selected={true}
-              testID={'requestCameraPermissionButton'}
+              selected
+              testID="requestCameraPermissionButton"
             />
           </>
         )}
@@ -70,8 +71,8 @@ const WelcomeScreen = ({ navigation }) => {
               onPressCallback={Linking.openSettings}
               title={I18N_KEY_SCREEN_WELCOME_OPEN_SETTINGS_BUTTON}
               width={200}
-              selected={true}
-              testID={'openSettingsButton'}
+              selected
+              testID="openSettingsButton"
             />
           </>
         )}
@@ -87,14 +88,12 @@ const WelcomeScreen = ({ navigation }) => {
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
-    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       backgroundColor: currentTheme.backgroundColor,
       flex: 1,
       justifyContent: 'center',
     },
-    // eslint-disable-next-line react-native/no-unused-styles
     title: {
       color: currentTheme.textColor,
       fontSize: 18,

@@ -1,8 +1,9 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
 import { Linking, ScrollView, Text } from 'react-native'
-import { useGlobalStyles } from './../hooks/useGlobalStyles'
+
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import {
   I18N_KEY_SCREEN_PRIVACY_GENERAL,
   I18N_KEY_SCREEN_PRIVACY_GENERAL_HEADLINE,
@@ -52,9 +53,9 @@ const PrivacyScreen = ({ navigation }) => {
       />
       <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_PRIVACY_GENERAL} />
       <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE} />
-      <Text style={styles.text}>{'René Wilby'}</Text>
-      <Text style={styles.text}>{'Burbarg 15'}</Text>
-      <Text style={styles.text}>{'24226 Heikendorf'}</Text>
+      <Text style={styles.text}>René Wilby</Text>
+      <Text style={styles.text}>Burbarg 15</Text>
+      <Text style={styles.text}>24226 Heikendorf</Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE}
         style={styles.title}
@@ -88,7 +89,7 @@ const PrivacyScreen = ({ navigation }) => {
         <Text onPress={() => Linking.openURL(EXPO_URL)} style={styles.link}>
           {EXPO_URL}
         </Text>
-        <Text>{'.'}</Text>
+        <Text>.</Text>
       </Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE_HEADLINE}
@@ -102,7 +103,7 @@ const PrivacyScreen = ({ navigation }) => {
         <Text onPress={() => Linking.openURL(GITHUB_URL)} style={styles.link}>
           {GITHUB_URL}
         </Text>
-        <Text>{'.'}</Text>
+        <Text>.</Text>
       </Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE}
@@ -117,7 +118,7 @@ const PrivacyScreen = ({ navigation }) => {
         >
           {MAIL}
         </Text>
-        <Text>{'.'}</Text>
+        <Text>.</Text>
       </Text>
     </ScrollView>
   )

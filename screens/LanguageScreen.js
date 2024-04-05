@@ -1,4 +1,5 @@
 // @ts-check
+import { Ionicons } from '@expo/vector-icons'
 import React, { useCallback, useLayoutEffect } from 'react'
 import {
   FlatList,
@@ -9,9 +10,12 @@ import {
   View,
 } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
-import { Ionicons } from '@expo/vector-icons'
-import { useTheme } from './../hooks/useTheme'
+
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
+import { useTheme } from './../hooks/useTheme'
+// eslint-disable-next-line no-unused-vars
+import typedefs from './../typedefs'
+import { PMLocaleAwareText } from '../components/PMLocaleAwareText'
 import {
   I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE,
   I18N_KEY_SCREEN_LANGUAGE_INFO,
@@ -21,9 +25,6 @@ import {
   currentLanguageCodeSelector,
   updateSetting,
 } from '../store/settings'
-// eslint-disable-next-line no-unused-vars
-import typedefs from './../typedefs'
-import { PMLocaleAwareText } from '../components/PMLocaleAwareText'
 
 const MAIL = 'contact@rene-wilby.de'
 
@@ -60,7 +61,7 @@ const LanguageScreen = ({ navigation }) => {
         </Text>
         {currentLanguageCode === item.code && (
           <Ionicons
-            name={'checkmark-outline'}
+            name="checkmark-outline"
             size={32}
             color={theme.iconColor}
           />
@@ -82,7 +83,7 @@ const LanguageScreen = ({ navigation }) => {
           >
             {MAIL}
           </Text>
-          <Text>{'.'}</Text>
+          <Text>.</Text>
         </Text>
       </View>
     ),
@@ -126,7 +127,6 @@ const LanguageScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
-    // eslint-disable-next-line react-native/no-unused-styles
     libItemContainer: {
       alignItems: 'center',
       flex: 1,

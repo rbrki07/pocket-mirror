@@ -1,13 +1,14 @@
 // @ts-check
 import React, { useCallback } from 'react'
 import { useColorScheme } from 'react-native'
-import { PMButton } from './PMButton'
 import { useDispatch, useSelector } from 'react-redux'
+
 import {
   SETTING_KEY_CURRENT_THEME,
   currentThemeSelector,
   updateSetting,
 } from './../store/settings'
+import { PMButton } from './PMButton'
 import { getThemeName } from '../utils/ThemeUtil'
 
 /**
@@ -53,7 +54,7 @@ const PMThemeSelector = () => {
           ? 'sunny-outline'
           : 'moon-outline'
       }
-      testID={'themeButton'}
+      testID="themeButton"
     />
   )
 }

@@ -1,8 +1,9 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
 import { ScrollView } from 'react-native'
-import { useGlobalStyles } from './../hooks/useGlobalStyles'
+
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import {
   I18N_KEY_SCREEN_HELP_HEADER_TITLE,
   I18N_KEY_SCREEN_HELP_ZOOM,

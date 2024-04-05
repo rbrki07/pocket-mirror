@@ -1,10 +1,11 @@
 // @ts-check
-import React from 'react'
-import { Provider } from 'react-redux'
-import { useColorScheme } from 'react-native'
 import { fireEvent, render } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
+import React from 'react'
+import { useColorScheme } from 'react-native'
+import { Provider } from 'react-redux'
+
 import { PMThemeSelector } from './PMThemeSelector'
+import { configureTestStore } from '../store/StoreTestUtils'
 import { SETTING_KEY_CURRENT_THEME } from '../store/settings'
 
 describe('PMThemeSelector component tests', () => {

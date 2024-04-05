@@ -1,22 +1,23 @@
 // @ts-check
+import { useIsFocused } from '@react-navigation/native'
+import { Camera, CameraType } from 'expo-camera'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Platform, StyleSheet, View } from 'react-native'
-import { Camera, CameraType } from 'expo-camera'
-import { useDispatch, useSelector } from 'react-redux'
-import { useIsFocused } from '@react-navigation/native'
 import {
   Gesture,
   GestureDetector,
   GestureHandlerRootView,
 } from 'react-native-gesture-handler'
 import { runOnJS, useSharedValue } from 'react-native-reanimated'
+import { useDispatch, useSelector } from 'react-redux'
+
+import { useCameraDimensions } from './../hooks/useCameraDimensions'
 import {
   SETTING_KEY_CURRENT_ZOOM_LEVEL,
   currentWhiteBalanceSelector,
   currentZoomLevelSelector,
   updateSetting,
 } from './../store/settings'
-import { useCameraDimensions } from './../hooks/useCameraDimensions'
 import {
   MAX_ZOOM_LEVEL,
   ZOOM_LEVEL_STEP,
@@ -143,7 +144,7 @@ const PMCameraView = () => {
           width: cameraContainerWidth,
         },
       ]}
-      testID={'cameraContainer'}
+      testID="cameraContainer"
     >
       {cameraPermissionStatus?.granted === true && isFocused === true && (
         <GestureHandlerRootView>
@@ -160,7 +161,7 @@ const PMCameraView = () => {
               useCamera2Api={false}
               whiteBalance={currentWhiteBalance}
               zoom={zoomLevel}
-              testID={'camera'}
+              testID="camera"
             />
           </GestureDetector>
         </GestureHandlerRootView>

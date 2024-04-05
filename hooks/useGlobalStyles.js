@@ -1,9 +1,10 @@
 // @ts-check
 import { Platform, StyleSheet } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
-import { useTheme } from './useTheme'
+
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
+import { useTheme } from './useTheme'
 
 /**
  * @returns {import("react-native").StyleSheet.NamedStyles<typedefs.GlobalStyle>}

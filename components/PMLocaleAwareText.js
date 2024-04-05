@@ -2,9 +2,10 @@
 import React from 'react'
 import { Text } from 'react-native'
 import { useSelector } from 'react-redux'
-import { currentLanguageCodeSelector } from './../store/settings'
-import { i18n } from './../i18n'
+
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
+import { i18n } from './../i18n'
+import { currentLanguageCodeSelector } from './../store/settings'
 
 /**
  * @param {Object} params

@@ -1,7 +1,8 @@
 // @ts-check
 import { act, renderHook } from '@testing-library/react-native'
-import { useAppInForeground } from './useAppInForeground'
 import { AppState } from 'react-native'
+
+import { useAppInForeground } from './useAppInForeground'
 
 describe('useAppInForeground hook', () => {
   it('should detect the app is in foreground, if appState is "active"', () => {

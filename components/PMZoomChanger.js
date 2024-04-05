@@ -1,9 +1,9 @@
 // @ts-check
+import { Ionicons } from '@expo/vector-icons'
 import React, { useCallback } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { useDispatch, useSelector } from 'react-redux'
-import { Ionicons } from '@expo/vector-icons'
-import { PMButton } from './PMButton'
+
 import { useTheme } from './../hooks/useTheme'
 import {
   SETTING_KEY_CURRENT_ZOOM_LEVEL,
@@ -16,6 +16,7 @@ import {
   decreaseCurrentZoomLevel,
   increaseCurrentZoomLevel,
 } from './../utils/ZoomUtil'
+import { PMButton } from './PMButton'
 
 /**
  * @param {Object} params
@@ -72,16 +73,16 @@ const PMZoomChanger = () => {
     <View style={styles.container}>
       <PMButton
         onPressCallback={decreaseZoomLevelButtonOnPressCallback}
-        iconName={'remove-circle-outline'}
+        iconName="remove-circle-outline"
         disabled={getDecreaseZoomLevelButtonDisabledState({ currentZoomLevel })}
-        testID={'decreaseZoomLevelButton'}
+        testID="decreaseZoomLevelButton"
       />
-      <Ionicons name={'search-outline'} size={32} color={theme.iconColor} />
+      <Ionicons name="search-outline" size={32} color={theme.iconColor} />
       <PMButton
         onPressCallback={increaseZoomLevelButtonOnPressCallback}
-        iconName={'add-circle-outline'}
+        iconName="add-circle-outline"
         disabled={getIncreaseZoomLevelButtonDisabledState({ currentZoomLevel })}
-        testID={'increaseZoomLevelButton'}
+        testID="increaseZoomLevelButton"
       />
     </View>
   )

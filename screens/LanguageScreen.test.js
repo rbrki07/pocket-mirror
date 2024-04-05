@@ -1,7 +1,8 @@
 // @ts-check
+import { fireEvent, render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { fireEvent, render } from '@testing-library/react-native'
+
 import { configureTestStore } from './../store/StoreTestUtils'
 import { SETTING_KEY_CURRENT_LANGUAGE_CODE } from './../store/settings'
 import { LanguageScreen } from './LanguageScreen'

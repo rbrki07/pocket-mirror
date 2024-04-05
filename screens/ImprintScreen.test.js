@@ -1,9 +1,10 @@
 // @ts-check
+import { render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { render } from '@testing-library/react-native'
-import { ImprintScreen } from './ImprintScreen'
+
 import { configureTestStore } from './../store/StoreTestUtils'
+import { ImprintScreen } from './ImprintScreen'
 
 describe('ImprintScreen snapshot test', () => {
   it('should render correctly', () => {

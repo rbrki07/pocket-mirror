@@ -1,19 +1,20 @@
 // @ts-check
+import { StackActions } from '@react-navigation/native'
+import { Camera } from 'expo-camera'
+import { StatusBar } from 'expo-status-bar'
 import React, { useCallback, useEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
-import { StatusBar } from 'expo-status-bar'
-import { Camera } from 'expo-camera'
-import { StackActions } from '@react-navigation/native'
-import { PMCameraView } from './../components/PMCameraView'
-import { useTheme } from './../hooks/useTheme'
-import { PMThemeSelector } from './../components/PMThemeSelector'
+
 import { PMBrightnessChanger } from './../components/PMBrightnessChanger'
 import { PMButton } from './../components/PMButton'
+import { PMCameraView } from './../components/PMCameraView'
+import { PMThemeSelector } from './../components/PMThemeSelector'
 import { PMZoomChanger } from './../components/PMZoomChanger'
-import { MENU_MODAL_ROUTE, WELCOME_SCREEN_ROUTE } from './Routes'
+import { useTheme } from './../hooks/useTheme'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
+import { MENU_MODAL_ROUTE, WELCOME_SCREEN_ROUTE } from './Routes'
 
 /**
  * @returns {Object} HomeScreen
@@ -39,7 +40,7 @@ const HomeScreen = ({ navigation }) => {
       <View style={[styles.menu, styles.menuTop]}>
         <PMButton
           onPressCallback={menuButtonOnPressCallback}
-          iconName={'menu-outline'}
+          iconName="menu-outline"
         />
         <PMZoomChanger />
       </View>
@@ -62,26 +63,22 @@ const HomeScreen = ({ navigation }) => {
  */
 const themedStyles = ({ currentTheme, insets }) =>
   StyleSheet.create({
-    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       backgroundColor: currentTheme.backgroundColor,
       flex: 1,
       justifyContent: 'center',
     },
-    // eslint-disable-next-line react-native/no-unused-styles
     menu: {
       flexDirection: 'row',
       width: '95%',
     },
-    // eslint-disable-next-line react-native/no-unused-styles
     menuBottom: {
       alignItems: 'flex-end',
       bottom: insets.bottom,
       justifyContent: 'space-between',
       position: 'absolute',
     },
-    // eslint-disable-next-line react-native/no-unused-styles
     menuTop: {
       alignItems: 'flex-start',
       justifyContent: 'space-between',

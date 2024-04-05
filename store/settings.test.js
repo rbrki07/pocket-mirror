@@ -1,6 +1,7 @@
 // @ts-check
 
 const { WhiteBalance } = require('expo-camera')
+
 const {
   SETTING_KEY_CURRENT_THEME,
   currentThemeSelector,

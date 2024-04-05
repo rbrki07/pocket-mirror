@@ -1,9 +1,10 @@
 // @ts-check
+import { render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { render } from '@testing-library/react-native'
-import { ThirdPartyLibsScreen } from './ThirdPartyLibsScreen'
+
 import { configureTestStore } from './../store/StoreTestUtils'
+import { ThirdPartyLibsScreen } from './ThirdPartyLibsScreen'
 
 describe('ThirdPartyLibsScreen snapshot test', () => {
   it('should render correctly', () => {

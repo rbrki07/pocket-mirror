@@ -1,11 +1,12 @@
 // @ts-check
-import React from 'react'
-import { Provider } from 'react-redux'
-import * as Brightness from 'expo-brightness'
-import { Alert } from 'react-native'
 import { render, fireEvent, waitFor } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
+import * as Brightness from 'expo-brightness'
+import React from 'react'
+import { Alert } from 'react-native'
+import { Provider } from 'react-redux'
+
 import { PMBrightnessChanger } from './PMBrightnessChanger'
+import { configureTestStore } from '../store/StoreTestUtils'
 
 describe('PMBrightnessChanger brightness decrease and increase tests', () => {
   let brightnessSpy

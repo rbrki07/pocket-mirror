@@ -1,9 +1,10 @@
 // @ts-check
+import { fireEvent, render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { fireEvent, render } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
+
 import { PMButton } from './PMButton'
+import { configureTestStore } from '../store/StoreTestUtils'
 
 describe('PMButton component tests', () => {
   it('should have a border if selected is true', () => {
@@ -11,9 +12,9 @@ describe('PMButton component tests', () => {
       <Provider store={configureTestStore()}>
         <PMButton
           onPressCallback={() => {}}
-          iconName={'add'}
-          selected={true}
-          testID={'testButton'}
+          iconName="add"
+          selected
+          testID="testButton"
         />
       </Provider>
     )
@@ -26,8 +27,8 @@ describe('PMButton component tests', () => {
       <Provider store={configureTestStore()}>
         <PMButton
           onPressCallback={() => {}}
-          iconName={'add'}
-          testID={'testButton'}
+          iconName="add"
+          testID="testButton"
         />
       </Provider>
     )
@@ -40,9 +41,9 @@ describe('PMButton component tests', () => {
       <Provider store={configureTestStore()}>
         <PMButton
           onPressCallback={() => {}}
-          iconName={'add'}
-          disabled={true}
-          testID={'testButton'}
+          iconName="add"
+          disabled
+          testID="testButton"
         />
       </Provider>
     )
@@ -55,8 +56,8 @@ describe('PMButton component tests', () => {
       <Provider store={configureTestStore()}>
         <PMButton
           onPressCallback={() => {}}
-          iconName={'add'}
-          testID={'testButton'}
+          iconName="add"
+          testID="testButton"
         />
       </Provider>
     )
@@ -70,8 +71,8 @@ describe('PMButton component tests', () => {
       <Provider store={configureTestStore()}>
         <PMButton
           onPressCallback={onPressCallback}
-          iconName={'add'}
-          testID={'testButton'}
+          iconName="add"
+          testID="testButton"
         />
       </Provider>
     )

@@ -1,13 +1,14 @@
 // @ts-check
-import React from 'react'
-import { Provider } from 'react-redux'
-import { render } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
-import { PMCameraView } from './PMCameraView'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { NavigationContainer } from '@react-navigation/native'
 import { useIsFocused } from '@react-navigation/core'
+import { NavigationContainer } from '@react-navigation/native'
+import { render } from '@testing-library/react-native'
 import { Camera } from 'expo-camera'
+import React from 'react'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { Provider } from 'react-redux'
+
+import { PMCameraView } from './PMCameraView'
+import { configureTestStore } from '../store/StoreTestUtils'
 
 jest.mock('@react-navigation/core', () => ({
   ...jest.requireActual('@react-navigation/core'),

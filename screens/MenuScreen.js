@@ -1,4 +1,5 @@
 // @ts-check
+import { Ionicons } from '@expo/vector-icons'
 import React, { useCallback, useLayoutEffect, useMemo } from 'react'
 import {
   Button,
@@ -8,9 +9,12 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
-import { useTheme } from './../hooks/useTheme'
+
 import { useGlobalStyles } from './../hooks/useGlobalStyles'
+import { useTheme } from './../hooks/useTheme'
+import { i18n } from './../i18n'
+// eslint-disable-next-line no-unused-vars
+import typedefs from './../typedefs'
 import {
   ABOUT_SCREEN_ROUTE,
   HELP_SCREEN_ROUTE,
@@ -20,7 +24,7 @@ import {
   SETTING_SCREEN_ROUTE,
   THIRD_PARTY_LIBS_SCREEN_ROUTE,
 } from './Routes'
-import { i18n } from './../i18n'
+import { PMLocaleAwareText } from '../components/PMLocaleAwareText'
 import {
   I18N_KEY_SCREEN_MENU_CLOSE_BUTTON,
   I18N_KEY_SCREEN_MENU_HEADER_TITLE,
@@ -32,9 +36,6 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
 } from '../i18n/keys'
-import { PMLocaleAwareText } from '../components/PMLocaleAwareText'
-// eslint-disable-next-line no-unused-vars
-import typedefs from './../typedefs'
 
 /**
  * @returns {Object} MenuScreen
@@ -74,7 +75,7 @@ const MenuScreen = ({ navigation }) => {
       >
         <PMLocaleAwareText i18nKey={item.title} />
         <Ionicons
-          name={'chevron-forward-outline'}
+          name="chevron-forward-outline"
           size={32}
           color={theme.iconColor}
         />
@@ -128,7 +129,6 @@ const MenuScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
-    // eslint-disable-next-line react-native/no-unused-styles
     infoItemContainer: {
       alignItems: 'center',
       flex: 1,

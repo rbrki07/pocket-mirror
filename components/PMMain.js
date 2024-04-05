@@ -1,18 +1,12 @@
 // @ts-check
-import React from 'react'
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import React from 'react'
+
 import { useTheme } from './../hooks/useTheme'
 import { HomeScreen } from './../screens/HomeScreen'
-import { MenuScreen } from '../screens/MenuScreen'
-import { SettingScreen } from './../screens/SettingScreen'
-import { LanguageScreen } from '../screens/LanguageScreen'
 import { ImprintScreen } from './../screens/ImprintScreen'
 import { PrivacyScreen } from './../screens/PrivacyScreen'
-import { ThirdPartyLibsScreen } from './../screens/ThirdPartyLibsScreen'
-import { ThirdPartyLibsDetailScreen } from './../screens/ThirdPartyLibsDetailScreen'
-import { AboutScreen } from '../screens/AboutScreen'
-import { WelcomeScreen } from '../screens/WelcomeScreen'
 import {
   HOME_SCREEN_ROUTE,
   IMPRINT_SCREEN_ROUTE,
@@ -27,9 +21,16 @@ import {
   LANGUAGE_SCREEN_ROUTE,
   HELP_SCREEN_ROUTE,
 } from './../screens/Routes'
+import { SettingScreen } from './../screens/SettingScreen'
+import { ThirdPartyLibsDetailScreen } from './../screens/ThirdPartyLibsDetailScreen'
+import { ThirdPartyLibsScreen } from './../screens/ThirdPartyLibsScreen'
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
+import { AboutScreen } from '../screens/AboutScreen'
 import { HelpScreen } from '../screens/HelpScreen'
+import { LanguageScreen } from '../screens/LanguageScreen'
+import { MenuScreen } from '../screens/MenuScreen'
+import { WelcomeScreen } from '../screens/WelcomeScreen'
 
 /**
  * @param {Object} params

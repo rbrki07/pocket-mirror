@@ -1,5 +1,4 @@
 // @ts-check
-import * as keys from './keys'
 import { da } from './da'
 import { de } from './de'
 import { en } from './en'
@@ -7,6 +6,7 @@ import { es } from './es'
 import { fi } from './fi'
 import { fr } from './fr'
 import { it as _it } from './it'
+import * as keys from './keys'
 import { nb } from './nb'
 import { nl } from './nl'
 import { pt } from './pt'

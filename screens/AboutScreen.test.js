@@ -1,9 +1,10 @@
 // @ts-check
+import { render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { render } from '@testing-library/react-native'
-import { AboutScreen } from './AboutScreen'
+
 import { configureTestStore } from './../store/StoreTestUtils'
+import { AboutScreen } from './AboutScreen'
 
 describe('AboutScreen snapshot test', () => {
   it('should render correctly', () => {

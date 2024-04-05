@@ -1,5 +1,6 @@
 // @ts-check
 import { configureStore } from '@reduxjs/toolkit'
+
 import { settingsReducer } from './settings'
 
 /**

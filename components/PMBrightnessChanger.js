@@ -1,13 +1,11 @@
 // @ts-check
-import React, { useCallback, useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
-import { Alert, StyleSheet, View } from 'react-native'
 import { Ionicons } from '@expo/vector-icons'
 import * as Brightness from 'expo-brightness'
-import { PMButton } from './PMButton'
+import React, { useCallback, useEffect, useState } from 'react'
+import { Alert, StyleSheet, View } from 'react-native'
+import { useSelector } from 'react-redux'
+
 import { useTheme } from './../hooks/useTheme'
-import { useAppInForeground } from '../hooks/useAppInForeground'
-import { currentLanguageCodeSelector } from './../store/settings'
 import { i18n } from './../i18n'
 import {
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_DIALOG_CANCEL,
@@ -17,6 +15,9 @@ import {
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_MESSAGE,
   I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_TITLE,
 } from './../i18n/keys'
+import { currentLanguageCodeSelector } from './../store/settings'
+import { PMButton } from './PMButton'
+import { useAppInForeground } from '../hooks/useAppInForeground'
 
 /**
  * @param {Object} params
@@ -209,20 +210,20 @@ const PMBrightnessChanger = ({ initialBrightness = 0.5 }) => {
     <View style={styles.container}>
       <PMButton
         onPressCallback={decreaseBrightnessButtonOnPressCallback}
-        iconName={'remove-circle-outline'}
+        iconName="remove-circle-outline"
         disabled={getDecreaseBrightnessButtonDisabledState({
           currentBrightness,
         })}
-        testID={'decreaseBrightnessButton'}
+        testID="decreaseBrightnessButton"
       />
-      <Ionicons name={'bulb-outline'} size={32} color={theme.iconColor} />
+      <Ionicons name="bulb-outline" size={32} color={theme.iconColor} />
       <PMButton
         onPressCallback={increaseBrightnessButtonOnPressCallback}
-        iconName={'add-circle-outline'}
+        iconName="add-circle-outline"
         disabled={getIncreaseBrightnessButtonDisabledState({
           currentBrightness,
         })}
-        testID={'increaseBrightnessButton'}
+        testID="increaseBrightnessButton"
       />
     </View>
   )

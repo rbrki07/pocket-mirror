@@ -2,6 +2,7 @@
 import { createSelector } from '@reduxjs/toolkit'
 import { WhiteBalance } from 'expo-camera'
 import { getLocales } from 'expo-localization'
+
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
 

@@ -3,6 +3,9 @@ import { useEffect } from 'react'
 import { Platform, useWindowDimensions } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import { useDispatch, useSelector } from 'react-redux'
+
+// eslint-disable-next-line no-unused-vars
+import typedefs from './../typedefs'
 import {
   SETTING_KEY_CAMERA_CONTAINER_HEIGHT,
   SETTING_KEY_CAMERA_CONTAINER_WIDTH,
@@ -14,8 +17,6 @@ import {
   cameraWidthSelector,
   updateSetting,
 } from '../store/settings'
-// eslint-disable-next-line no-unused-vars
-import typedefs from './../typedefs'
 
 /**
  * @returns {typedefs.CameraDimensions}

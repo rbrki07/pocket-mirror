@@ -1,10 +1,11 @@
 // @ts-check
+import { renderHook } from '@testing-library/react-native'
 import React from 'react'
 import { Platform } from 'react-native'
-import { renderHook } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
 import { Provider } from 'react-redux'
+
 import { useCameraDimensions } from './useCameraDimensions'
+import { configureTestStore } from '../store/StoreTestUtils'
 
 // Mock data for calculation:
 // - useSafeAreaInsets(): { top: 0, bottom: 0 } (https://github.com/th3rdwave/react-native-safe-area-context#testing)

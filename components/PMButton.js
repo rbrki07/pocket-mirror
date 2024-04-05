@@ -1,11 +1,12 @@
 // @ts-check
+import { Ionicons } from '@expo/vector-icons'
 import React from 'react'
 import { StyleSheet, TouchableOpacity } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
-import { useTheme } from '../hooks/useTheme'
-import { PMLocaleAwareText } from './PMLocaleAwareText'
+
 // eslint-disable-next-line no-unused-vars
 import typedefs from './../typedefs'
+import { PMLocaleAwareText } from './PMLocaleAwareText'
+import { useTheme } from '../hooks/useTheme'
 
 /**
  * @param {Object} params
@@ -40,7 +41,6 @@ const PMButton = ({
       onPress={onPressCallback}
       style={[
         styles.container,
-        // eslint-disable-next-line react-native/no-inline-styles
         { borderWidth: selected ? 1 : 0, height, width },
       ]}
       testID={testID}
@@ -51,7 +51,6 @@ const PMButton = ({
           name={iconName}
           size={iconSize}
           color={theme.iconColor}
-          // eslint-disable-next-line react-native/no-inline-styles
           style={{ opacity: disabled ? 0.25 : 1.0 }}
           testID={`${testID}_${iconName}`}
         />
@@ -70,7 +69,6 @@ const PMButton = ({
  */
 const themedStyles = (currentTheme) =>
   StyleSheet.create({
-    // eslint-disable-next-line react-native/no-unused-styles
     container: {
       alignItems: 'center',
       borderColor: currentTheme.borderColor,
@@ -80,7 +78,6 @@ const themedStyles = (currentTheme) =>
       justifyContent: 'space-evenly',
       margin: 8,
     },
-    // eslint-disable-next-line react-native/no-unused-styles
     title: {
       color: currentTheme.textColor,
       fontSize: 16,

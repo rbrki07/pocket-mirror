@@ -1,12 +1,13 @@
 // @ts-check
-import React from 'react'
-import { Provider } from 'react-redux'
-import { useColorScheme } from 'react-native'
 import { renderHook } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
-import { THEME } from '../style/theme'
+import React from 'react'
+import { useColorScheme } from 'react-native'
+import { Provider } from 'react-redux'
+
 import { useTheme } from './useTheme'
+import { configureTestStore } from '../store/StoreTestUtils'
 import { SETTING_KEY_CURRENT_THEME } from '../store/settings'
+import { THEME } from '../style/theme'
 
 describe('useTheme hook', () => {
   it('should return light theme if currentTheme is light', () => {

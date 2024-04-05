@@ -1,9 +1,10 @@
 // @ts-check
+import { render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { render } from '@testing-library/react-native'
-import { PrivacyScreen } from './PrivacyScreen'
+
 import { configureTestStore } from './../store/StoreTestUtils'
+import { PrivacyScreen } from './PrivacyScreen'
 
 describe('PrivacyScreen snapshot test', () => {
   it('should render correctly', () => {

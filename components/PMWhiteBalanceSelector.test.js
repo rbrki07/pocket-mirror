@@ -1,10 +1,11 @@
 // @ts-check
-import React from 'react'
-import { Provider } from 'react-redux'
 import { fireEvent, render } from '@testing-library/react-native'
 import { WhiteBalance } from 'expo-camera'
-import { configureTestStore } from '../store/StoreTestUtils'
+import React from 'react'
+import { Provider } from 'react-redux'
+
 import { PMWhiteBalanceSelector } from './PMWhiteBalanceSelector'
+import { configureTestStore } from '../store/StoreTestUtils'
 import { SETTING_KEY_CURRENT_WHITE_BALANCE } from '../store/settings'
 
 describe('PMWhiteBalanceSelector component tests', () => {

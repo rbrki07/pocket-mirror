@@ -1,9 +1,10 @@
 // @ts-check
+import { fireEvent, render } from '@testing-library/react-native'
 import React from 'react'
 import { Provider } from 'react-redux'
-import { fireEvent, render } from '@testing-library/react-native'
-import { configureTestStore } from '../store/StoreTestUtils'
+
 import { PMZoomChanger } from './PMZoomChanger'
+import { configureTestStore } from '../store/StoreTestUtils'
 import { SETTING_KEY_CURRENT_ZOOM_LEVEL } from '../store/settings'
 
 describe('PMZoomChanger component test', () => {

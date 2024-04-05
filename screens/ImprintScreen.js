@@ -1,8 +1,9 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
 import { Linking, ScrollView, Text } from 'react-native'
-import { useGlobalStyles } from './../hooks/useGlobalStyles'
+
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import {
   I18N_KEY_SCREEN_IMPRINT_CONTACT,
   I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION,
@@ -40,9 +41,9 @@ const ImprintScreen = ({ navigation }) => {
         i18nKey={I18N_KEY_SCREEN_IMPRINT_RESPONSIBLE}
         style={styles.title}
       />
-      <Text style={styles.text}>{'René Wilby'}</Text>
-      <Text style={styles.text}>{'Burbarg 15'}</Text>
-      <Text style={styles.text}>{'24226 Heikendorf'}</Text>
+      <Text style={styles.text}>René Wilby</Text>
+      <Text style={styles.text}>Burbarg 15</Text>
+      <Text style={styles.text}>24226 Heikendorf</Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_IMPRINT_CONTACT}
         style={styles.title}
@@ -56,7 +57,7 @@ const ImprintScreen = ({ navigation }) => {
         >
           {PHONE_NUMBER}
         </Text>
-        <Text>{'.'}</Text>
+        <Text>.</Text>
       </Text>
       <Text style={styles.text}>
         <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_IMPRINT_MAIL} />
@@ -67,7 +68,7 @@ const ImprintScreen = ({ navigation }) => {
         >
           {MAIL}
         </Text>
-        <Text>{'.'}</Text>
+        <Text>.</Text>
       </Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION}
@@ -79,7 +80,7 @@ const ImprintScreen = ({ navigation }) => {
         <Text onPress={() => Linking.openURL(EU_ODR_URL)} style={styles.link}>
           {EU_ODR_URL}
         </Text>
-        <Text>{'.'}</Text>
+        <Text>.</Text>
       </Text>
     </ScrollView>
   )

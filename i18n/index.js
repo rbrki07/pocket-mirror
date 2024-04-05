@@ -1,5 +1,6 @@
 // @ts-check
 import { I18n } from 'i18n-js'
+
 import { da } from './da'
 import { de } from './de'
 import { en } from './en'

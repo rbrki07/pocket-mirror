@@ -1,9 +1,10 @@
 // @ts-check
 import React, { useLayoutEffect } from 'react'
 import { StyleSheet, View } from 'react-native'
-import { useGlobalStyles } from './../hooks/useGlobalStyles'
-import { PMWhiteBalanceSelector } from './../components/PMWhiteBalanceSelector'
+
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
+import { PMWhiteBalanceSelector } from './../components/PMWhiteBalanceSelector'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
 import {
   I18N_KEY_SCREEN_SETTING_HEADER_TITLE,
   I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE,
@@ -50,7 +51,6 @@ const SettingScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
-    // eslint-disable-next-line react-native/no-unused-styles
     row: {
       alignItems: 'center',
       height: 110,

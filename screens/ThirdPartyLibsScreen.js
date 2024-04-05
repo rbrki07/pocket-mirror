@@ -1,4 +1,5 @@
 // @ts-check
+import { Ionicons } from '@expo/vector-icons'
 import React, { useCallback, useLayoutEffect } from 'react'
 import {
   FlatList,
@@ -7,17 +8,17 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native'
-import { Ionicons } from '@expo/vector-icons'
-import { useTheme } from './../hooks/useTheme'
-import { useGlobalStyles } from './../hooks/useGlobalStyles'
+
 import { PMLocaleAwareText } from './../components/PMLocaleAwareText'
+import { useGlobalStyles } from './../hooks/useGlobalStyles'
+import { useTheme } from './../hooks/useTheme'
+// eslint-disable-next-line no-unused-vars
+import typedefs from './../typedefs'
+import { THIRD_PARTY_LIBS_DETAIL_SCREEN_ROUTE } from './Routes'
 import {
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_HEADER_TITLE,
   I18N_KEY_SCREEN_THIRD_PARTY_LIBS_INFO,
 } from '../i18n/keys'
-import { THIRD_PARTY_LIBS_DETAIL_SCREEN_ROUTE } from './Routes'
-// eslint-disable-next-line no-unused-vars
-import typedefs from './../typedefs'
 
 /**
  * @returns {Object} ThirdPartyLibsScreen
@@ -37,7 +38,7 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
       >
         <Text style={styles.text}>{item.name}</Text>
         <Ionicons
-          name={'chevron-forward-outline'}
+          name="chevron-forward-outline"
           size={32}
           color={theme.iconColor}
         />
@@ -92,7 +93,6 @@ const ThirdPartyLibsScreen = ({ navigation }) => {
 const mergedStyles = (globalStyles) =>
   StyleSheet.create({
     ...globalStyles,
-    // eslint-disable-next-line react-native/no-unused-styles
     libItemContainer: {
       alignItems: 'center',
       flex: 1,

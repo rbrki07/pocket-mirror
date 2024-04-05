@@ -1,12 +1,13 @@
 // @ts-check
-import React from 'react'
-import { Provider } from 'react-redux'
+import { NavigationContainer } from '@react-navigation/native'
 import { render, waitFor } from '@testing-library/react-native'
 import { Camera } from 'expo-camera'
-import { NavigationContainer } from '@react-navigation/native'
+import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { configureTestStore } from '../store/StoreTestUtils'
+import { Provider } from 'react-redux'
+
 import { HomeScreen } from './HomeScreen'
+import { configureTestStore } from '../store/StoreTestUtils'
 
 describe('HomeScreen tests', () => {
   it('should dispatch navigation stack action to WelcomeScreen, if camera permission is not granted', async () => {

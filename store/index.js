@@ -1,6 +1,7 @@
 // @ts-check
-import { combineReducers } from 'redux'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import { configureStore } from '@reduxjs/toolkit'
+import { combineReducers } from 'redux'
 import {
   createMigrate,
   persistReducer,
@@ -12,7 +13,7 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist'
-import { configureStore } from '@reduxjs/toolkit'
+
 import { migrations, settingsReducer } from './settings'
 
 const pmReducer = combineReducers({
