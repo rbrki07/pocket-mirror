@@ -85,7 +85,7 @@
     "redux-persist": "^6.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.4",
+    "@babel/core": "^7.24.5",
     "@testing-library/jest-native": "^5.4.3",
     "@testing-library/react-native": "^12.4.5",
     "@types/jest": "^29.5.12",
