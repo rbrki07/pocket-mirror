@@ -17,20 +17,14 @@
 
 /**
  * @typedef {Object} Setting
- * @property {'currentTheme' | 'currentWhiteBalance' | 'currentZoomLevel' | 'currentLanguageCode' | 'cameraContainerHeight' | 'cameraContainerWidth' | 'cameraHeight' | 'cameraWidth'} key
- * @property {ColorScheme | import("expo-camera").WhiteBalance | Number | String} value
+ * @property {'currentTheme' | 'currentZoomLevel' | 'currentLanguageCode' | 'cameraContainerHeight' | 'cameraContainerWidth' | 'cameraHeight' | 'cameraWidth'} key
+ * @property {ColorScheme | Number | String | Null} value
  */
 
 /**
  * @typedef {Object} CurrentThemeSetting
  * @property {'currentTheme'} key
  * @property {ColorScheme} value
- */
-
-/**
- * @typedef {Object} CurrentWhiteBalanceSetting
- * @property {'currentWhiteBalance'} key
- * @property {import("expo-camera").WhiteBalance} value
  */
 
 /**

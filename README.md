@@ -12,8 +12,6 @@ The Pocket Mirror app turns your smartphone into a digital mirror, which you can
 
 - Your pocket mirror can be used in light or dark mode. So it adapts optimally to your needs.
 
-- If necessary, you can adjust the white balance settings of the camera to achieve even better results.
-
 After downloading you can use the app immediately. No registration is required.
 
 The app does not collect or process any personal data. No usage data is collected either.

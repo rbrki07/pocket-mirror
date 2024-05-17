@@ -1,6 +1,6 @@
 // @ts-check
 import { useIsFocused } from '@react-navigation/native'
-import { Camera, CameraType } from 'expo-camera'
+import { CameraView, useCameraPermissions } from 'expo-camera'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Platform, StyleSheet, View } from 'react-native'
 import {
@@ -14,7 +14,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useCameraDimensions } from './../hooks/useCameraDimensions'
 import {
   SETTING_KEY_CURRENT_ZOOM_LEVEL,
-  currentWhiteBalanceSelector,
   currentZoomLevelSelector,
   updateSetting,
 } from './../store/settings'
@@ -26,8 +25,8 @@ import {
 } from './../utils/ZoomUtil'
 
 const DECREASE_ZOOM_LEVEL_STEP_FACTOR =
-  Platform.OS === 'android' ? -3.0 : -0.0005
-const INCREASE_ZOOM_LEVEL_STEP_FACTOR = Platform.OS === 'android' ? 1.5 : 0.0001
+  Platform.OS === 'android' ? -6.0 : -0.0005
+const INCREASE_ZOOM_LEVEL_STEP_FACTOR = Platform.OS === 'android' ? 3.0 : 0.0001
 
 /**
  * @returns {Object} PMCameraView
@@ -39,11 +38,10 @@ const PMCameraView = () => {
     cameraHeight,
     cameraWidth,
   } = useCameraDimensions()
-  const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)
   const currentZoomLevel = useSelector(currentZoomLevelSelector) || 0.0
   const [zoomLevel, setZoomLevel] = useState(0.0)
   const dispatch = useDispatch()
-  const [cameraPermissionStatus] = Camera.useCameraPermissions()
+  const [cameraPermissionStatus] = useCameraPermissions()
   const isFocused = useIsFocused()
 
   useEffect(() => {
@@ -87,10 +85,12 @@ const PMCameraView = () => {
   )
 
   const scale = useSharedValue(1)
+  // TODO fix gesture handler on iOS
   const panGesture = useMemo(
     () =>
       Gesture.Pinch()
         .onUpdate((e) => {
+          console.log('panGesture > onUpdate')
           if (e.scale <= scale.value) {
             runOnJS(decreaseZoomLevelWrapper)(
               e.velocity * DECREASE_ZOOM_LEVEL_STEP_FACTOR
@@ -102,6 +102,7 @@ const PMCameraView = () => {
           }
         })
         .onEnd(() => {
+          console.log('panGesture > onEnd')
           scale.value = 1
           runOnJS(updateCurrentZoomLevel)(zoomLevel)
         }),
@@ -120,6 +121,7 @@ const PMCameraView = () => {
         .numberOfTaps(2)
         .maxDuration(250)
         .onStart(() => {
+          console.log('doubleTapGesture > onStart')
           runOnJS(increaseZoomLevelWrapper)(ZOOM_LEVEL_STEP)
         }),
     [increaseZoomLevelWrapper]
@@ -130,6 +132,7 @@ const PMCameraView = () => {
       Gesture.LongPress()
         .minDuration(750)
         .onStart(() => {
+          console.log('longPressGesture > onStart')
           runOnJS(decreaseZoomLevelWrapper)(MAX_ZOOM_LEVEL)
         }),
     [decreaseZoomLevelWrapper]
@@ -155,11 +158,9 @@ const PMCameraView = () => {
               longPressGesture
             )}
           >
-            <Camera
+            <CameraView
               style={{ height: cameraHeight, width: cameraWidth }}
-              type={CameraType.front}
-              useCamera2Api={false}
-              whiteBalance={currentWhiteBalance}
+              facing="front"
               zoom={zoomLevel}
               testID="camera"
             />

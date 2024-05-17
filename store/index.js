@@ -22,9 +22,10 @@ const pmReducer = combineReducers({
 
 const persistConfig = {
   key: 'pocket-mirror',
-  version: 2,
+  version: 3,
   storage: AsyncStorage,
-  migrate: createMigrate(migrations, { debug: false }),
+  migrate: createMigrate(migrations, { debug: true }),
+  debug: true,
 }
 
 const persistedReducer = persistReducer(persistConfig, pmReducer)

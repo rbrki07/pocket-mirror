@@ -17,10 +17,6 @@ exports[`MenuScreen snapshot test should render correctly 1`] = `
     data={
       [
         {
-          "route": "Setting",
-          "title": "screen_menu_item_setting",
-        },
-        {
           "route": "Language",
           "title": "screen_menu_item_language",
         },
@@ -63,76 +59,6 @@ exports[`MenuScreen snapshot test should render correctly 1`] = `
     viewabilityConfigCallbackPairs={[]}
   >
     <View>
-      <View
-        onFocusCapture={[Function]}
-        onLayout={[Function]}
-        style={null}
-      >
-        <View
-          accessibilityState={
-            {
-              "busy": undefined,
-              "checked": undefined,
-              "disabled": undefined,
-              "expanded": undefined,
-              "selected": undefined,
-            }
-          }
-          accessibilityValue={
-            {
-              "max": undefined,
-              "min": undefined,
-              "now": undefined,
-              "text": undefined,
-            }
-          }
-          accessible={true}
-          collapsable={false}
-          focusable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "row",
-              "justifyContent": "space-between",
-              "marginVertical": 4,
-              "minHeight": 48,
-              "opacity": 1,
-            }
-          }
-        >
-          <Text
-            style={
-              [
-                {
-                  "color": "#000",
-                  "fontSize": 16,
-                  "lineHeight": 22,
-                },
-                {},
-              ]
-            }
-          >
-            Einstellungen
-          </Text>
-          <Text />
-        </View>
-        <View
-          style={
-            {
-              "borderBottomColor": "#000",
-              "borderBottomWidth": 0.5,
-            }
-          }
-        />
-      </View>
       <View
         onFocusCapture={[Function]}
         onLayout={[Function]}

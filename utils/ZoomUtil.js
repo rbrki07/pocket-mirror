@@ -2,8 +2,8 @@
 import { Platform } from 'react-native'
 
 const MIN_ZOOM_LEVEL = 0.0
-const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 0.5 : 0.025
-const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.1 : 0.005
+const MAX_ZOOM_LEVEL = Platform.OS === 'android' ? 0.875 : 0.025
+const ZOOM_LEVEL_STEP = Platform.OS === 'android' ? 0.175 : 0.005
 
 /**
  * @param {Object} params
@@ -17,7 +17,8 @@ const decreaseCurrentZoomLevel = ({
   currentZoomLevel,
   zoomLevelStep = ZOOM_LEVEL_STEP,
 }) => {
-  const newZoomLevel = currentZoomLevel - zoomLevelStep
+  const newZoomLevel =
+    Math.round((currentZoomLevel - zoomLevelStep) * 1000) / 1000
   if (newZoomLevel > MAX_ZOOM_LEVEL) {
     return currentZoomLevel
   }
@@ -40,7 +41,8 @@ const increaseCurrentZoomLevel = ({
   currentZoomLevel,
   zoomLevelStep = ZOOM_LEVEL_STEP,
 }) => {
-  const newZoomLevel = currentZoomLevel + zoomLevelStep
+  const newZoomLevel =
+    Math.round((currentZoomLevel + zoomLevelStep) * 1000) / 1000
   if (newZoomLevel < MIN_ZOOM_LEVEL) {
     return currentZoomLevel
   }
