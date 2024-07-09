@@ -1,12 +1,8 @@
 // @ts-check
 
-const { WhiteBalance } = require('expo-camera')
-
 const {
   SETTING_KEY_CURRENT_THEME,
   currentThemeSelector,
-  SETTING_KEY_CURRENT_WHITE_BALANCE,
-  currentWhiteBalanceSelector,
   SETTING_KEY_CURRENT_ZOOM_LEVEL,
   currentZoomLevelSelector,
   settingsReducer,
@@ -44,29 +40,6 @@ describe('Setting selectors', () => {
     }
 
     const result = currentThemeSelector(state)
-    expect(result).toBeUndefined()
-  })
-
-  it('should select auto as current white-balance if current white-balance is available', () => {
-    const setting = {
-      key: SETTING_KEY_CURRENT_WHITE_BALANCE,
-      value: WhiteBalance.auto,
-    }
-    const state = {
-      settings: [setting],
-    }
-
-    // @ts-ignore
-    const result = currentWhiteBalanceSelector(state)
-    expect(result).toEqual(setting.value)
-  })
-
-  it('should select undefined as current white-balance if current white-balance is not available', () => {
-    const state = {
-      settings: [],
-    }
-
-    const result = currentWhiteBalanceSelector(state)
     expect(result).toBeUndefined()
   })
 

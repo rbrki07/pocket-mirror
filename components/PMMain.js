@@ -12,7 +12,6 @@ import {
   IMPRINT_SCREEN_ROUTE,
   PRIVACY_SCREEN_ROUTE,
   MENU_MODAL_ROUTE,
-  SETTING_SCREEN_ROUTE,
   THIRD_PARTY_LIBS_SCREEN_ROUTE,
   THIRD_PARTY_LIBS_DETAIL_SCREEN_ROUTE,
   MENU_SCREEN_ROUTE,
@@ -21,7 +20,6 @@ import {
   LANGUAGE_SCREEN_ROUTE,
   HELP_SCREEN_ROUTE,
 } from './../screens/Routes'
-import { SettingScreen } from './../screens/SettingScreen'
 import { ThirdPartyLibsDetailScreen } from './../screens/ThirdPartyLibsDetailScreen'
 import { ThirdPartyLibsScreen } from './../screens/ThirdPartyLibsScreen'
 // eslint-disable-next-line no-unused-vars
@@ -58,7 +56,6 @@ const MenuModal = () => {
   return (
     <MenuStack.Navigator screenOptions={{ headerBackTitleVisible: false }}>
       <MenuStack.Screen name={MENU_SCREEN_ROUTE} component={MenuScreen} />
-      <MenuStack.Screen name={SETTING_SCREEN_ROUTE} component={SettingScreen} />
       <MenuStack.Screen
         name={LANGUAGE_SCREEN_ROUTE}
         component={LanguageScreen}

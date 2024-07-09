@@ -14,7 +14,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useCameraDimensions } from './../hooks/useCameraDimensions'
 import {
   SETTING_KEY_CURRENT_ZOOM_LEVEL,
-  currentWhiteBalanceSelector,
   currentZoomLevelSelector,
   updateSetting,
 } from './../store/settings'
@@ -39,7 +38,6 @@ const PMCameraView = () => {
     cameraHeight,
     cameraWidth,
   } = useCameraDimensions()
-  const currentWhiteBalance = useSelector(currentWhiteBalanceSelector)
   const currentZoomLevel = useSelector(currentZoomLevelSelector) || 0.0
   const [zoomLevel, setZoomLevel] = useState(0.0)
   const dispatch = useDispatch()
@@ -159,7 +157,6 @@ const PMCameraView = () => {
               style={{ height: cameraHeight, width: cameraWidth }}
               type={CameraType.front}
               useCamera2Api={false}
-              whiteBalance={currentWhiteBalance}
               zoom={zoomLevel}
               testID="camera"
             />

@@ -14,7 +14,6 @@ export const I18N_KEY_SCREEN_IMPRINT_DISPUTE_RESOLUTION =
 export const I18N_KEY_SCREEN_IMPRINT_ODR = 'screen_imprint_odr'
 // MenuScreen
 export const I18N_KEY_SCREEN_MENU_HEADER_TITLE = 'screen_menu_header_title'
-export const I18N_KEY_SCREEN_MENU_ITEM_SETTING = 'screen_menu_item_setting'
 export const I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE = 'screen_menu_item_language'
 export const I18N_KEY_SCREEN_MENU_ITEM_HELP = 'screen_menu_item_help'
 export const I18N_KEY_SCREEN_MENU_ITEM_IMPRINT = 'screen_menu_item_imprint'
@@ -55,11 +54,6 @@ export const I18N_KEY_SCREEN_PRIVACY_OTHER_DATA_LICENSE =
 export const I18N_KEY_SCREEN_PRIVACY_QUESTIONS_HEADLINE =
   'screen_privacy_questions_headline'
 export const I18N_KEY_SCREEN_PRIVACY_QUESTIONS = 'screen_privacy_questions'
-// SettingScreen
-export const I18N_KEY_SCREEN_SETTING_HEADER_TITLE =
-  'screen_setting_header_title'
-export const I18N_KEY_SCREEN_SETTING_ITEM_WHITE_BALANCE =
-  'screen_setting_item_white_balance'
 // LanguageScreen
 export const I18N_KEY_SCREEN_LANGUAGE_HEADER_TITLE =
   'screen_language_header_title'
@@ -96,12 +90,3 @@ export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_
   'component_pm_brightness_changer_request_permission_failed_dialog_title'
 export const I18N_KEY_COMPONENT_PM_BRIGHTNESS_CHANGER_REQUEST_PERMISSION_FAILED_DIALOG_MESSAGE =
   'component_pm_brightness_changer_request_permission_failed_dialog_message'
-// PMWhiteBalanceSelector
-export const I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_AUTOMATIC =
-  'component_pm_white_balance_selector_option_automatic'
-export const I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_SUNNY =
-  'component_pm_white_balance_selector_option_sunny'
-export const I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_CLOUDY =
-  'component_pm_white_balance_selector_option_cloudy'
-export const I18N_KEY_COMPONENT_PM_WHITE_BALANCE_SELECTOR_OPTION_SHADY =
-  'component_pm_white_balance_selector_option_shady'

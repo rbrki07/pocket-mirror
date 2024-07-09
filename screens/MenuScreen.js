@@ -21,7 +21,6 @@ import {
   IMPRINT_SCREEN_ROUTE,
   LANGUAGE_SCREEN_ROUTE,
   PRIVACY_SCREEN_ROUTE,
-  SETTING_SCREEN_ROUTE,
   THIRD_PARTY_LIBS_SCREEN_ROUTE,
 } from './Routes'
 import { PMLocaleAwareText } from '../components/PMLocaleAwareText'
@@ -33,7 +32,6 @@ import {
   I18N_KEY_SCREEN_MENU_ITEM_IMPRINT,
   I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
   I18N_KEY_SCREEN_MENU_ITEM_PRIVACY,
-  I18N_KEY_SCREEN_MENU_ITEM_SETTING,
   I18N_KEY_SCREEN_MENU_ITEM_THIRD_PARTY_LIBS,
 } from '../i18n/keys'
 
@@ -47,7 +45,6 @@ const MenuScreen = ({ navigation }) => {
 
   const infoItems = useMemo(
     () => [
-      { title: I18N_KEY_SCREEN_MENU_ITEM_SETTING, route: SETTING_SCREEN_ROUTE },
       {
         title: I18N_KEY_SCREEN_MENU_ITEM_LANGUAGE,
         route: LANGUAGE_SCREEN_ROUTE,
