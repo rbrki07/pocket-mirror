@@ -42,7 +42,7 @@ const ImprintScreen = ({ navigation }) => {
         style={styles.title}
       />
       <Text style={styles.text}>René Wilby</Text>
-      <Text style={styles.text}>Burbarg 15</Text>
+      <Text style={styles.text}>Langer Rehm 19</Text>
       <Text style={styles.text}>24226 Heikendorf</Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_IMPRINT_CONTACT}

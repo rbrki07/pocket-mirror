@@ -54,7 +54,7 @@ exports[`ImprintScreen snapshot test should render correctly 1`] = `
         }
       }
     >
-      Burbarg 15
+      Langer Rehm 19
     </Text>
     <Text
       style={

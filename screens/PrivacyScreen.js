@@ -54,7 +54,7 @@ const PrivacyScreen = ({ navigation }) => {
       <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_PRIVACY_GENERAL} />
       <PMLocaleAwareText i18nKey={I18N_KEY_SCREEN_PRIVACY_RESPONSIBLE} />
       <Text style={styles.text}>René Wilby</Text>
-      <Text style={styles.text}>Burbarg 15</Text>
+      <Text style={styles.text}>Langer Rehm 19</Text>
       <Text style={styles.text}>24226 Heikendorf</Text>
       <PMLocaleAwareText
         i18nKey={I18N_KEY_SCREEN_PRIVACY_USAGE_DESCRIPTION_HEADLINE}
