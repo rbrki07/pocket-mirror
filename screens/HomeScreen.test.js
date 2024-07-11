@@ -1,7 +1,7 @@
 // @ts-check
 import { NavigationContainer } from '@react-navigation/native'
 import { render, waitFor } from '@testing-library/react-native'
-import { Camera } from 'expo-camera'
+import { useCameraPermissions } from 'expo-camera'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { Provider } from 'react-redux'
@@ -9,12 +9,18 @@ import { Provider } from 'react-redux'
 import { HomeScreen } from './HomeScreen'
 import { configureTestStore } from '../store/StoreTestUtils'
 
+jest.mock('expo-camera', () => ({
+  ...jest.requireActual('expo-camera'),
+  useCameraPermissions: jest.fn(),
+}))
+
 describe('HomeScreen tests', () => {
   it('should dispatch navigation stack action to WelcomeScreen, if camera permission is not granted', async () => {
-    jest
-      .spyOn(Camera, 'useCameraPermissions')
-      // @ts-ignore
-      .mockReturnValue([{ granted: false }, () => Promise.resolve({})])
+    // @ts-ignore
+    useCameraPermissions.mockReturnValue([
+      { granted: false },
+      () => Promise.resolve({}),
+    ])
 
     const dispatchMock = jest.fn()
     const navigationMock = {
@@ -40,10 +46,11 @@ describe('HomeScreen tests', () => {
   })
 
   it('should render camera view, if camera permission is granted', async () => {
-    jest
-      .spyOn(Camera, 'useCameraPermissions')
-      // @ts-ignore
-      .mockReturnValue([{ granted: true }, () => Promise.resolve({})])
+    // @ts-ignore
+    useCameraPermissions.mockReturnValue([
+      { granted: true },
+      () => Promise.resolve({}),
+    ])
 
     const { getByTestId } = render(
       <Provider store={configureTestStore()}>

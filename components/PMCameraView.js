@@ -1,6 +1,6 @@
 // @ts-check
 import { useIsFocused } from '@react-navigation/native'
-import { Camera, CameraType } from 'expo-camera'
+import { CameraView, useCameraPermissions } from 'expo-camera'
 import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { Platform, StyleSheet, View } from 'react-native'
 import {
@@ -25,8 +25,8 @@ import {
 } from './../utils/ZoomUtil'
 
 const DECREASE_ZOOM_LEVEL_STEP_FACTOR =
-  Platform.OS === 'android' ? -3.0 : -0.0005
-const INCREASE_ZOOM_LEVEL_STEP_FACTOR = Platform.OS === 'android' ? 1.5 : 0.0001
+  Platform.OS === 'android' ? -6.0 : -0.0005
+const INCREASE_ZOOM_LEVEL_STEP_FACTOR = Platform.OS === 'android' ? 3.0 : 0.0001
 
 /**
  * @returns {Object} PMCameraView
@@ -41,7 +41,7 @@ const PMCameraView = () => {
   const currentZoomLevel = useSelector(currentZoomLevelSelector) || 0.0
   const [zoomLevel, setZoomLevel] = useState(0.0)
   const dispatch = useDispatch()
-  const [cameraPermissionStatus] = Camera.useCameraPermissions()
+  const [cameraPermissionStatus] = useCameraPermissions()
   const isFocused = useIsFocused()
 
   useEffect(() => {
@@ -153,10 +153,9 @@ const PMCameraView = () => {
               longPressGesture
             )}
           >
-            <Camera
+            <CameraView
               style={{ height: cameraHeight, width: cameraWidth }}
-              type={CameraType.front}
-              useCamera2Api={false}
+              facing="front"
               zoom={zoomLevel}
               testID="camera"
             />

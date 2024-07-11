@@ -1,6 +1,6 @@
 // @ts-check
 import { StackActions } from '@react-navigation/native'
-import { Camera } from 'expo-camera'
+import { useCameraPermissions } from 'expo-camera'
 import { StatusBar } from 'expo-status-bar'
 import React, { useEffect } from 'react'
 import { Linking, StyleSheet } from 'react-native'
@@ -28,7 +28,7 @@ const WelcomeScreen = ({ navigation }) => {
   const theme = useTheme()
   const styles = themedStyles(theme)
   const [cameraPermissionStatus, requestCameraPermission] =
-    Camera.useCameraPermissions()
+    useCameraPermissions()
 
   useEffect(() => {
     if (cameraPermissionStatus?.granted === true) {

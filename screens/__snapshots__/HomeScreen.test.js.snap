@@ -292,13 +292,24 @@ exports[`HomeScreen tests should render correctly 1`] = `
     }
     testID="cameraContainer"
   >
-    <View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
       <ViewManagerAdapter_ExpoCamera
+        autoFocus="off"
+        barcodeScannerEnabled={false}
         collapsable={false}
-        faceDetectorSettings={{}}
-        focusDepth={0}
+        enableTorch={false}
+        facing="front"
+        flash="off"
+        flashMode="off"
+        mode="picture"
+        mute={false}
         onCameraReady={[Function]}
-        onFacesDetected={[Function]}
         onMountError={[Function]}
         onPictureSaved={[Function]}
         onResponsiveOrientationChanged={[Function]}

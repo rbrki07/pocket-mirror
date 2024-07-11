@@ -2,7 +2,7 @@
 import { useIsFocused } from '@react-navigation/core'
 import { NavigationContainer } from '@react-navigation/native'
 import { render } from '@testing-library/react-native'
-import { Camera } from 'expo-camera'
+import { useCameraPermissions } from 'expo-camera'
 import React from 'react'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 import { Provider } from 'react-redux'
@@ -15,12 +15,18 @@ jest.mock('@react-navigation/core', () => ({
   useIsFocused: jest.fn(),
 }))
 
+jest.mock('expo-camera', () => ({
+  ...jest.requireActual('expo-camera'),
+  useCameraPermissions: jest.fn(),
+}))
+
 describe('PMCameraView component tests', () => {
   it('should show camera if permissions are granted and component is focused', () => {
-    jest
-      .spyOn(Camera, 'useCameraPermissions')
-      // @ts-ignore
-      .mockReturnValue([{ granted: true }, () => Promise.resolve({})])
+    // @ts-ignore
+    useCameraPermissions.mockReturnValue([
+      { granted: true },
+      () => Promise.resolve({}),
+    ])
 
     // @ts-ignore
     useIsFocused.mockReturnValue(true)
@@ -39,10 +45,11 @@ describe('PMCameraView component tests', () => {
   })
 
   it('should not show camera if permissions are granted and component is not focused', () => {
-    jest
-      .spyOn(Camera, 'useCameraPermissions')
-      // @ts-ignore
-      .mockReturnValue([{ granted: true }, () => Promise.resolve({})])
+    // @ts-ignore
+    useCameraPermissions.mockReturnValue([
+      { granted: true },
+      () => Promise.resolve({}),
+    ])
 
     // @ts-ignore
     useIsFocused.mockReturnValue(false)
@@ -61,10 +68,11 @@ describe('PMCameraView component tests', () => {
   })
 
   it('should not show camera if permissions are not granted and component is focused', () => {
-    jest
-      .spyOn(Camera, 'useCameraPermissions')
-      // @ts-ignore
-      .mockReturnValue([{ granted: false }, () => Promise.resolve({})])
+    // @ts-ignore
+    useCameraPermissions.mockReturnValue([
+      { granted: false },
+      () => Promise.resolve({}),
+    ])
 
     // @ts-ignore
     useIsFocused.mockReturnValue(true)
